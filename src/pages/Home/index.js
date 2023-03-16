@@ -1,8 +1,7 @@
 const Home = () => {
     return (
         <div>
-            Home
-            <a href="#">Login</a>
+            HIHI
         </div>
     );
 };
