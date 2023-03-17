@@ -1,6 +1,7 @@
 import { useCallback, useState, useRef } from 'react';
 import useLocalStorageState from 'use-local-storage-state';
 import { objectToQuery, queryToObject } from './tools';
+import axios from 'axios';
 const { default: apiClient } = require('~/services/axios');
 
 const OAUTH_STATE_KEY = 'react-use-oauth2-state-key';
@@ -93,31 +94,28 @@ const useOAuth2 = (props) => {
                     } else {
                         const code = message && message.data && message.data.payload && message.data.payload.code;
 
-                        const response = await apiClient
-                            .post('/oauth2/token', {
-                                client_id: clientId,
-                                client_secret: clientSecret,
-                                code,
-                                redirect_uri: redirectUri,
-                            })
+                        const response = await axios
+                            .post(
+                                'http://localhost:3001/',
+                                {
+                                    client_id: clientId,
+                                    client_secret: clientSecret,
+                                    code,
+                                    grant_type: 'authorization_code',
+                                },
+                                {
+                                    headers: {
+                                        'Target-URL': 'http://canvas.docker/login/oauth2/token',
+                                    },
+                                },
+                            )
                             .then((response) => response.data)
                             .catch((error) => {
                                 throw error;
                             });
-                        if (!response.ok) {
-                            setUI({
-                                loading: false,
-                                error: 'Failed to exchange code for token',
-                            });
-                        } else {
-                            let payload = await response.json();
-                            setUI({
-                                loading: false,
-                                error: null,
-                            });
-                            setData(payload);
-                            // Lines above will cause 2 rerenders but it's fine for this tutorial :-)
-                        }
+
+                        const payload = await response;
+                        setData(payload);
                     }
                 }
             } catch (genericError) {

@@ -5,8 +5,7 @@ const Login = () => {
         authorizeUrl: 'http://canvas.docker/login/oauth2/auth',
         clientId: '10000000000001',
         clientSecret: 'xcSEau0qqyb3xjVQa6uK7PZtsbgeZ2vFtFEBr1Hy7hzkyUbruEjdHHQ4q1neDOKO',
-        redirectUri: `https://localhost:3000/callback`,
-        scope: 'SOME_SCOPE',
+        redirectUri: `http://localhost:3000/callback`,
         responseType: 'code',
     });
 

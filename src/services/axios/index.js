@@ -4,7 +4,7 @@ import { notification } from 'antd';
 import qs, { parse } from 'qs';
 
 const apiClient = axios.create({
-    baseURL: 'http://canvas.docker/',
+    baseURL: 'http://localhost:3001/',
     cancelToken: axios.CancelToken.source().token,
 
     paramsSerializer: {
@@ -12,6 +12,7 @@ const apiClient = axios.create({
         serialize: (params) => JSON.stringify(params, { skipNulls: true, arrayFormat: 'repeat' }),
     },
 });
+
 
 apiClient.interceptors.request.use((request) => {
     const accessToken = store.get('access_token');

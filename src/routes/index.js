@@ -1,5 +1,5 @@
 // upload
-import { Home, Login, OAuthPopup } from '~/pages';
+import { Home, Login, Course, OAuthPopup } from '~/pages';
 
 const publicRoutes = [
     {
@@ -9,6 +9,10 @@ const publicRoutes = [
     {
         path: '/login',
         component: Login,
+    },
+    {
+        path: '/course',
+        component: Course,
     },
     {
         path: '/callback',
