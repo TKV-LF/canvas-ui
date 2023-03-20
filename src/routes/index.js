@@ -11,8 +11,27 @@ const publicRoutes = [
         component: Login,
     },
     {
-        path: '/course',
+        path: '/courses',
         component: Course,
+    },
+    {
+        path: '/courses/:id',
+        component: Course,
+    },
+    {
+        path: '/profile',
+    },
+    {
+        path: '/admin',
+    },
+    {
+        path: '/calendar',
+    },
+    {
+        path: '/inbox'
+    },
+    {
+        path: '/history',
     },
     {
         path: '/callback',
