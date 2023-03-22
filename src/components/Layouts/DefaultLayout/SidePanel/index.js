@@ -78,7 +78,7 @@ const Sidebar = () => {
 
 							>
 								<Tooltip title={Menu.title} placement="bottom-start" arrow>
-									<div className={`text-xl ${!open && "mx-auto my-auto text-3xl"}`}>{Menu.icon}</div>
+									<div className={`ml-0.5 text-xl ${!open && "mx-auto my-auto text-3xl"}`}>{Menu.icon}</div>
 								</Tooltip>
 								<span className={`text-sm font-medium ${!open && 'hidden'}`}>{Menu.title}</span>
 							</li>
