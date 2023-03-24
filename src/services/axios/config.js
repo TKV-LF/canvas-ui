@@ -1,23 +1,10 @@
-const { default: apiClient } = require('./');
-
-const externalHeader = (url) => {
-    const headers = {
-        headers: {
-            'Target-URL': url,
-        },
-    };
-    return headers;
-};
+const { default: apiClient } = require('.');
 
 export const get = (url, params) => {
-    return apiClient.get('', { ...params }, {
-        headers: {
-            'Target-URL': url,
-        }
-    });
+    return apiClient.get(url, { ...params });
 };
 
-export const post = (url, data) => apiClient.post('', data, externalHeader(url));
-export const put = (url, data) => apiClient.put(url, data, externalHeader(url));
-export const patch = (url, data) => apiClient.put(url, data, externalHeader(url)));
-export const remove = (url) => apiClient.put('', null, externalHeader(url));
+export const post = (url, data) => apiClient.post(url, data);
+export const put = (url, data) => apiClient.put(url, data);
+export const patch = (url, data) => apiClient.put(url, data);
+export const remove = (url) => apiClient.delete(url, data);

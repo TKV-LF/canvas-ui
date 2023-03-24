@@ -1,4 +1,5 @@
 import { useOAuth2 } from '~/hooks';
+import store from 'store';
 
 const Login = () => {
     const { data, loading, error, getAuth } = useOAuth2({
@@ -20,6 +21,9 @@ const Login = () => {
     }
 
     if (isLoggedIn) {
+        store.set('access_token', data.access_token);
+        store.set('refresh_token', data.refresh_token);
+        store.set('user', data.user);
         return <pre id="implicit-grant-data">{JSON.stringify(data)}</pre>;
     }
 

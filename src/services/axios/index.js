@@ -4,7 +4,7 @@ import { notification } from 'antd';
 import qs, { parse } from 'qs';
 
 const apiClient = axios.create({
-    baseURL: 'http://localhost:3001/',
+    baseURL: 'http://localhost:8088/http://canvas.docker/',
     cancelToken: axios.CancelToken.source().token,
 
     paramsSerializer: {
@@ -13,33 +13,52 @@ const apiClient = axios.create({
     },
 });
 
+// Function to refresh token
+async function refreshToken() {
+    const response = await apiClient.post('/login/oauth2/token', {
+        refresh_token: store.get('refresh_token'),
+        grant_type: 'refresh_token',
+        client_id: '10000000000001',
+        client_secret: 'xcSEau0qqyb3xjVQa6uK7PZtsbgeZ2vFtFEBr1Hy7hzkyUbruEjdHHQ4q1neDOKO',
+    });
+    const accessToken = response.data.access_token;
+    const user = response.data.user;
+    store.set('user', user);
+    store.set('access_token', accessToken);
+    return accessToken;
+}
 
 apiClient.interceptors.request.use((request) => {
     const accessToken = store.get('access_token');
 
     if (accessToken) {
         request.headers.Authorization = `Bearer ${accessToken}`;
-        request.headers.accessToken = accessToken;
     }
     return request;
 });
 
-apiClient.interceptors.response.use((undefined, error) => {
-    try {
+apiClient.interceptors.response.use(
+    (response) => response,
+    async (error) => {
+        const originalRequest = error.config;
         const { response } = error;
-        const { data } = response;
-        if (data) {
-            notification.error({
-                message: 'Error',
-                description: data?.message || 'Something went wrong. Please try again',
-            });
+        const refresh = store.get('refresh_token');
+        if (response.status === 401 && refresh && !originalRequest._retry) {
+            originalRequest._retry = true;
+            try {
+                const accessToken = await refreshToken();
+                originalRequest.headers.Authorization = `Bearer ${accessToken}`;
+                return apiClient(originalRequest);
+            } catch (error) {
+                // Handle refresh token failure
+                notification.error({
+                    message: 'Error',
+                    description: error,
+                });
+            }
         }
-    } catch (error) {
-        notification.error({
-            message: 'Error',
-            description: 'Something went wrong. Please try again',
-        });
-    }
-});
+        return Promise.reject(error);
+    },
+);
 
 export default apiClient;

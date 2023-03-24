@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { OAUTH_RESPONSE, OAUTH_STATE_KEY } from './constants';
-import { queryToObject } from './tools';
+import { queryToObject } from '~/hooks/OAuth2/tools';
 
 const checkState = (receivedState) => {
     const state = sessionStorage.getItem(OAUTH_STATE_KEY);

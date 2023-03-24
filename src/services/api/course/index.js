@@ -1,18 +1,15 @@
-const { default: apiClient } = require('~/services/axios');
+import apiClient from '~/services/axios';
 
-const courseApi = {
-    // get all course
-    getAllCourse: (payload) => {
-        return apiClient
-            .get('', {
-                headers: {
-                    'Target-URL': 'http://canvas.docker/api/v1/courses',
-                },
-            })
-            .then((response) => response.data)
-            .catch((error) => {
-                throw error;
-            });
+const CourseApi = {
+    getAllCourse: async () => {
+        try {
+            const response = await apiClient.get('/api/v1/courses');
+            return response.data;
+        } catch (error) {
+            // Rethrow the error to allow error handling further up the call stack
+            throw error;
+        }
     },
 };
-export default courseApi;
+
+export default CourseApi;

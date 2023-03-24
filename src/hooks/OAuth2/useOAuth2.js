@@ -1,8 +1,6 @@
 import { useCallback, useState, useRef } from 'react';
 import useLocalStorageState from 'use-local-storage-state';
-import { objectToQuery, queryToObject } from './tools';
 import axios from 'axios';
-const { default: apiClient } = require('~/services/axios');
 
 const OAUTH_STATE_KEY = 'react-use-oauth2-state-key';
 const POPUP_HEIGHT = 700;
@@ -49,15 +47,6 @@ const enhanceAuthorizeUrl = (authorizeUrl, clientId, redirectUri, scope, state, 
     return `${authorizeUrl}?client_id=${clientId}&response_type=${responseType}&redirect_uri=${redirectUri}&scope=${scope}&state=${state}`;
 };
 
-const formatExchangeCodeForTokenServerURL = (serverUrl, clientId, code, redirectUri) => {
-    return `${serverUrl}?${objectToQuery({
-        client_id: clientId,
-        code,
-        redirect_uri: redirectUri,
-        grant_type: 'authorization_code',
-    })}`;
-};
-
 const useOAuth2 = (props) => {
     const popupRef = useRef();
     const intervalRef = useRef();
@@ -96,18 +85,13 @@ const useOAuth2 = (props) => {
 
                         const response = await axios
                             .post(
-                                'http://localhost:3001/',
+                                'http://localhost:8088/http://canvas.docker/login/oauth2/token',
                                 {
                                     client_id: clientId,
                                     client_secret: clientSecret,
                                     code,
                                     grant_type: 'authorization_code',
-                                },
-                                {
-                                    headers: {
-                                        'Target-URL': 'http://canvas.docker/login/oauth2/token',
-                                    },
-                                },
+                                }
                             )
                             .then((response) => response.data)
                             .catch((error) => {
