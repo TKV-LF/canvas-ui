@@ -1,5 +1,5 @@
 // upload
-import { Home, Login, Course, OAuthPopup } from '~/pages';
+import { Home, Login, Course, OAuthPopup, Dashboard } from '~/pages';
 
 const publicRoutes = [
     {
