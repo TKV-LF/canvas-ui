@@ -99,14 +99,16 @@ const Home = () => {
 					<div className="grid grid-cols-5 gap-4">
 						{
 							unpublishCourses.map((course) => (
-								<div key={course.id} className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-									<a href="#">
-										<h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{course.name}</h5>
-									</a>
-									<p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{course.code}</p>
-									<a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-400">
-										{course.term}
-									</a>
+								<div key={course.id} className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow h-full">
+									<div className={`h-[146px] bg-red-100 -mx-6 -mt-6`}>
+
+									</div>
+									<div className="h-2/5">
+										<a href="#">
+											<h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">{course.name}</h5>
+										</a>
+										<p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{course.code}</p>
+									</div>
 								</div>
 							))
 						}

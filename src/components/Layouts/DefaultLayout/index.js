@@ -1,3 +1,4 @@
+import React from 'react';
 import classNames from 'classnames/bind';
 import styles from './DefaultLayout.module.scss';
 import SidePanel from './SidePanel';
