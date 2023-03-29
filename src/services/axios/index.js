@@ -9,7 +9,7 @@ const apiClient = axios.create({
 
     paramsSerializer: {
         encode: parse,
-        serialize: (params) => JSON.stringify(params, { skipNulls: true, arrayFormat: 'repeat' }),
+        serialize: (params) => qs.stringify(params, { skipNulls: true, arrayFormat: 'repeat' }),
     },
 });
 
