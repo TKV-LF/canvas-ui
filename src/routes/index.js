@@ -1,5 +1,5 @@
 // upload
-import { Home, Login, Course, OAuthPopup, Calendar } from '~/pages';
+import { Home, Login, Course, OAuthPopup, Calendar, Inbox } from '~/pages';
 
 const publicRoutes = [
 	{
@@ -29,7 +29,8 @@ const publicRoutes = [
 		component: Calendar,
 	},
 	{
-		path: '/inbox'
+		path: '/inbox',
+		component: Inbox,
 	},
 	{
 		path: '/history',

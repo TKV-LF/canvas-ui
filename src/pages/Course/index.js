@@ -9,7 +9,7 @@ import TableHead from '@mui/material/TableHead';
 import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
 
-import courseApi from '~/services/api/course';
+import { CourseApi } from '~/services/api';
 
 import CreateSource from './CreateSource';
 
@@ -45,7 +45,7 @@ function createData(id, course, nickname, term, enrolled, published) {
 
 async function getData() {
 	try {
-		const data = await courseApi.getAllCourse();
+		const data = await CourseApi.getAllCourse();
 		return data;
 	} catch (error) {
 		console.error(error); // Handle the error

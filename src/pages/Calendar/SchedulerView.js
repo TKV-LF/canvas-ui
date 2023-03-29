@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import { ViewState, EditingState, IntegratedEditing } from "@devexpress/dx-react-scheduler";
+import { ViewState, EditingState } from "@devexpress/dx-react-scheduler";
 import {
 	Scheduler,
 	MonthView,
@@ -21,26 +21,35 @@ import {
 } from "@devexpress/dx-react-scheduler-material-ui";
 
 function SchedulerView(props) {
-	const { data, onCurrentDateChange } = props;
-
+	const { onCurrentDateChange } = props;
+	const [data, setData] = useState([]);
 	const [currentViewName, setCurrentViewName] = useState("Month");
 
 	const onCommitChanges = ({ added, changed, deleted }) => {
+		let appointments = data;
 		if (added) {
-			const startingAddedId = data.length > 0 ? data[data.length - 1].id + 1 : 0;
-			data.push({ id: startingAddedId, ...added });
+			const startingAddedId =
+				appointments.length > 0 ? appointments[appointments.length - 1].id + 1 : 0;
+			appointments = [...appointments, { id: startingAddedId, ...added }];
 		}
 		if (changed) {
-			data[data.findIndex((appointment) => appointment.id === changed.id)] = {
-				...data[data.findIndex((appointment) => appointment.id === changed.id)],
-				...changed,
-			};
+			appointments = appointments.map(appointment =>
+				changed[appointment.id]
+					? { ...appointment, ...changed[appointment.id] }
+					: appointment
+			);
 		}
 		if (deleted !== undefined) {
-			data.splice(data.findIndex((appointment) => appointment.id === deleted), 1);
+			appointments = appointments.filter(appointment => appointment.id !== deleted);
 		}
 
+		setData(appointments);
+
 	};
+
+	useEffect(() => {
+		setData(props.data);
+	}, []);
 
 	return (
 
@@ -51,7 +60,7 @@ function SchedulerView(props) {
 				onCurrentDateChange={onCurrentDateChange}
 			/>
 			<EditingState onCommitChanges={onCommitChanges} />
-			<IntegratedEditing />
+			<EditRecurrenceMenu />
 			<ConfirmationDialog />
 			<DayView startDayHour={0.0} endDayHour={24.0} cellDuration={60} />
 			<WeekView startDayHour={0.0} endDayHour={24.0} cellDuration={60} />
@@ -69,14 +78,13 @@ function SchedulerView(props) {
 				shadePreviousAppointments={true}
 				updateInterval={10000}
 			/>
-			<AppointmentForm readOnly />
+			<AppointmentForm />
 		</Scheduler>
 	);
 }
 
 SchedulerView.propTypes = {
 	data: PropTypes.array.isRequired,
-	isFetching: PropTypes.bool.isRequired,
 	onCurrentDateChange: PropTypes.func.isRequired,
 	onCommitChanges: PropTypes.func.isRequired
 };

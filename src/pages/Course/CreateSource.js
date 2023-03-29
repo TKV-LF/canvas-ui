@@ -6,7 +6,7 @@ import Checkbox from '@mui/material/Checkbox';
 import Dialog from '@mui/material/Dialog';
 import { makeStyles } from '@mui/styles';
 
-import CourseApi from '~/services/api/course';
+import { CourseApi } from '~/services/api';
 
 const useStyles = makeStyles(() => ({
 	dialog: {
