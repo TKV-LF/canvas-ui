@@ -35,8 +35,8 @@ const Sidebar = () => {
 	const path = useLocation().pathname;
 
 	return (
-		<div className="flex">
-			<div className={`${open ? 'w-72' : 'w-20'} bg-dark-purple h-screen p-5  pt-8 relative duration-300`}>
+		<div className="flex h-screen">
+			<div className={`${open ? 'w-72' : 'w-20'} bg-dark-purple p-5  pt-8 relative duration-300`}>
 				<AiOutlineLeft
 					className={`absolute cursor-pointer right-0 top-10 text-1xl text-white w-7 border-dark-purple
                  ${!open && 'rotate-180 right-6'}`}
