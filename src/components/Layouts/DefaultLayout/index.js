@@ -8,7 +8,7 @@ function DefaultLayout({ children }) {
 	return (
 		<div className="flex">
 			<SidePanel />
-			<div className={cx('container')}>
+			<div className="w-full">
 				<div className={cx('content')}>{children}</div>
 			</div>
 		</div>

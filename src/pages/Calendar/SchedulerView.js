@@ -33,7 +33,6 @@ function SchedulerView(props) {
             appointments = [...appointments, { id: startingAddedId, ...added }];
         }
         if (changed) {
-            console.log(changed);
             appointments = appointments.map((appointment) => {
                 if (changed[appointment.id]) {
                     CalendarApi().updateEvent({ eventId: appointment.id, ...changed[appointment.id] });
