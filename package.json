@@ -30,6 +30,7 @@
         "moment": "^2.29.4",
         "qs": "^6.11.0",
         "react": "^18.2.0",
+        "react-beautiful-dnd": "^13.1.1",
         "react-dom": "^18.2.0",
         "react-icons": "^4.8.0",
         "react-router-dom": "^6.8.1",
@@ -37,6 +38,7 @@
         "rrule": "^2.7.2",
         "store": "^2.0.12",
         "use-local-storage-state": "^18.1.2",
+        "uuidv4": "^6.2.13",
         "web-vitals": "^2.1.4"
     },
     "devDependencies": {

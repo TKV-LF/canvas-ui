@@ -1,11 +1,62 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Typography from '@mui/material/Typography';
 import { Menu } from '~/components/Course';
+import { Group } from '~/pages/Course/Assignments';
 
+const groups = [
+	{
+		id: '1',
+		name: 'Group 1',
+		date: '25-May-2020',
+		assignments: [
+			{
+				id: '1',
+				name: 'Assignment 1',
+				// Assigned_To: 'Beltran',
+				// Assignee: 'Romona',
+				// Status: 'To-do',
+				// Priority: 'Low',
+				Due_Date: '25-May-2020',
+			},
+			{
+				id: '2',
+				name: 'Assignment 2',
+				// Assigned_To: 'Dave',
+				// Assignee: 'Romona',
+				// Status: 'To-do',
+				// Priority: 'Low',
+				Due_Date: '26-May-2020',
+			}
+		]
+	},
+	{
+		id: '2',
+		name: 'Group 2',
 
-
-
-const Course = ({children}) => {
+		date: '26-May-2020',
+		assignments: [
+			{
+				id: '3',
+				name: 'Assignment 3',
+				// Assigned_To: 'Beltran',
+				// Assignee: 'Romona',
+				// Status: 'To-do',
+				// Priority: 'Low',
+				Due_Date: '25-May-2020',
+			},
+			{
+				id: '4',
+				name: 'Assignment 4',
+				// Assigned_To: 'Dave',
+				// Assignee: 'Romona',
+				// Status: 'To-do',
+				// Priority: 'Low',
+				Due_Date: '26-May-2020',
+			}
+		]
+	}
+];
+const Course = () => {
 	return (
 		<div className="grid grid-cols-1 gap-4">
 			<div className="flex flex-col">
@@ -21,11 +72,13 @@ const Course = ({children}) => {
 					<div className="col-span-1 mb-7 pb-1">
 						<Menu />
 					</div>
-					<div className="mb-7 pb-1 w-100 col-span-5">
-						<h2 className='text-2xl font-bold'>Publish Courses</h2>
-						{children}
+					<div className="grid grid-cols-4 mb-7 pb-1 w-100 col-span-5">
+						<div className="col-span-3">
+							<Group data={groups}/>
+						</div>
+						<div className="col-span-1">
+						</div>
 					</div>
-
 				</div>
 
 			</div>
