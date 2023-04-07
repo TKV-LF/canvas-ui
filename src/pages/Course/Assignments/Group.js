@@ -2,6 +2,8 @@ import React, { useState, } from 'react';
 import styled from '@emotion/styled';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import { Assignment } from '~/pages/Course/Assignments';
+import { faCaretRight, faCaretDown } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 const Container = styled.div`
@@ -56,6 +58,7 @@ const reorder = (list, startIndex, endIndex) => {
 };
 const Group = ({ data }) => {
 	const [items, setItems] = useState(data);
+	const [show, setShow] = useState(false);
 	const onDragEnd = (result) => {
 		if (!result.destination) {
 			return;
@@ -92,8 +95,13 @@ const Group = ({ data }) => {
 												{...provided.dragHandleProps}
 												className='border-x border-t mb-5'
 											>
-												<AssignmentGroup>{item.name}</AssignmentGroup>
-												<Assignment data={item.assignments} />
+												<AssignmentGroup>
+													<div onClick={() => setShow(!show)}>
+														<FontAwesomeIcon className='mr-2' icon={show ? faCaretDown : faCaretRight} />
+														{item.name}
+													</div>
+												</AssignmentGroup>
+												{show ? (<Assignment data={item.assignments} />) : ""}
 											</div>
 										)}
 									</Draggable>
