@@ -23,7 +23,7 @@ const CourseApi = {
 
 	createCourse: async (payload) => {
 		try {
-			const response = await apiClient.post(`/api/v1/accounts/${payload.accountId}/courses`, payload);
+			const response = await apiClient.post(`/api/v1/accounts/${payload.course.accountId}/courses`, payload);
 			return response.data;
 		} catch (error) {
 			// Rethrow the error to allow error handling further up the call stack
