@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.9)  13 APR 2023 23:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.9)  14 APR 2023 22:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1074,37 +1074,37 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 25
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-<../figures//lms-market.jpg, id=15, 2168.1pt x 1409.265pt>
+<../figures//lms-market.jpg, id=27, 2168.1pt x 1409.265pt>
 File: ../figures//lms-market.jpg Graphic file (type jpg)
 <use ../figures//lms-market.jpg>
 Package pdftex.def Info: ../figures//lms-market.jpg  used on input line 38.
 (pdftex.def)             Requested size: 325.20097pt x 211.38063pt.
- [2{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc}] [3 <../figures//lms-market.jpg>] [4]
+ [2{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc}] [3 <../figures//lms-market.jpg>] [4] [5]
 
 Package glossaries Warning: No \printnoidxglossary or \printnoidxglossaries
  found. (Remove \makenoidxglossaries if you don't want any glossaries.)
 This document will not have a glossary.
 
-[5] (./chap1-co-so-ly-thuyet.aux)
+[6] (./chap1-co-so-ly-thuyet.aux)
 Package rerunfilecheck Info: File `chap1-co-so-ly-thuyet.out' has not changed.
-(rerunfilecheck)             Checksum: 8CC558A916EBCC4856F5B5A254355486;116.
+(rerunfilecheck)             Checksum: 537FF17CE2A0B2997C431E0E8E1B6782;733.
 Package logreq Info: Writing requests to 'chap1-co-so-ly-thuyet.run.xml'.
 \openout1 = `chap1-co-so-ly-thuyet.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26675 strings out of 476025
- 468458 string characters out of 5790018
+ 26682 strings out of 476025
+ 468536 string characters out of 5790018
  1865388 words of memory out of 5000000
- 46698 multiletter control sequences out of 15000+600000
+ 46701 multiletter control sequences out of 15000+600000
  526266 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  114i,12n,107p,2367b,854s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/urwvn/utmb8v.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.pfb>
-Output written on chap1-co-so-ly-thuyet.pdf (5 pages, 661343 bytes).
+Output written on chap1-co-so-ly-thuyet.pdf (6 pages, 666307 bytes).
 PDF statistics:
- 55 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
- 8 named destinations out of 1000 (max. 500000)
- 14 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 PDF objects out of 1000 (max. 8388607)
+ 55 compressed objects within 1 object stream
+ 12 named destinations out of 1000 (max. 500000)
+ 38 words of extra memory for PDF output out of 10000 (max. 10000000)
 
