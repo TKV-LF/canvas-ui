@@ -115,7 +115,7 @@ export default function CreateCourseForm() {
 				Create Course
 			</Button>
 			<Dialog open={open} onClose={handleClose} classes={{ paper: classes.dialog }}>
-				<DialogTitle classes={{ root: classes.title }}>Create Course</DialogTitle>
+				<DialogTitle classes={{ root: classes.title }}>Create a new course</DialogTitle>
 				<form onSubmit={handleSubmit}>
 					<TextField
 						id="name"
@@ -145,7 +145,7 @@ export default function CreateCourseForm() {
 					<FormGroup>
 						<FormControlLabel control={<Checkbox checked={isPublic} onChange={handleIsPublicChange} />} label="Public" />
 					</FormGroup>
-					<Button type="submit" variant="contained" color="primary">
+					<Button type="submit" variant="contained" classes={{ root: classes.button }}>
 						Create Course
 					</Button>
 				</form>

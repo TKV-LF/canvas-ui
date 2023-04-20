@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Tooltip from '@mui/material/Tooltip';
+import History from '~/pages/History';
 import {
 	AiOutlineLeft,
 	AiOutlineSearch,
@@ -22,14 +23,19 @@ const Menus = [
 	{ title: 'Courses', path: '/courses', icon: <AiOutlineBook /> },
 	{ title: 'Calendar', path: '/calendar', icon: <AiOutlineCalendar /> },
 	{ title: 'Inbox', path: '/inbox', gap: true, icon: <AiOutlineInbox /> },
-	{ title: 'History', path: '/history', gap: true, icon: <AiOutlineClockCircle /> },
+	{ title: 'History', path: '', component: History, gap: true, icon: <AiOutlineClockCircle /> },
 ];
 const Sidebar = () => {
 
 	const [open, setOpen] = useState(true);
+	const [sideSlide, setSideSlide] = useState(false);
 
 	const toggleSidebar = () => {
 		setOpen(!open);
+	};
+
+	const toggleSideSlide = () => {
+		setSideSlide(!sideSlide);
 	};
 
 	const path = useLocation().pathname;
@@ -70,7 +76,22 @@ const Sidebar = () => {
 				</div>
 
 				<ul className="pt-6">
-					{Menus.map((Menu, index) => (
+					{Menus.map((Menu, index) =>
+					(Menu.path === '' ? (
+						<div key={index}>
+							<li onClick={toggleSideSlide}
+								className={`flex rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4 mt-2 ${Menu.path === path && 'bg-light-white'
+									} ${!open && "pl-1"}`}
+
+							>
+								<Tooltip title={Menu.title} placement="bottom-start" arrow>
+									<div className={`ml-0.5 text-xl ${!open && "mx-auto my-auto text-3xl"}`}>{Menu.icon}</div>
+								</Tooltip>
+								<span className={`text-sm font-medium ${!open && 'hidden'}`}>{Menu.title}</span>
+							</li>
+							{<Menu.component display={sideSlide} left={open ? "left-72" : "left-20"} />}
+						</div>
+					) : (
 						<Link to={Menu.path} key={index}>
 							<li
 								className={`flex rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4 mt-2 ${Menu.path === path && 'bg-light-white'
@@ -83,7 +104,9 @@ const Sidebar = () => {
 								<span className={`text-sm font-medium ${!open && 'hidden'}`}>{Menu.title}</span>
 							</li>
 						</Link>
-					))}
+					))
+
+					)}
 				</ul>
 
 				<div className={`flex items-center w-full text-white absolute bottom-0 mb-3`}>
