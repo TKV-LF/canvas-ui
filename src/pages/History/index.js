@@ -1,5 +1,5 @@
 import React from 'react';
-import SideSlide from '~/components/SideSlide';
+import { SideSlide } from '~/components/Side';
 
 const data = [
 	{
@@ -15,6 +15,51 @@ const data = [
 	{
 		title: 'Introduction to Science',
 		code: 'CS 103',
+		time: '1:50 PM 20/04/2023',
+	},
+	{
+		title: 'Introduction to Network',
+		code: 'CS 104',
+		time: '1:50 PM 20/04/2023',
+	},
+	{
+		title: 'Introduction to Network',
+		code: 'CS 104',
+		time: '1:50 PM 20/04/2023',
+	},
+	{
+		title: 'Introduction to Network',
+		code: 'CS 104',
+		time: '1:50 PM 20/04/2023',
+	},
+	{
+		title: 'Introduction to Network',
+		code: 'CS 104',
+		time: '1:50 PM 20/04/2023',
+	},
+	{
+		title: 'Introduction to Network',
+		code: 'CS 104',
+		time: '1:50 PM 20/04/2023',
+	},
+	{
+		title: 'Introduction to Network',
+		code: 'CS 104',
+		time: '1:50 PM 20/04/2023',
+	},
+	{
+		title: 'Introduction to Network',
+		code: 'CS 104',
+		time: '1:50 PM 20/04/2023',
+	},
+	{
+		title: 'Introduction to Network',
+		code: 'CS 104',
+		time: '1:50 PM 20/04/2023',
+	},
+	{
+		title: 'Introduction to Network',
+		code: 'CS 104',
 		time: '1:50 PM 20/04/2023',
 	},
 	{
