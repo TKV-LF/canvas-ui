@@ -11,7 +11,7 @@ import TableRow from '@mui/material/TableRow';
 
 import { CourseApi } from '~/services/api';
 
-import CreateSource from './CreateSource';
+import CreateCourse from './CreateCourse';
 
 const columns = [
 	{ id: 'course', label: 'Course', minWidth: 170 },
@@ -77,7 +77,7 @@ const ListCourse = () => {
 
 	return (
 		<div>
-			<CreateSource />
+			<CreateCourse title="Create Course" />
 			<Paper sx={{ width: '100%', overflow: 'hidden' }}>
 				<TableContainer sx={{ maxHeight: 440 }}>
 					<Table stickyHeader aria-label="sticky table">

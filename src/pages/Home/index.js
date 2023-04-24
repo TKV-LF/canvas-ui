@@ -1,8 +1,12 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
 import Typography from '@mui/material/Typography';
+import { Link } from 'react-router-dom';
+import { FaRegCalendarAlt } from 'react-icons/fa';
 
 import { RightSide } from '~/components/Side';
+import CreateCourse from '~/pages/Course/CreateCourse';
+
 
 const exampleData = [
 	{
@@ -62,7 +66,7 @@ const Home = () => {
 		setUnpublishCourses(exampleData.filter((course) => course.published === "0"));
 	}, [exampleData]);
 	return (
-		<div className="grid grid-cols-7">
+		<div className="grid grid-cols-7 ">
 			<div class="left col-span-6 px-5 pr-8">
 				<div className="flex flex-col border-b">
 					<Typography variant="h4" component="h1" gutterBottom>
@@ -114,15 +118,24 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
-			<div className='right col-span-1 mt-5'>
+			<div className='right col-span-1 p-4'>
 				<RightSide>
-					<div className="grid grid-cols-2 mb-10 border-b pb-2">
-						<div className="grid grid-cols-1">
+					<div className="grid grid-cols-2 border-b pb-2">
+						<div className="grid col-span-1 font-bold">
 							Coming up
 						</div>
-						<div className="grid grid-cols-1">
-							<a>zxczxxcz</a>
+						<div className="grid col-span-1">
+							<Link to="/calendar" className="flex group">
+								<FaRegCalendarAlt />
+								<span className="ml-1 text-xs underline group-hover:no-underline group-hover:text-sky-400 flex">View Calendar</span>
+							</Link>
 						</div>
+					</div>
+					<span className="text-sm">Nothing for the next week</span>
+
+					<div className="mt-4">
+						<CreateCourse title="Start a New Course" css="border p-2 text-center hover:bg-black hover:text-white"/>
+						<Link to="grades" className="border p-2 text-center hover:bg-black hover:text-white cursor-pointer">Start a New Course</Link>
 					</div>
 				</RightSide>
 			</div>
