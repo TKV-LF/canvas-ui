@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Typography from '@mui/material/Typography';
 import { Link } from 'react-router-dom';
 import { FaRegCalendarAlt } from 'react-icons/fa';
+import { Button } from '@mui/material';
 
 import { RightSide } from '~/components/Side';
 import CreateCourse from '~/pages/Course/CreateCourse';
@@ -67,7 +68,7 @@ const Home = () => {
 	}, [exampleData]);
 	return (
 		<div className="grid grid-cols-7 ">
-			<div class="left col-span-6 px-5 pr-8">
+			<div className="left col-span-6 px-5 pr-8">
 				<div className="flex flex-col border-b">
 					<Typography variant="h4" component="h1" gutterBottom>
 						Breadcrumb
@@ -134,8 +135,14 @@ const Home = () => {
 					<span className="text-sm">Nothing for the next week</span>
 
 					<div className="mt-4">
-						<CreateCourse title="Start a New Course" css="border p-2 text-center hover:bg-black hover:text-white"/>
-						<Link to="grades" className="border p-2 text-center hover:bg-black hover:text-white cursor-pointer">Start a New Course</Link>
+						<div className="mb-2">
+							<CreateCourse title="Start a New Course" />
+						</div>
+						<div>
+							<Button variant="outlined" className='w-full text-left'>
+								<Link to="grades">View grades</Link>
+							</Button>
+						</div>
 					</div>
 				</RightSide>
 			</div>

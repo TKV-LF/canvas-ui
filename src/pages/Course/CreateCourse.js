@@ -62,7 +62,7 @@ const licenses = [
 	},
 ];
 
-export default function CreateCourseForm({ title, css}) {
+export default function CreateCourseForm({ title, css }) {
 	const classes = useStyles();
 	const [name, setName] = useState('');
 	const [license, setLicense] = useState('private');
@@ -111,7 +111,7 @@ export default function CreateCourseForm({ title, css}) {
 
 	return (
 		<div>
-			<Button variant="outlined" onClick={handleClickOpen} classes={css ? css : { root: classes.button }}>
+			<Button variant="outlined" onClick={handleClickOpen} className={css}>
 				{title}
 			</Button>
 			<Dialog open={open} onClose={handleClose} classes={{ paper: classes.dialog }}>
