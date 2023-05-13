@@ -1,5 +1,5 @@
 // upload
-import { Home, Login, ListCourse, Course, OAuthPopup, Calendar, Inbox, Grades, Profile } from '~/pages';
+import { Home, Login, ListCourse, Course, OAuthPopup, Calendar, Inbox, Grades, Profile, Assignments } from '~/pages';
 
 const publicRoutes = [
 	{
@@ -17,6 +17,10 @@ const publicRoutes = [
 	{
 		path: '/courses/:id',
 		component: Course,
+	},
+	{
+		path: '/courses/:id/assignments',
+		component: Assignments,
 	},
 	{
 		path: '/profile',

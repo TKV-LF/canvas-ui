@@ -1,7 +1,7 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
 import { Menu } from '~/components/Layouts';
-import { Group } from '~/pages/Course/Assignments';
+import Group from './Group';
 import { courseMenu } from '~/components/Menu';
 
 const groups = [
@@ -58,7 +58,8 @@ const groups = [
 	}
 ];
 
-const Course = () => {
+const Assignments = () => {
+
 	return (
 		<div className="grid grid-cols-1 gap-4">
 			<div className="flex flex-col">
@@ -74,11 +75,9 @@ const Course = () => {
 					<div className="col-span-1 mb-7 pb-1">
 						<Menu items={courseMenu} />
 					</div>
-					<div className="grid grid-cols-4 mb-7 pb-1 w-100 col-span-5">
+					<div className="mb-7 pb-1 w-100 col-span-5">
 						<div className="col-span-3">
 							<Group data={groups} />
-						</div>
-						<div className="col-span-1">
 						</div>
 					</div>
 				</div>
@@ -87,6 +86,5 @@ const Course = () => {
 
 		</div>
 	);
-};
-
-export default Course;
+}
+export default Assignments;
