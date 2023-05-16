@@ -8,3 +8,4 @@ export { default as CourseApi } from './course';
 // export {default as SubmissionReviewApi} from './submission_review';
 
 export { default as CalendarApi } from './calendar';
+export { default as UserApi } from './user';

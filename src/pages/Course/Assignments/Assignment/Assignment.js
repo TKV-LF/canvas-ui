@@ -84,7 +84,7 @@ const Assignment = ({ data }) => {
 								{...provided.droppableProps}
 							>
 								{items.map((item, index) => (
-									<Draggable key={item.id} draggableId={item.id} index={index}>
+									<Draggable key={item.id} draggableId={item.id.toString()} index={index}>
 										{(provided) => (
 											<div
 												ref={provided.innerRef}
