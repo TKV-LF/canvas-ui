@@ -1,7 +1,9 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
 import { Menu } from '~/components/Layouts';
 import Group from './Group';
+import AssignmentsMenu from './AssignmentsMenu';
 import { courseMenu } from '~/components/Menu';
 
 const groups = [
@@ -71,19 +73,20 @@ const Assignments = () => {
 
 			</div>
 			<div className='mx-8'>
-				<div className="grid grid-cols-6 mb-10">
-					<div className="col-span-1 mb-7 pb-1">
+				<Grid container spacing={2}>
+					<Grid item xs={2}>
 						<Menu items={courseMenu} />
-					</div>
-					<div className="mb-7 pb-1 w-100 col-span-5">
-						<div className="col-span-3">
+					</Grid>
+					<Grid item xs={10}>
+						<Grid item xs={12}>
+							<AssignmentsMenu />
+						</Grid>
+						<Grid item xs={12}>
 							<Group data={groups} />
-						</div>
-					</div>
-				</div>
-
+						</Grid>
+					</Grid>
+				</Grid>
 			</div>
-
 		</div>
 	);
 }

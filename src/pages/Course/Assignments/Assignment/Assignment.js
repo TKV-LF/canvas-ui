@@ -55,7 +55,6 @@ const reorder = (list, startIndex, endIndex) => {
 	return result;
 };
 const Assignment = ({ data }) => {
-	console.log(data);
 	const [items, setItems] = useState(data);
 	const onDragEnd = (result) => {
 		if (!result.destination) {

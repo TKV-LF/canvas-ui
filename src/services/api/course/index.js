@@ -59,6 +59,34 @@ const CourseApi = {
 			// Rethrow the error to allow error handling further up the call stack
 			throw error;
 		}
+	},
+	// List assignments
+	listAssignments: async (payload) => {
+		try {
+			const response = await apiClient.get(`/api/v1/courses/${payload.courseId}/assignments`);
+			return response.data;
+		} catch (error) {
+			// Rethrow the error to allow error handling further up the call stack
+			throw error;
+		}
+	},
+	// Create assignment groups
+	createAssignmentGroup: async (payload) => {
+		try {
+			const response = await apiClient.post(`/api/v1/courses/${payload.courseId}/assignment_groups`, payload);
+			return response.data;
+		} catch (error) {
+			throw error;
+		}
+	},
+	// Edit assignment groups
+	editAssignmentGroup: async (payload) => {
+		try {
+			const response = await apiClient.put(`/api/v1/courses/${payload.courseId}/assignment_groups/${payload.assignmentGroupId}`, payload);
+			return response.data;
+		} catch (error) {
+			throw error;
+		}
 	}
 };
 

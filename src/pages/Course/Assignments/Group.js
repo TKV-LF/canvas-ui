@@ -17,7 +17,6 @@ const List = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 15px 15px;
 `;
 
 const ColumnStyles = styled.div`
@@ -58,7 +57,7 @@ const reorder = (list, startIndex, endIndex) => {
 };
 const Group = ({ data }) => {
 	const [items, setItems] = useState(data);
-	const [show, setShow] = useState(false);
+	const [visibleItems, setVisibleItems] = useState([]);
 	const onDragEnd = (result) => {
 		if (!result.destination) {
 			return;
@@ -70,9 +69,20 @@ const Group = ({ data }) => {
 			result.destination.index
 		);
 
+		
+
 
 		setItems(orderItems);
 	}
+
+	function toggleVisibility(item) {
+		if (visibleItems.includes(item)) {
+			setVisibleItems(visibleItems.filter((i) => i !== item));
+		} else {
+			setVisibleItems([...visibleItems, item]);
+		}
+	}
+
 	return (
 		<DragDropContext
 			onDragEnd={onDragEnd}
@@ -96,12 +106,12 @@ const Group = ({ data }) => {
 												className='border-x border-t mb-5'
 											>
 												<AssignmentGroup>
-													<div onClick={() => setShow(!show)}>
-														<FontAwesomeIcon className='mr-2' icon={show ? faCaretDown : faCaretRight} />
+													<div onClick={() => toggleVisibility(item)}>
+														<FontAwesomeIcon className='mr-2' icon={visibleItems.includes(item) ? faCaretDown : faCaretRight} />
 														{item.name}
 													</div>
 												</AssignmentGroup>
-												{show ? (<Assignment data={item.assignments} />) : ""}
+												{visibleItems.includes(item) && <Assignment data={item.assignments} />}
 											</div>
 										)}
 									</Draggable>

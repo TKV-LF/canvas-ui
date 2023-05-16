@@ -1,34 +1,48 @@
-import { useState } from 'react';
-import Button from '@mui/material/Button';
-import TextField from '@mui/material/TextField';
-import Dialog from '@mui/material/Dialog';
-import DialogActions from '@mui/material/DialogActions';
-import DialogContent from '@mui/material/DialogContent';
-import DialogContentText from '@mui/material/DialogContentText';
-import DialogTitle from '@mui/material/DialogTitle';
+import { useState } from "react";
+import { Button, Dialog, DialogTitle, DialogContent, DialogActions, TextField } from "@mui/material";
 
-export default function FormDialog({ children, ...props }) {
-    const [open, setOpen] = useState(false);
-    const { title } = props;
+const FormDialog = ({ open, onClose, onSubmit, title, fields }) => {
+	const [formValues, setFormValues] = useState({});
 
-    const handleClickOpen = () => {
-        setOpen(true);
-    };
+	const handleFormChange = (event) => {
+		setFormValues({ ...formValues, [event.target.name]: event.target.value });
+	};
 
-    const handleClose = () => {
-        setOpen(false);
-    };
-    console.log(props);
+	const handleSubmit = (event) => {
+		event.preventDefault();
+		onSubmit(formValues);
+		onClose();
+	};
 
-    return (
-        <div>
-            <Button variant="outlined" onClick={handleClickOpen}>
-                {title}
-            </Button>
-            <Dialog open={open} onClose={handleClose}>
-                <DialogTitle>{title}</DialogTitle>
-                <DialogContent>{children}</DialogContent>
-            </Dialog>
-        </div>
-    );
-}
+	return (
+		<Dialog open={open} onClose={onClose}>
+			<DialogTitle>{title}</DialogTitle>
+			<DialogContent>
+				<form onSubmit={handleSubmit}>
+					{fields.map((field) => (
+						<div key={field.name} className="mb-4">
+							<TextField
+								fullWidth
+								variant="outlined"
+								label={field.label}
+								name={field.name}
+								value={formValues[field.name] || ""}
+								onChange={handleFormChange}
+							/>
+						</div>
+					))}
+				</form>
+			</DialogContent>
+			<DialogActions>
+				<Button variant="outlined" onClick={onClose}>
+					Cancel
+				</Button>
+				<Button variant="contained" onClick={handleSubmit}>
+					Submit
+				</Button>
+			</DialogActions>
+		</Dialog>
+	);
+};
+
+export default FormDialog;

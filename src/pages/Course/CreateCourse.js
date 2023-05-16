@@ -95,7 +95,6 @@ export default function CreateCourseForm({ title, css }) {
 		};
 		try {
 			const response = await CourseApi.createCourse(payload);
-			console.log(response.data);
 		} catch (error) {
 			console.error(error);
 		}
