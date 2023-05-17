@@ -149,5 +149,4 @@ const Group = ({courseId}) => {
         </DragDropContext>
     );
 };
-
 export default Group;
