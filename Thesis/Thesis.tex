@@ -30,7 +30,7 @@
 
 \setlength{\glsdescwidth}{9cm}
 
-\bibliography{bibliography/main.bib} % chèn file chứa danh mục tài liệu tham khảo vào 
+\bibliography{bibliography/main.bib} % chèn file chứa danh mục tài liệu tham khảo vào
 
 \include{lstlisting} % Phần này cho phép chèn code và formatting code như C, C++, Python
 
@@ -70,7 +70,7 @@ pdfmenubar=false % Ẩn đi menu bar trong PDF viewer
 
 \hypersetup{pdftitle={\TITLE},
 	pdfauthor={\AUTHOR}}
-	
+
 \usepackage[all]{hypcap} % Cho phép tham chiếu chính xác đến hình ảnh và bảng biểu
 
 \graphicspath{{figures/}{../figures/}} % Thư mục chứa các hình ảnh
@@ -104,7 +104,7 @@ pdfmenubar=false % Ẩn đi menu bar trong PDF viewer
 % \newpage
 % \listoftables % Danh sách bảng biểu
 
-\glsaddall 
+\glsaddall
 % \renewcommand*{\glossaryname}{Danh sách thuật ngữ}
 % \renewcommand*{\acronymname}{Danh sách từ viết tắt}
 % \renewcommand*{\entryname}{Tiếng Anh}
@@ -117,8 +117,13 @@ pdfmenubar=false % Ẩn đi menu bar trong PDF viewer
 
 \newpage
 \pagestyle{fancy} % Áp dụng header và footer
+\chapter{Giới thiệu}
+\subfile{chapters/chap1-gioi-thieu}
+
+\newpage
+\pagestyle{fancy} % Áp dụng header và footer
 \chapter{Cơ sở lý thuyết}
-\subfile{chapters/chap1-co-so-ly-thuyet}
+\subfile{chapters/chap2-co-so-ly-thuyet}
 
 % \chapter{HƯỚNG TIẾP CẬN VÀ THỰC NGHIỆM}
 % \subfile{chapters/chap2-thuc_nghiem}
