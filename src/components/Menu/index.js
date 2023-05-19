@@ -1,19 +1,19 @@
 export const courseMenu = [
 	{
-		label: 'Home',
+		label: 'Trang chủ',
 		path: '/courses/:id',
 	},
 	{
-		label: 'Announcements',
+		label: 'Thông báo chung',
 		path: '/courses/:id/announcements',
 		role: 'teacher',
 	},
 	{
-		label: 'Assignments',
+		label: 'Bài tập',
 		path: '/courses/:id/assignments',
 	},
 	{
-		label: 'Discussions',
+		label: 'Thảo luận',
 		path: '/courses/:id/discussions',
 	},
 	{
@@ -21,35 +21,35 @@ export const courseMenu = [
 		path: '/courses/:id/grades',
 	},
 	{
-		label: 'People',
+		label: 'Mọi người',
 		path: '/courses/:id/users',
 	},
 	{
-		label: 'Pages',
+		label: 'Các trang',
 		path: '/courses/:id/wiki',
 	},
 	{
-		label: 'Files',
+		label: 'Tập tin',
 		path: '/courses/:id/files',
 	},
 	{
-		label: 'Syllabus',
+		label: 'Chương trình học',
 		path: '/courses/:id/assignments/syllabus',
 	},
 	{
-		label: 'Outcomes',
+		label: 'Kết quả',
 		path: '/courses/:id/outcomes',
 	},
 	{
-		label: 'Rubrics',
+		label: 'Bảng đánh giá theo tiêu chí',
 		path: '/courses/:id/rubrics',
 	},
 	{
-		label: 'Quizzes',
+		label: 'Các câu hỏi kiểm tra',
 		path: '/courses/:id/quizzes',
 	},
 	{
-		label: 'Modules',
+		label: 'Các học phần',
 		path: '/courses/:id/modules',
 	},
 	{
@@ -57,7 +57,7 @@ export const courseMenu = [
 		path: '/courses/:id/conferences',
 	},
 	{
-		label: 'Collaborations',
+		label: 'Cộng tác',
 		path: '/courses/:id/collaborations',
 	},
 	// {

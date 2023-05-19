@@ -1,4 +1,5 @@
 import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
 import classNames from 'classnames/bind';
 
 import MenuItem from './MenuItem';
@@ -19,9 +20,8 @@ function Menu({ children, items = [] }) {
 		<Tippy
 			interactive
 			arrow={true}
-			delay={[0, 700]}
-			animation="fade"
-			placement="bottom-end"
+			placement='right'
+			trigger='click'
 			render={attrs => (
 				<div {...attrs} className={cx('menu-list')} tabIndex="-1">
 					<PopperWrapper className={cx('menu-popper')}>{renderItems()}</PopperWrapper>

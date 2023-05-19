@@ -4,6 +4,7 @@ import { Menu } from '~/components/Layouts';
 import { Group, AssignmentsMenu } from '~/pages/Course/Assignments';
 import { courseMenu } from '~/components/Menu';
 import Grid from '@mui/material/Grid';
+import Breadcrumbs from '@mui/material/Breadcrumbs';
 
 const groups = [
 	{
@@ -63,11 +64,10 @@ const Course = () => {
 	return (
 		<div className="grid grid-cols-1 gap-4">
 			<div className="flex flex-col">
-
-				<Typography variant="h4" component="h1" gutterBottom>
-
-					Breadcrumb
-				</Typography>
+				<Breadcrumbs aria-label="breadcrumb">
+					Thuy Nguyen Trong profile's
+					<Typography color="text.primary">Breadcrumbs</Typography>
+				</Breadcrumbs>
 
 			</div>
 			<div className='mx-8'>

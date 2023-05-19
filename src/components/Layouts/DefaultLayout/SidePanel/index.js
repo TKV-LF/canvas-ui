@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Tooltip from '@mui/material/Tooltip';
 import History from '~/pages/History';
+import { Menu } from '~/components/Popper';
+
 import {
 	AiOutlineLeft,
 	AiOutlineSearch,
@@ -17,17 +19,22 @@ import {
 import logo from '~/assets/images/logo.jpg';
 
 const Menus = [
-	{ title: 'Dashboard', path: '/', icon: <AiOutlineHome /> },
-	{ title: 'Account', path: '/profile', icon: <AiOutlineUser /> },
-	{ title: 'Admin', path: '/admin', icon: <AiOutlineKey /> },
-	{ title: 'Courses', path: '/courses', icon: <AiOutlineBook /> },
-	{ title: 'Calendar', path: '/calendar', icon: <AiOutlineCalendar /> },
-	{ title: 'Inbox', path: '/inbox', gap: true, icon: <AiOutlineInbox /> },
-	{ title: 'History', path: '', component: History, gap: true, icon: <AiOutlineClockCircle /> },
+	{ title: 'Trang chủ', path: '/', icon: <AiOutlineHome /> },
+	{ title: 'Tài khoản', path: '/profile', icon: <AiOutlineUser /> },
+	{ title: 'Cài đặt', path: '/admin', icon: <AiOutlineKey /> },
+	{ title: 'Khóa học', path: '/courses', icon: <AiOutlineBook /> },
+	{ title: 'Lịch', path: '/calendar', icon: <AiOutlineCalendar /> },
+	{ title: 'Tin nhắn', path: '/inbox', gap: true, icon: <AiOutlineInbox /> },
+	{ title: 'Lịch sử', path: '', component: History, gap: true, icon: <AiOutlineClockCircle /> },
 ];
+
+const Items = [
+	{ id: 1, title: 'Tài khoản', path: '' }
+]
+
 const Sidebar = () => {
 
-	const [open, setOpen] = useState(true);
+	const [open, setOpen] = useState(false);
 	const [sideSlide, setSideSlide] = useState(false);
 
 	const toggleSidebar = () => {
@@ -110,18 +117,22 @@ const Sidebar = () => {
 				</ul>
 
 				<div className={`flex items-center w-full text-white absolute bottom-0 mb-3`}>
-					<div className="inline-flex">
-						<img
-							className={`bg-amber-300 rounded cursor-pointer block float-left duration-300`}
-							src="https://www.w3schools.com/howto/img_avatar.png"
-							alt="ThuyLoi"
-							width="36"
-							height="36"
-						/>
-						<h1 className={`origin-left font-medium text-2xl duration-300 ${!open && 'scale-0'} pl-3`}>
-							Lucius
-						</h1>
-					</div>
+					<Menu items={Items}>
+						<div className="inline-flex">
+							<img
+								className={`bg-amber-300 rounded cursor-pointer block float-left duration-300`}
+								src="https://www.w3schools.com/howto/img_avatar.png"
+								alt="ThuyLoi"
+								width="36"
+								height="36"
+							/>
+
+							<h1 className={`origin-left font-medium text-2xl duration-300 ${!open && 'scale-0'} pl-3`}>
+								Lucius
+							</h1>
+						</div>
+					</Menu>
+
 				</div>
 			</div>
 		</div>

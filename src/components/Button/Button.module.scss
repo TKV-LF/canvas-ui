@@ -1,0 +1,104 @@
+:root {
+    --outline-background-color-dark: rgba(255, 255, 255, 0.08);
+    --outline-background-color-hover-dark: rgba(254, 44, 85, 0.06);
+
+    --text-background-color-dark: rgba(255, 255, 255, 0.08);
+    --text-background-color-hover-dark: rgba(254, 44, 85, 0.06);
+    --text-border-color-dark: rgba(22, 24, 35, 0.12);
+}
+
+.wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    padding: 9px 16px;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: var(--white);
+    border: 1px solid transparent;
+    user-select: none;
+
+    + .wrapper {
+        margin-left: 8px;
+    }
+
+    &.disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+    }
+}
+
+.icon + .title,
+.title + .icon {
+    margin-left: 8px;
+}
+
+.icon {
+    display: inline-block;
+    width: 24px;
+    text-align: center;
+}
+
+// Button types
+
+.rounded {
+    border-radius: 9999px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 6%);
+    border-color: rgba(255, 255, 255, 0);
+    background-color: rgba(37, 37, 37, 1);
+
+    &:hover {
+        border-color: rgba(255, 255, 255, 0);
+        background-color: rgba(46, 46, 46, 1);
+    }
+}
+
+.custom-rounded {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.primary {
+    background-color: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+
+    &:hover {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), var(--primary);
+    }
+}
+
+.outline {
+    color: var(--primary);
+    border-color: currentColor;
+    background-color: var(--outline-background-color-dark);
+
+    &:hover {
+        border-color: currentColor;
+        background-color: var(--outline-background-color-hover-dark);
+    }
+}
+
+.text {
+    border: 1px solid var(--text-border-color-dark);
+    border-radius: 2px;
+    background: var(--text-background-color-dark);
+    color: rgba(255, 255, 255, 0.9);
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.04);
+    }
+}
+
+// button sizes
+.small {
+    min-width: 88px;
+    padding: 4px 16px;
+}
+
+.large {
+    padding: 14px 16px;
+    min-width: 148px;
+}

@@ -38,6 +38,7 @@
         "react-scripts": "5.0.1",
         "rrule": "^2.7.2",
         "store": "^2.0.12",
+        "tippy": "^0.0.0",
         "use-local-storage-state": "^18.1.2",
         "uuidv4": "^6.2.13",
         "web-vitals": "^2.1.4"

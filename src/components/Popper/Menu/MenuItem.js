@@ -11,7 +11,4 @@ function MenuItem({ data }) {
 		</Button>
 	)
 }
-
-
-
 export default MenuItem;
