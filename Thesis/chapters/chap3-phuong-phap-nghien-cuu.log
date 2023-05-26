@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.9)  14 APR 2023 22:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.9)  18 MAY 2023 21:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/thuynt/Working/canvas-ui/Thesis/chapters/chap1-co-so-ly-thuyet
-(/Users/thuynt/Working/canvas-ui/Thesis/chapters/chap1-co-so-ly-thuyet.tex
+**/Users/thuynt/Working/canvas-ui/Thesis/chapters/chap3-phuong-phap-nghien-cuu
+(/Users/thuynt/Working/canvas-ui/Thesis/chapters/chap3-phuong-phap-nghien-cuu.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (/usr/local/texlive/2023/texmf-dist/tex/latex/subfiles/subfiles.cls
 Document Class: subfiles 2020/11/14 v2.2 Multi-file projects (class)
@@ -962,8 +962,8 @@ Package: hypcap 2016/05/16 v1.12 Adjusting the anchors of captions (HO)
 LaTeX Font Info:    Trying to load font information for T5+ptm on input line 2.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/vntex/t5ptm.fd
 File: t5utm.fd 2005/08/24 Fontinst v1.929 font definitions for T5/ptm.
-) (./chap1-co-so-ly-thuyet.aux)
-\openout1 = `chap1-co-so-ly-thuyet.aux'.
+) (./chap3-phuong-phap-nghien-cuu.aux)
+\openout1 = `chap3-phuong-phap-nghien-cuu.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
 LaTeX Font Info:    ... okay on input line 2.
@@ -1053,58 +1053,48 @@ File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout4 = `chap1-co-so-ly-thuyet.bcf'.
+\openout4 = `chap3-phuong-phap-nghien-cuu.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'chap1-co-so-ly-thuyet.bbl' not found.
+Package biblatex Info: ... file 'chap3-phuong-phap-nghien-cuu.bbl' not found.
 
-No file chap1-co-so-ly-thuyet.bbl.
+No file chap3-phuong-phap-nghien-cuu.bbl.
 Package biblatex Info: Reference section=0 on input line 2.
 Package biblatex Info: Reference segment=0 on input line 2.
 \c@lstlisting=\count466
 Package hyperref Info: Link coloring OFF on input line 2.
-(./chap1-co-so-ly-thuyet.out) (./chap1-co-so-ly-thuyet.out)
+(./chap3-phuong-phap-nghien-cuu.out) (./chap3-phuong-phap-nghien-cuu.out)
 \@outlinefile=\write5
-\openout5 = `chap1-co-so-ly-thuyet.out'.
+\openout5 = `chap3-phuong-phap-nghien-cuu.out'.
 
  [1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/vntex/t5.enc}
 
-]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 25.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-<../figures//lms-market.jpg, id=27, 2168.1pt x 1409.265pt>
-File: ../figures//lms-market.jpg Graphic file (type jpg)
-<use ../figures//lms-market.jpg>
-Package pdftex.def Info: ../figures//lms-market.jpg  used on input line 38.
-(pdftex.def)             Requested size: 325.20097pt x 211.38063pt.
- [2{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc}] [3 <../figures//lms-market.jpg>] [4] [5]
+] [2] [3]
 
 Package glossaries Warning: No \printnoidxglossary or \printnoidxglossaries
  found. (Remove \makenoidxglossaries if you don't want any glossaries.)
 This document will not have a glossary.
 
-[6] (./chap1-co-so-ly-thuyet.aux)
-Package rerunfilecheck Info: File `chap1-co-so-ly-thuyet.out' has not changed.
-(rerunfilecheck)             Checksum: 537FF17CE2A0B2997C431E0E8E1B6782;733.
-Package logreq Info: Writing requests to 'chap1-co-so-ly-thuyet.run.xml'.
-\openout1 = `chap1-co-so-ly-thuyet.run.xml'.
+[4] (./chap3-phuong-phap-nghien-cuu.aux)
+Package rerunfilecheck Info: File `chap3-phuong-phap-nghien-cuu.out' has not changed.
+(rerunfilecheck)             Checksum: B1524D8D63BCB183E7A14523801B92A2;2682.
+Package logreq Info: Writing requests to 'chap3-phuong-phap-nghien-cuu.run.xml'.
+\openout1 = `chap3-phuong-phap-nghien-cuu.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26682 strings out of 476025
- 468536 string characters out of 5790018
- 1865388 words of memory out of 5000000
- 46701 multiletter control sequences out of 15000+600000
- 526266 words of font info for 41 fonts, out of 8000000 for 9000
+ 26653 strings out of 476025
+ 468224 string characters out of 5790018
+ 1864388 words of memory out of 5000000
+ 46677 multiletter control sequences out of 15000+600000
+ 527137 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,12n,107p,2367b,854s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/urwvn/utmb8v.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.pfb>
-Output written on chap1-co-so-ly-thuyet.pdf (6 pages, 666307 bytes).
+ 114i,12n,107p,2374b,854s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/urwvn/utmb8v.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.pfb>
+Output written on chap3-phuong-phap-nghien-cuu.pdf (4 pages, 57132 bytes).
 PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 92 PDF objects out of 1000 (max. 8388607)
+ 81 compressed objects within 1 object stream
+ 18 named destinations out of 1000 (max. 500000)
+ 105 words of extra memory for PDF output out of 10000 (max. 10000000)
 

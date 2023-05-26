@@ -44,10 +44,10 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>chap1-tong-quan-ve-bai-toan.bcf</file>
+      <file>chap3-phuong-phap-nghien-cuu.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>chap1-tong-quan-ve-bai-toan.bbl</file>
+      <file>chap3-phuong-phap-nghien-cuu.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -68,19 +68,19 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>chap1-tong-quan-ve-bai-toan</infile>
+      <infile>chap3-phuong-phap-nghien-cuu</infile>
     </cmdline>
     <input>
-      <file>chap1-tong-quan-ve-bai-toan.bcf</file>
+      <file>chap3-phuong-phap-nghien-cuu.bcf</file>
     </input>
     <output>
-      <file>chap1-tong-quan-ve-bai-toan.bbl</file>
+      <file>chap3-phuong-phap-nghien-cuu.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>chap1-tong-quan-ve-bai-toan.bbl</file>
+      <file>chap3-phuong-phap-nghien-cuu.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>chap1-tong-quan-ve-bai-toan.bcf</file>
+      <file>chap3-phuong-phap-nghien-cuu.bcf</file>
     </requires>
     <requires type="editable">
       <file>bibliography/main.bib</file>
