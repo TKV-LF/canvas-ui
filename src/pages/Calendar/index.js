@@ -39,13 +39,13 @@ const myTheme = createTheme({
 function Calendar() {
 
 	return (
-		<ThemeProvider applyTo="body" theme={myTheme}>
+		<ThemeProvider applyTo="body" theme={myTheme} className="mx-10">
 			<Pivot>
-				<PivotItem headerText="Calendar">
+				<PivotItem headerText="Lịch">
 					<Scheduler data={appointments} />
 				</PivotItem>
-				<PivotItem headerText="List">
-					<List data={appointments} />
+				<PivotItem headerText="Danh sách">
+					<List data={appointments}/>
 				</PivotItem>
 			</Pivot>
 		</ThemeProvider>

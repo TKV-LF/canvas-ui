@@ -86,7 +86,7 @@ const History = ({ display, left }) => {
 		});
 	}, []);
     return (
-        <div className="">
+        <div>
             <SideSlide title="Recent History" display={display} left={left}>
                 <div className="flex flex-col gap-y-2 space-y-4">
                     {data.map((item, index) => (

@@ -5,28 +5,25 @@ const currentDate = moment();
 let date = currentDate.date();
 
 const makeTodayAppointment = (startDate, endDate) => {
-	const days = moment(startDate).diff(endDate, 'days');
-	const nextStartDate = moment(startDate)
-		.year(currentDate.year())
-		.month(currentDate.month())
-		.date(date);
-	const nextEndDate = moment(endDate)
-		.year(currentDate.year())
-		.month(currentDate.month())
-		.date(date + days);
+    const days = moment(startDate).diff(endDate, 'days');
+    const nextStartDate = moment(startDate).year(currentDate.year()).month(currentDate.month()).date(date);
+    const nextEndDate = moment(endDate)
+        .year(currentDate.year())
+        .month(currentDate.month())
+        .date(date + days);
 
-	return {
-		startDate: nextStartDate.toDate().toString(),
-		endDate: nextEndDate.toDate().toString(),
-	};
+    return {
+        startDate: nextStartDate.toDate().toString(),
+        endDate: nextEndDate.toDate().toString(),
+    };
 };
 
 export default appointments.map(({ startDate, endDate, ...restArgs }) => {
-	const result = {
-		...makeTodayAppointment(startDate, endDate),
-		...restArgs,
-	};
-	date += 1;
-	if (date > 31) date = 1;
-	return result;
+    const result = {
+        ...makeTodayAppointment(startDate, endDate),
+        ...restArgs,
+    };
+    date += 1;
+    if (date > 31) date = 1;
+    return result;
 });

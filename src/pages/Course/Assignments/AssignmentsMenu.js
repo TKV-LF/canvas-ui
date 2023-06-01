@@ -38,19 +38,19 @@ const AssignmentsMenu = ({ courseId }) => {
     return (
         <div className="flex border-b border-[#c7cdd1] mb-6 pb-3">
             <div className="flex flex-col w-1/6">
-                <TextField id="outlined-basic" label="Search for Assignment" variant="outlined" />
+                <TextField id="outlined-basic" label="Tìm kiếm bài tập" variant="outlined" />
             </div>
             <div className="flex flex-col w-5/6">
                 <div className="flex justify-end">
                     <div>
                         <Button variant="contained" onClick={() => setOpen(true)}>
-                            <AiOutlinePlus /> Group
+                            <AiOutlinePlus /> Nhóm bài tập
                         </Button>
                         <FormDialog
                             open={open}
                             onClose={() => setOpen(false)}
                             onSubmit={handleFormSubmit}
-                            title="Add new group"
+                            title="Tạo mới nhóm bài tập"
                             fields={[
                                 {
                                     label: 'Name',
@@ -61,10 +61,10 @@ const AssignmentsMenu = ({ courseId }) => {
                             ]}
                         />
                     </div>
-                    <div>
+                    <div className='ml-5'>
                         <Link to="#">
                             <Button variant="outlined">
-                                <AiOutlinePlus /> Assginment
+                                <AiOutlinePlus /> Bài tập
                             </Button>
                         </Link>
                     </div>

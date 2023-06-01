@@ -53,7 +53,7 @@ const reorder = (list, startIndex, endIndex) => {
 
     return result;
 };
-const Group = ({courseId}) => {
+const Group = ({ courseId }) => {
     const [items, setItems] = useState([]);
     const [visibleItems, setVisibleItems] = useState([]);
     const onDragEnd = (result) => {
