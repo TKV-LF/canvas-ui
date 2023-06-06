@@ -188,11 +188,11 @@ export default function CreateCourseForm({ title, css }) {
                             onChange={handleAccountIdChange}
                             label="Chọn tài khoản"
                         >
-                            {accounts.map((option) => (
+                            {/* {accounts.map((option) => (
                                 <MenuItem key={option.id} value={option.id}>
                                     {option.name}
                                 </MenuItem>
-                            ))}
+                            ))} */}
                         </Select>
 
                         <FormGroup>
