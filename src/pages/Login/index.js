@@ -43,7 +43,7 @@ const Login = () => {
             localStorage.setItem('accounts', JSON.stringify(data));
         });
 
-        window.location.href = '/dashboard';
+        // window.location.href = '/dashboard';
         // return redirect('/dashboard');
     }
 
