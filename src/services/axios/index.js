@@ -4,7 +4,7 @@ import { notification } from 'antd';
 import qs, { parse } from 'qs';
 
 const apiClient = axios.create({
-    baseURL: process.env.REACT_APP_BASE_URL,
+    baseURL: process.env.REACT_APP_API_URL,
     cancelToken: axios.CancelToken.source().token,
 
     paramsSerializer: {
