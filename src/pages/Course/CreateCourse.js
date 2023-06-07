@@ -8,7 +8,7 @@ import { makeStyles } from '@mui/styles';
 import { notification } from 'antd';
 import store from 'store';
 
-import { CourseApi } from '~/services/api';
+import { CourseApi, AccountApi } from '~/services/api';
 
 const useStyles = makeStyles(() => ({
     button: {
@@ -28,11 +28,11 @@ const useStyles = makeStyles(() => ({
 
 const licenses = [
     {
-        name: 'Private (Copyrighted)',
+        name: 'Riêng tư (Có bản quyền)',
         id: 'private',
     },
     {
-        name: 'Public Domain',
+        name: 'Công khai',
         id: 'public_domain',
     },
     {
@@ -66,11 +66,8 @@ export default function CreateCourseForm({ title, css }) {
     const [name, setName] = useState('');
     const [license, setLicense] = useState('private');
     const [isPublic, setIsPublic] = useState(false);
-    const [accountId, setAccountId] = useState(null);
     const [open, setOpen] = useState(false);
-    const accounts = JSON.parse(localStorage.getItem('accounts'));
-    const user = store.get('user');
-    console.log(user);
+    // const accounts = JSON.parse(localStorage.getItem('accounts'));
     const handleNameChange = (event) => {
         setName(event.target.value);
     };
@@ -81,10 +78,6 @@ export default function CreateCourseForm({ title, css }) {
 
     const handleIsPublicChange = (event) => {
         setIsPublic(event.target.checked);
-    };
-
-    const handleAccountIdChange = (event) => {
-        setAccountId(event.target.value);
     };
 
     const handleSubmit = async (event) => {
@@ -111,14 +104,7 @@ export default function CreateCourseForm({ title, css }) {
             });
             return;
         }
-
-        if (accountId === null) {
-            notification.error({
-                message: 'Vui lòng chọn workspace',
-            });
-            return;
-        }
-
+        const user = store.get('user');
         const payload = {
             course: {
                 name,
@@ -131,6 +117,21 @@ export default function CreateCourseForm({ title, css }) {
         };
         try {
             const response = await CourseApi.createCourse(payload);
+            const enrollPayload = {
+                enrollment: {
+                    user_id: user.id,
+                    type: 'TeacherEnrollment',
+                    enrollment_state: 'active',
+                },
+                course_id: response.id,
+            };
+            const enrollResponse = await CourseApi.enrollCourse(enrollPayload);
+            if (response && enrollResponse) {
+                notification.success({
+                    message: 'Tạo khoá học thành công',
+                });
+                setOpen(false);
+            }
         } catch (error) {
             console.error(error);
         }
@@ -178,23 +179,6 @@ export default function CreateCourseForm({ title, css }) {
                                 </MenuItem>
                             ))}
                         </Select>
-
-                        <Select
-                            labelId="select-label"
-                            id="accountId"
-                            value={accountId}
-                            fullWidth
-                            sx={{ mb: 1 }}
-                            onChange={handleAccountIdChange}
-                            label="Chọn tài khoản"
-                        >
-                            {/* {accounts.map((option) => (
-                                <MenuItem key={option.id} value={option.id}>
-                                    {option.name}
-                                </MenuItem>
-                            ))} */}
-                        </Select>
-
                         <FormGroup>
                             <FormControlLabel
                                 control={<Checkbox checked={isPublic} onChange={handleIsPublicChange} />}

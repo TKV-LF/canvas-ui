@@ -101,6 +101,16 @@ const CourseApi = {
             throw error;
         }
     },
+
+    // Enrollments
+    enrollCourse: async (payload) => {
+        try {
+            const response = await apiClient.post(`/api/v1/courses/${payload.course_id}/enrollments`, payload);
+            return response;
+        } catch (error) {
+            throw error;
+        }
+    },
 };
 
 export default CourseApi;
