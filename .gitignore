@@ -12,6 +12,11 @@
 /build
 /.cert
 
+# dotenv environment variables file
+.env
+
+.yarnrc
+
 # misc
 .DS_Store
 .env.local
@@ -23,3 +28,4 @@ yarn.lock
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+

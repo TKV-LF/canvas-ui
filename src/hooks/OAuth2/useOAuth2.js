@@ -84,15 +84,12 @@ const useOAuth2 = (props) => {
                         const code = message && message.data && message.data.payload && message.data.payload.code;
 
                         const response = await axios
-                            .post(
-                                'http://localhost:8088/http://canvas.docker/login/oauth2/token',
-                                {
-                                    client_id: clientId,
-                                    client_secret: clientSecret,
-                                    code,
-                                    grant_type: 'authorization_code',
-                                }
-                            )
+                            .post(`${process.env.REACT_APP_API_URL}/http://canvas.docker/login/oauth2/token`, {
+                                client_id: clientId,
+                                client_secret: clientSecret,
+                                code,
+                                grant_type: 'authorization_code',
+                            })
                             .then((response) => response.data)
                             .catch((error) => {
                                 throw error;
