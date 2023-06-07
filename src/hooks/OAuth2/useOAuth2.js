@@ -85,7 +85,7 @@ const useOAuth2 = (props) => {
 
                         const response = await axios
                             .post(
-                                'http://localhost:8088/http://canvas.docker/login/oauth2/token',
+                                'http://192.168.1.4:8088/http://canvas.docker/login/oauth2/token',
                                 {
                                     client_id: clientId,
                                     client_secret: clientSecret,
