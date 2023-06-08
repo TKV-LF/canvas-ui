@@ -1,4 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import Login from '../Login';
+
+const LoginButton = () => {
+    const handleLogin = () => {
+        // Redirect the user to the Canvas LMS authorization endpoint
+        window.location.href = `${process.env.REACT_APP_CANVAS_API}/login/oauth2/auth?client_id=${process.env.REACT_APP_CANVAS_CLIENT_ID}&response_type=code&redirect_uri=${process.env.REACT_APP_REDIRECT_URI}`;
+    };
+
+    return (
+        <button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded" onClick={handleLogin}>
+            Login
+        </button>
+    );
+};
 
 const Home = () => {
     const courses = [
@@ -19,7 +34,7 @@ const Home = () => {
                 <div className="container mx-auto flex justify-between items-center">
                     <h1 className="text-2xl font-bold text-gray-800">Canvas LMS</h1>
                     <div>
-                        <button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Login</button>
+                        <LoginButton />
                         <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 py-2 px-4 rounded ml-2">
                             Logout
                         </button>

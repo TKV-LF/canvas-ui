@@ -18,8 +18,8 @@ async function refreshToken() {
     const response = await apiClient.post('/login/oauth2/token', {
         refresh_token: store.get('refresh_token'),
         grant_type: 'refresh_token',
-        client_id: '10000000000001',
-        client_secret: 'xcSEau0qqyb3xjVQa6uK7PZtsbgeZ2vFtFEBr1Hy7hzkyUbruEjdHHQ4q1neDOKO',
+        client_id: process.env.REACT_APP_CANVAS_CLIENT_ID,
+        client_secret: process.env.REACT_APP_CANVAS_CLIENT_SECRET,
     });
     const accessToken = response.data.access_token;
     const user = response.data.user;

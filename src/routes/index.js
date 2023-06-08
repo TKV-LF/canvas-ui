@@ -1,19 +1,8 @@
 // upload
 import ProfileLayout from '~/components/Layouts/ProfileLayout';
-import {
-    Home,
-    Dashboard,
-    Login,
-    ListCourse,
-    Course,
-    OAuthPopup,
-    Calendar,
-    Inbox,
-    Grades,
-    Profile,
-    Assignments,
-} from '~/pages';
+import { Home, Dashboard, Login, ListCourse, Course, Calendar, Inbox, Grades, Profile, Assignments } from '~/pages';
 import Communication from '~/pages/Communication';
+import withAuth from '~/components/withAuth';
 
 const publicRoutes = [
     {
@@ -22,7 +11,7 @@ const publicRoutes = [
     },
     {
         path: '/dashboard',
-        component: Dashboard,
+        component: withAuth(Dashboard),
     },
     {
         path: '/login',
@@ -60,8 +49,8 @@ const publicRoutes = [
         path: '/history',
     },
     {
-        path: '/callback',
-        component: OAuthPopup,
+        path: '/oauth2response',
+        component: Login,
     },
     {
         path: '/grades',
