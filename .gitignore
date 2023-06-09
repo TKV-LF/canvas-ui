@@ -13,7 +13,6 @@
 /.cert
 
 # dotenv environment variables file
-.env
 
 .yarnrc
 
