@@ -74,11 +74,9 @@ const Course = () => {
     const { id } = useParams();
     useEffect(() => {
         getData({ courseId: id }).then((data) => {
-            console.log(data);
             setCourse(data);
         });
     }, []);
-    console.log(course);
     return (
         <div className="grid grid-cols-1 gap-4">
             <header className="bg-white shadow ">
@@ -101,10 +99,10 @@ const Course = () => {
                     </Grid>
                     <Grid item xs={8}>
                         <Grid item xs={12}>
-                            <AssignmentsMenu />
+                            <AssignmentsMenu/>
                         </Grid>
                         <Grid item xs={12}>
-                            <Group data={groups} />
+                            <Group data={groups} assignments={[]} />
                         </Grid>
                     </Grid>
                     <Grid item xs={2}>

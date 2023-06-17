@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Breadcrumbs, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
@@ -7,9 +7,48 @@ import { Menu } from '~/components/Layouts';
 import Group from './Group';
 import AssignmentsMenu from './AssignmentsMenu';
 import { courseMenu } from '~/components/Menu';
+import { CourseApi } from '~/services/api';
+
+async function getAssignmentGroups(payload) {
+    try {
+        const data = await CourseApi.getAssignmentGroups(payload);
+        return data;
+    } catch (error) {
+        console.log(error);
+    }
+}
+async function getAssignments(payload) {
+    try {
+        const assignments = await CourseApi.getAssignments(payload);
+        return assignments;
+    } catch (error) {
+        console.log(error);
+    }
+}
 
 const Assignments = () => {
+    const [items, setItems] = useState([]);
     const { id } = useParams();
+
+    useEffect(() => {
+        let payload = {
+            courseId: id,
+        };
+        getAssignmentGroups(payload).then((data) => {
+            getAssignments(payload).then((assignments) => {
+                let groups = data.map((group) => {
+                    let groupAssignments = assignments.filter(
+                        (assignment) => assignment.assignment_group_id === group.id,
+                    );
+                    return {
+                        ...group,
+                        assignments: groupAssignments,
+                    };
+                });
+                setItems(groups);
+            });
+        });
+    }, []);
     return (
         <div className="grid grid-cols-1 gap-4">
             <div className="flex flex-col">
@@ -33,10 +72,10 @@ const Assignments = () => {
                     </Grid>
                     <Grid item xs={10}>
                         <Grid item xs={12}>
-                            <AssignmentsMenu courseId={id} />
+                            <AssignmentsMenu courseId={id} assignments={items} />
                         </Grid>
                         <Grid item xs={12}>
-                            <Group courseId={id} />
+                            <Group courseId={id} assignments={items} />
                         </Grid>
                     </Grid>
                 </Grid>

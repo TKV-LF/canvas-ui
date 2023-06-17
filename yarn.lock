@@ -4503,6 +4503,14 @@
   dependencies:
     "@babel/runtime" "^7.12.5"
 
+"@tinymce/tinymce-react@^4.3.0":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@tinymce/tinymce-react/-/tinymce-react-4.3.0.tgz#5e2f5a58526a1bba9710f54f5fcf16abd4c742a1"
+  integrity sha512-iB4cUsYfcJL4NGuKhqCGYuTmFTje3nPxyPv1HxprTsp/YMGuuiiSNWrv3zwI31QX5Cn8qeq9MrMDnbxuRugHyg==
+  dependencies:
+    prop-types "^15.6.2"
+    tinymce "^6.3.1"
+
 "@tippyjs/react@^4.2.6":
   version "4.2.6"
   resolved "https://registry.yarnpkg.com/@tippyjs/react/-/react-4.2.6.tgz#971677a599bf663f20bb1c60a62b9555b749cc71"
@@ -12355,6 +12363,11 @@ tinycolor2@^1.6.0:
   version "1.6.0"
   resolved "https://registry.npmjs.org/tinycolor2/-/tinycolor2-1.6.0.tgz"
   integrity sha512-XPaBkWQJdsf3pLKJV9p4qN/S+fm2Oj8AIPo1BTUhg5oxkvm9+SVEGFdhyOz7tTdUTfvxMiAs4sp6/eZO2Ew+pw==
+
+tinymce@^6.3.1:
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/tinymce/-/tinymce-6.5.0.tgz#f0c97016e9ad12b5f8f829429f8e0e782b1d653a"
+  integrity sha512-I23hTUhbIyU/HCruy6wpIpOtr8UJhRJjRmJS9DCalN7UxT9iunkkbrcHa0FO9sG4GdMAOmVbZTHFBrgbDPYU6Q==
 
 tippy.js@^6.3.1:
   version "6.3.7"

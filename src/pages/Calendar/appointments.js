@@ -11,7 +11,6 @@ const Func = () => {
         .getAllEvents(payload)
         .then((res) => {
             let events = [];
-            console.log(res);
             res.forEach((event) => {
                 events.push({
                     id: event.id,

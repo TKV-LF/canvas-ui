@@ -20,10 +20,10 @@ const Login = () => {
         const urlParams = new URLSearchParams(window.location.search);
         const code = urlParams.get('code');
         const payload = {
+            grant_type: 'authorization_code',
             client_id: process.env.REACT_APP_CANVAS_CLIENT_ID,
             client_secret: process.env.REACT_APP_CANVAS_CLIENT_SECRET,
             code,
-            grant_type: 'authorization_code',
         };
         exchangeCodeForToken(payload).then((data) => {
             store.set('access_token', data.access_token);

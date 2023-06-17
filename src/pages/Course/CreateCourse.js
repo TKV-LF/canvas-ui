@@ -131,6 +131,7 @@ export default function CreateCourseForm({ title, css }) {
                     message: 'Tạo khoá học thành công',
                 });
                 setOpen(false);
+                window.location.href = `/courses/${response.id}`;
             }
         } catch (error) {
             console.error(error);

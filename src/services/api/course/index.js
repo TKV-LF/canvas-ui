@@ -31,6 +31,18 @@ const CourseApi = {
         }
     },
 
+    deleteCourse: async (payload) => {
+        try {
+            const response = await apiClient.delete(`/api/v1/courses/${payload.courseId}`, {
+                data: { event: 'delete' },
+            });
+            return response;
+        } catch (error) {
+            // Rethrow the error to allow error handling further up the call stack
+            throw error;
+        }
+    },
+
     uploadFile: async (payload) => {
         try {
             const response = await apiClient.post(`/api/v1/courses/${payload.courseId}/files`, payload);

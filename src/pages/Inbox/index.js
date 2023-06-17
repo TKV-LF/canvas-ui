@@ -31,7 +31,6 @@ function Inbox() {
             setConversations(data);
         });
     }, []);
-    console.log(conversations);
     return (
         <div className="w-10/12 h-screen flex h-[90vh] w-full">
             <main className="flex flex-col w-full bg-dark-600 h-full">

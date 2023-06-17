@@ -4,7 +4,6 @@ import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import { Assignment } from '~/pages/Course/Assignments';
 import { faCaretRight, faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { CourseApi } from '~/services/api';
 
 const Container = styled.div`
     display: flex;
@@ -53,7 +52,7 @@ const reorder = (list, startIndex, endIndex) => {
 
     return result;
 };
-const Group = ({ courseId }) => {
+const Group = ({ assignments }) => {
     const [items, setItems] = useState([]);
     const [visibleItems, setVisibleItems] = useState([]);
     const onDragEnd = (result) => {
@@ -74,39 +73,7 @@ const Group = ({ courseId }) => {
     }
 
     useEffect(() => {
-        let payload = {
-            courseId: courseId,
-        };
-        async function getData() {
-            try {
-                const data = await CourseApi.getAssignmentGroups(payload);
-                return data;
-            } catch (error) {
-                console.log(error);
-            }
-        }
-        getData().then((data) => {
-            async function getAssignments() {
-                try {
-                    const assignments = await CourseApi.getAssignments(payload);
-                    return assignments;
-                } catch (error) {
-                    console.log(error);
-                }
-            }
-            getAssignments().then((assignments) => {
-                let groups = data.map((group) => {
-                    let groupAssignments = assignments.filter(
-                        (assignment) => assignment.assignment_group_id === group.id,
-                    );
-                    return {
-                        ...group,
-                        assignments: groupAssignments,
-                    };
-                });
-                setItems(groups);
-            });
-        });
+        setItems(assignments);
     }, []);
     return (
         <DragDropContext onDragEnd={onDragEnd}>

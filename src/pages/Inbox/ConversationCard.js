@@ -5,7 +5,6 @@ export default function ConversationCard(props) {
     const handleClick = () => {
         onClick(id);
     };
-    console.log(message_count);
     return (
         <div
             className={`${

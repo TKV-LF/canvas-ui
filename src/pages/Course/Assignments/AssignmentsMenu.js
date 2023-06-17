@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { TextField, Button } from '@mui/material';
 import { FormDialog } from '~/components/Form';
@@ -6,10 +6,12 @@ import { AiOutlinePlus } from 'react-icons/ai';
 import { CourseApi } from '~/services/api';
 import { notification } from 'antd';
 import { set } from 'store';
+import CreateAssignment from './CreateAssignment';
 
-const AssignmentsMenu = ({ courseId }) => {
+const AssignmentsMenu = ({ courseId, assignments }) => {
     const [open, setOpen] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
+    const [assignmentGroups, setAssignmentGroups] = useState([]);
 
     const handleFormSubmit = async (formData) => {
         try {
@@ -35,6 +37,10 @@ const AssignmentsMenu = ({ courseId }) => {
             setIsLoading(false);
         }
     };
+
+    useEffect(() => {
+        setAssignmentGroups(assignments);
+    }, []);
     return (
         <div className="flex border-b border-[#c7cdd1] mb-6 pb-3">
             <div className="flex flex-col w-1/6">
@@ -53,7 +59,7 @@ const AssignmentsMenu = ({ courseId }) => {
                             title="Tạo mới nhóm bài tập"
                             fields={[
                                 {
-                                    label: 'Name',
+                                    label: 'Tên',
                                     name: 'name',
                                     type: 'text',
                                     required: true,
@@ -61,11 +67,9 @@ const AssignmentsMenu = ({ courseId }) => {
                             ]}
                         />
                     </div>
-                    <div className='ml-5'>
+                    <div className="ml-5">
                         <Link to="#">
-                            <Button variant="outlined">
-                                <AiOutlinePlus /> Bài tập
-                            </Button>
+                            <CreateAssignment title="Tạo bài tập" assignments={assignmentGroups} />
                         </Link>
                     </div>
                 </div>

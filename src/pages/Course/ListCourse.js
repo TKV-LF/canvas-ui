@@ -10,10 +10,12 @@ import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
 import { Breadcrumbs, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
+import { FaTrashAlt } from 'react-icons/fa';
 
 import { CourseApi } from '~/services/api';
 
 import CreateCourse from './CreateCourse';
+import { notification } from 'antd';
 
 const columns = [
     { id: 'course', label: 'Course', minWidth: 170 },
@@ -39,6 +41,13 @@ const columns = [
         align: 'right',
         format: (value) => value.toFixed(2),
     },
+    {
+        id: 'action',
+        label: 'Action',
+        minWidth: 30,
+        align: 'right',
+        format: (value) => value.toFixed(2),
+    },
 ];
 
 function createData(id, course, nickname, term, enrolled, published) {
@@ -54,10 +63,19 @@ async function getData() {
     }
 }
 
+async function deleteCourse(payload) {
+    try {
+        const response = await CourseApi.deleteCourse(payload);
+        return response;
+    } catch (error) {
+        console.error(error); // Handle the error
+    }
+}
+
 const ListCourse = () => {
     const [course, setCourse] = useState([]);
-    const [page, setPage] = React.useState(0);
-    const [rowsPerPage, setRowsPerPage] = React.useState(5);
+    const [page, setPage] = useState(0);
+    const [rowsPerPage, setRowsPerPage] = useState(5);
 
     const handleChangePage = (event, newPage) => {
         setPage(newPage);
@@ -67,10 +85,21 @@ const ListCourse = () => {
         setRowsPerPage(+event.target.value);
         setPage(0);
     };
+
+    const deleteCourseHandle = (id) => {
+        let payload = {
+            courseId: id,
+        };
+        deleteCourse(payload).then((res) => {
+            notification.success({
+                message: `Xoá khoá học có id là ${id}`,
+            });
+            window.location.href = `/courses`;
+        });
+    };
     useEffect(() => {
         getData().then((data) => {
             let arr = [];
-            console.log(data);
             data.forEach((item) => {
                 arr.push(createData(item.id, item.name, item.nickname, item.term, item.name, item.is_public));
             });
@@ -118,16 +147,24 @@ const ListCourse = () => {
                                             className="cursor-pointer"
                                         >
                                             {columns.map((column) => {
-                                                const value = row[column.id];
-                                                return (
-                                                    <TableCell key={column.id} align={column.align}>
-                                                        <Link to={`/courses/${row.id}`}>
-                                                            {column.format && typeof value === 'number'
-                                                                ? column.format(value)
-                                                                : value}
-                                                        </Link>
-                                                    </TableCell>
-                                                );
+                                                if (column.id != 'action') {
+                                                    const value = row[column.id];
+                                                    return (
+                                                        <TableCell key={column.id} align={column.align}>
+                                                            <Link to={`/courses/${row.id}`}>
+                                                                {column.format && typeof value === 'number'
+                                                                    ? column.format(value)
+                                                                    : value}
+                                                            </Link>
+                                                        </TableCell>
+                                                    );
+                                                } else {
+                                                    return (
+                                                        <TableCell key={column.id} align={column.align}>
+                                                            <FaTrashAlt onClick={() => deleteCourseHandle(row['id'])} />
+                                                        </TableCell>
+                                                    );
+                                                }
                                             })}
                                         </TableRow>
                                     );

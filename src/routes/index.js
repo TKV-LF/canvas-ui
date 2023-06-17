@@ -53,7 +53,7 @@ const publicRoutes = [
         component: Login,
     },
     {
-        path: '/grades',
+        path: '/courses/:id/grades',
         component: Grades,
     },
     {
