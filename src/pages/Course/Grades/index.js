@@ -1,12 +1,10 @@
 import { useState, useEffect } from 'react';
 import { Menu } from '~/components/Layouts';
-import { Group, AssignmentsMenu } from '~/pages/Course/Assignments';
-import { courseMenu } from '~/components/Menu';
+import { COURSE_MENU } from '~/constants';
 import Grid from '@mui/material/Grid';
 import { Breadcrumbs, Typography } from '@mui/material';
 import { Link, useParams } from 'react-router-dom';
 import { CourseApi, GradeApi } from '~/services/api';
-import { get } from 'store/dist/store.legacy.min';
 import Paper from '@mui/material/Paper';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -64,7 +62,7 @@ const Grades = () => {
     const [gradebook, setGradebook] = useState([]);
     const [page, setPage] = useState(0);
     const [rowsPerPage, setRowsPerPage] = useState(5);
-    const { id } = useParams();
+    const { courseId } = useParams();
 
     const handleChangePage = (event, newPage) => {
         setPage(newPage);
@@ -75,14 +73,14 @@ const Grades = () => {
         setPage(0);
     };
     useEffect(() => {
-        getGrade({ courseId: id }).then((data) => {
+        getGrade({ courseId: courseId }).then((data) => {
             data.map((item) => {
                 item.graders.map((grader) => {
                     console.log(grader);
                 });
             });
         });
-        getAssignments({ courseId: id }).then((data) => {
+        getAssignments({ courseId: courseId }).then((data) => {
             data.map((item) => {
                 columns.push({
                     id: item.id,
@@ -90,7 +88,7 @@ const Grades = () => {
                 });
             });
         });
-        getAssignmentGroups({ courseId: id }).then((data) => {
+        getAssignmentGroups({ courseId: courseId }).then((data) => {
             data.map((item) => {
                 columns.push({
                     id: item.id,
@@ -98,7 +96,7 @@ const Grades = () => {
                 });
             });
         });
-        getCourse({ courseId: id }).then((data) => {
+        getCourse({ courseId: courseId }).then((data) => {
             setCourse(data);
         });
     }, []);
@@ -113,7 +111,7 @@ const Grades = () => {
                         <Link underline="hover" color="inherit" to="/courses">
                             Tất cả khoá học
                         </Link>
-                        <Link underline="hover" color="inherit" to={`/courses/x${id}`}>
+                        <Link underline="hover" color="inherit" to={`/courses/${courseId}`}>
                             {course && course.name}
                         </Link>
                         <Typography color="text.primary">Điểm</Typography>
@@ -123,7 +121,7 @@ const Grades = () => {
             <div className="mx-8">
                 <Grid container spacing={2}>
                     <Grid item xs={2}>
-                        <Menu items={courseMenu} />
+                        <Menu items={COURSE_MENU} />
                     </Grid>
                     <Grid item xs={10}>
                         <Paper className="w-100 overflow-hidden mt-5">

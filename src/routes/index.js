@@ -1,6 +1,18 @@
 // upload
 import ProfileLayout from '~/components/Layouts/ProfileLayout';
-import { Home, Dashboard, Login, ListCourse, Course, Calendar, Inbox, Grades, Profile, Assignments } from '~/pages';
+import {
+    Home,
+    Dashboard,
+    Login,
+    ListCourse,
+    Course,
+    Calendar,
+    Inbox,
+    Grades,
+    Profile,
+    Assignments,
+    Assignment,
+} from '~/pages';
 import Communication from '~/pages/Communication';
 import withAuth from '~/components/withAuth';
 
@@ -22,12 +34,16 @@ const publicRoutes = [
         component: ListCourse,
     },
     {
-        path: '/courses/:id',
+        path: '/courses/:courseId',
         component: Course,
     },
     {
-        path: '/courses/:id/assignments',
+        path: '/courses/:courseId/assignments',
         component: Assignments,
+    },
+    {
+        path: '/courses/:courseId/assignments/:assignmentId',
+        component: Assignment,
     },
     {
         path: '/profile',
@@ -53,7 +69,7 @@ const publicRoutes = [
         component: Login,
     },
     {
-        path: '/courses/:id/grades',
+        path: '/courses/:courseId/grades',
         component: Grades,
     },
     {

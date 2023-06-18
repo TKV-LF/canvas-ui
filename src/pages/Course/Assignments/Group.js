@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useLayoutEffect } from 'react';
 import styled from '@emotion/styled';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
-import { Assignment } from '~/pages/Course/Assignments';
+import { AssignmentList } from '~/pages/Course/Assignments';
 import { faCaretRight, faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { CourseApi } from '~/services/api';
+import { Button } from 'antd';
 
 const Container = styled.div`
     display: flex;
@@ -65,6 +66,7 @@ async function getAssignments(payload) {
 const Group = ({ courseId, assignmentGroups }) => {
     const [items, setItems] = useState(assignmentGroups);
     const [visibleItems, setVisibleItems] = useState([]);
+    const [loaded, setLoaded] = useState(false);
     const onDragEnd = (result) => {
         if (!result.destination) {
             return;
@@ -93,12 +95,13 @@ const Group = ({ courseId, assignmentGroups }) => {
 
                 return result;
             }, []);
-            console.log(assignmentGroupsWithAssignments);
+            console.log('assign ', assignmentGroupsWithAssignments);
             setItems(assignmentGroupsWithAssignments);
+            setLoaded(true);
         });
     }, []);
-
-    return (
+    console.log(items);
+    return { loaded } ? (
         <DragDropContext onDragEnd={onDragEnd}>
             <Container>
                 <ColumnStyles>
@@ -125,7 +128,9 @@ const Group = ({ courseId, assignmentGroups }) => {
                                                         {item.name}
                                                     </div>
                                                 </AssignmentGroup>
-                                                {visibleItems.includes(item) && <Assignment data={item.assignments} />}
+                                                {visibleItems.includes(item) && (
+                                                    <AssignmentList courseId={courseId} data={item.assignments} />
+                                                )}
                                             </div>
                                         )}
                                     </Draggable>
@@ -137,6 +142,8 @@ const Group = ({ courseId, assignmentGroups }) => {
                 </ColumnStyles>
             </Container>
         </DragDropContext>
+    ) : (
+        <div>Loading...</div>
     );
 };
 export default Group;

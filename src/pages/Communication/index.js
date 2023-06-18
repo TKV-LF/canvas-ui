@@ -3,7 +3,7 @@ function Communication() {
     useHead({
         title: 'Communication',
     });
-    return <h1>le anh tuan</h1>;
+    return <h1>Hey Hey</h1>;
 }
 
 export default Communication;

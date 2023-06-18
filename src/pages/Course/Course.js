@@ -1,65 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Menu } from '~/components/Layouts';
 import { Group, AssignmentsMenu } from '~/pages/Course/Assignments';
-import { courseMenu } from '~/components/Menu';
+import { COURSE_MENU } from 'src/constants';
 import Grid from '@mui/material/Grid';
 import { Breadcrumbs, Typography } from '@mui/material';
 import { Link, useParams } from 'react-router-dom';
 import { CourseApi } from '~/services/api';
-
-const groups = [
-    {
-        id: '1',
-        name: 'Group 1',
-        date: '25-May-2020',
-        assignments: [
-            {
-                id: '1',
-                name: 'Assignment 1',
-                // Assigned_To: 'Beltran',
-                // Assignee: 'Romona',
-                // Status: 'To-do',
-                // Priority: 'Low',
-                Due_Date: '25-May-2020',
-            },
-            {
-                id: '2',
-                name: 'Assignment 2',
-                // Assigned_To: 'Dave',
-                // Assignee: 'Romona',
-                // Status: 'To-do',
-                // Priority: 'Low',
-                Due_Date: '26-May-2020',
-            },
-        ],
-    },
-    {
-        id: '2',
-        name: 'Group 2',
-
-        date: '26-May-2020',
-        assignments: [
-            {
-                id: '3',
-                name: 'Assignment 3',
-                // Assigned_To: 'Beltran',
-                // Assignee: 'Romona',
-                // Status: 'To-do',
-                // Priority: 'Low',
-                Due_Date: '25-May-2020',
-            },
-            {
-                id: '4',
-                name: 'Assignment 4',
-                // Assigned_To: 'Dave',
-                // Assignee: 'Romona',
-                // Status: 'To-do',
-                // Priority: 'Low',
-                Due_Date: '26-May-2020',
-            },
-        ],
-    },
-];
 
 async function getData(payload) {
     try {
@@ -71,9 +17,9 @@ async function getData(payload) {
 }
 const Course = () => {
     const [course, setCourse] = useState();
-    const { id } = useParams();
+    const { courseId } = useParams();
     useEffect(() => {
-        getData({ courseId: id }).then((data) => {
+        getData({ courseId: courseId }).then((data) => {
             setCourse(data);
         });
     }, []);
@@ -95,7 +41,7 @@ const Course = () => {
             <div className="mx-8">
                 <Grid container spacing={2}>
                     <Grid item xs={2}>
-                        <Menu items={courseMenu} />
+                        <Menu items={COURSE_MENU} />
                     </Grid>
                     <Grid item xs={8}>
                         <Grid item xs={12}>
@@ -106,7 +52,7 @@ const Course = () => {
                         </Grid>
                     </Grid>
                     <Grid item xs={2}>
-                        <Menu items={courseMenu} />
+                        <Menu items={COURSE_MENU} />
                     </Grid>
                 </Grid>
             </div>

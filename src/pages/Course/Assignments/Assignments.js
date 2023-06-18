@@ -6,7 +6,7 @@ import Grid from '@mui/material/Grid';
 import { Menu } from '~/components/Layouts';
 import Group from './Group';
 import AssignmentsMenu from './AssignmentsMenu';
-import { courseMenu } from '~/components/Menu';
+import { COURSE_MENU } from '~/constants';
 import { CourseApi } from '~/services/api';
 
 async function getAssignmentGroups(payload) {
@@ -20,11 +20,11 @@ async function getAssignmentGroups(payload) {
 
 const Assignments = () => {
     const [items, setItems] = useState([]);
-    const { id } = useParams();
+    const { courseId } = useParams();
 
     useEffect(() => {
         let payload = {
-            courseId: id,
+            courseId: courseId,
         };
         getAssignmentGroups(payload).then((data) => {
             setItems(data);
@@ -50,18 +50,18 @@ const Assignments = () => {
             <div className="mx-8">
                 <Grid container spacing={2}>
                     <Grid item xs={2}>
-                        <Menu items={courseMenu} />
+                        <Menu items={COURSE_MENU} />
                     </Grid>
                     <Grid item xs={10}>
                         <Grid item xs={12}>
                             {items ? (
-                                <AssignmentsMenu courseId={id} assignmentGroups={items} />
+                                <AssignmentsMenu courseId={courseId} assignmentGroups={items} />
                             ) : (
                                 console.log('loading...')
                             )}
                         </Grid>
                         <Grid item xs={12}>
-                            {items ? <Group courseId={id} assignmentGroups={items} /> : <div>Loading...</div>}
+                            {items ? <Group courseId={courseId} assignmentGroups={items} /> : <div>Loading...</div>}
                         </Grid>
                     </Grid>
                 </Grid>

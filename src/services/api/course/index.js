@@ -136,6 +136,42 @@ const CourseApi = {
         }
     },
 
+    getAssignment: async (payload) => {
+        try {
+            const response = await apiClient.get(
+                `/api/v1/courses/${payload.courseId}/assignments/${payload.assignmentId}`,
+            );
+            return response;
+        } catch (error) {
+            throw error;
+        }
+    },
+
+    // Edit assignment
+    editAssignment: async (payload) => {
+        try {
+            const response = await apiClient.put(
+                `/api/v1/courses/${payload.courseId}/assignments/${payload.assignmentId}`,
+                payload,
+            );
+            return response;
+        } catch (error) {
+            throw error;
+        }
+    },
+
+    // Delete assignment
+    deleteAssignment: async (payload) => {
+        try {
+            const response = await apiClient.delete(
+                `/api/v1/courses/${payload.courseId}/assignments/${payload.assignmentId}`,
+            );
+            return response;
+        } catch (error) {
+            throw error;
+        }
+    },
+
     // Enrollments
     enrollCourse: async (payload) => {
         try {

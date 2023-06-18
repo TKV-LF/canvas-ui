@@ -34,7 +34,7 @@ const useStyles = makeStyles(() => ({
     },
 }));
 
-export default function CreateAssignmentForm({ title, css, assignmentGroups }) {
+export default function EditAssignmentForm({ title, css, assignmentGroups, assignment }) {
     const classes = useStyles();
     const [name, setName] = useState('');
     const [assignmentGroup, setAssignmentGroup] = useState();
@@ -161,7 +161,7 @@ export default function CreateAssignmentForm({ title, css, assignmentGroups }) {
         };
 
         try {
-            const res = await CourseApi.createAssignment(payload);
+            const res = await CourseApi.editAssignment(payload);
             console.log('res', res);
             if (res.status === 201) {
                 notification.success({
