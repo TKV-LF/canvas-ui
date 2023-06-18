@@ -1,12 +1,17 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.9)  18 JUN 2023 22:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.9)  18 JUN 2023 22:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/thuynt/Working/canvas-ui/Thesis/Thesis
-(/Users/thuynt/Working/canvas-ui/Thesis/Thesis.tex
+**/Users/thuynt/Working/canvas-ui/Thesis/chapters/chap3-phan-tich-yeu-cau
+(/Users/thuynt/Working/canvas-ui/Thesis/chapters/chap3-phan-tich-yeu-cau.tex
 LaTeX2e <2022-11-01> patch level 1
-L3 programming layer <2023-02-22> (/usr/local/texlive/2023/texmf-dist/tex/latex/base/report.cls
+L3 programming layer <2023-02-22> (/usr/local/texlive/2023/texmf-dist/tex/latex/subfiles/subfiles.cls
+Document Class: subfiles 2020/11/14 v2.2 Multi-file projects (class)
+Preamble taken from file `../Thesis.tex'
+(/usr/local/texlive/2023/texmf-dist/tex/latex/import/import.sty
+Package: import 2020/04/01  v 6.2
+) (../Thesis.tex (/usr/local/texlive/2023/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2022/07/02 v1.4n Standard LaTeX document class
 (/usr/local/texlive/2023/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
@@ -358,9 +363,7 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enitdp@description=\count276
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2020/11/14 v2.2 Multi-file projects (package)
- (/usr/local/texlive/2023/texmf-dist/tex/latex/import/import.sty
-Package: import 2020/04/01  v 6.2
-)) (/usr/local/texlive/2023/texmf-dist/tex/latex/titlesec/titlesec.sty
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \ttl@box=\box58
 \beforetitleunit=\skip59
@@ -817,7 +820,7 @@ Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
 
 LaTeX Warning: \include should only be used after \begin{document} on input line 35.
 
-(./lstlisting.tex (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/listings.sty
+(..//lstlisting.tex (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count437
 \lst@gtempboxa=\box68
 \lst@token=\toks50
@@ -850,7 +853,7 @@ Package color Info: Driver file: pdftex.def on input line 149.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (/usr/local/texlive/2023/texmf-dist/tex/latex/lstaddons/lstautogobble.sty
 Package: lstautogobble 2012/05/03 v0.1 Implements 'autogobble' option for 'listings'
 \lstag@spacecount=\count445
-)) (./glossary/main.tex) (/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/hyperref.sty
+)) (..//glossary/main.tex) (/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2023-02-07 v7.00v Hypertext links for LaTeX
  (/usr/local/texlive/2023/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
@@ -953,34 +956,35 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 Package: hypcap 2016/05/16 v1.12 Adjusting the anchors of captions (HO)
 )
 \c@example=\count457
+))
 \@quotelevel=\count458
 \@quotereset=\count459
-LaTeX Font Info:    Trying to load font information for T5+ptm on input line 93.
+LaTeX Font Info:    Trying to load font information for T5+ptm on input line 2.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/vntex/t5ptm.fd
 File: t5utm.fd 2005/08/24 Fontinst v1.929 font definitions for T5/ptm.
-) (./Thesis.aux)
-\openout1 = `Thesis.aux'.
+) (./chap3-phan-tich-yeu-cau.aux)
+\openout1 = `chap3-phan-tich-yeu-cau.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1049,149 +1053,48 @@ File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout4 = `Thesis.bcf'.
+\openout4 = `chap3-phan-tich-yeu-cau.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'Thesis.bbl' not found.
+Package biblatex Info: ... file 'chap3-phan-tich-yeu-cau.bbl' not found.
 
-No file Thesis.bbl.
-Package biblatex Info: Reference section=0 on input line 93.
-Package biblatex Info: Reference segment=0 on input line 93.
+No file chap3-phan-tich-yeu-cau.bbl.
+Package biblatex Info: Reference section=0 on input line 2.
+Package biblatex Info: Reference segment=0 on input line 2.
 \c@lstlisting=\count466
-Package hyperref Info: Link coloring OFF on input line 93.
-(./Thesis.out) (./Thesis.out)
+Package hyperref Info: Link coloring OFF on input line 2.
+(./chap3-phan-tich-yeu-cau.out) (./chap3-phan-tich-yeu-cau.out)
 \@outlinefile=\write5
-\openout5 = `Thesis.out'.
+\openout5 = `chap3-phan-tich-yeu-cau.out'.
 
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: a4paper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
-* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=483.69687pt
-* \textheight=731.23584pt
-* \oddsidemargin=-15.36449pt
-* \evensidemargin=-15.36449pt
-* \topmargin=-54.36449pt
-* \headheight=14.0pt
-* \headsep=25.0pt
-* \topskip=12.0pt
-* \footskip=30.0pt
-* \marginparwidth=35.0pt
-* \marginparsep=10.0pt
-* \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+ [1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/vntex/t5.enc}
 
- (./cover.tex
-<figures//logo.png, id=128, 1204.5pt x 1002.74625pt>
-File: figures//logo.png Graphic file (type png)
-<use figures//logo.png>
-Package pdftex.def Info: figures//logo.png  used on input line 14.
-(pdftex.def)             Requested size: 145.11053pt x 120.79868pt.
- [1
-
-
-{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/vntex/t5.enc} <./figures//logo.png>]) (./Thesis.toc
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 2.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/base/ulasy.fd
-File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
-
-
-])
-\tf@toc=\write6
-\openout6 = `Thesis.toc'.
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.114 \newpage
-               [2]
-Ch\uhorn \ohorn ng 1.
-(./chapters/chap1-tong-quan.tex
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.15 
-      [1
-
-]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 25.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [2{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc}]
-<figures//lms-market.jpg, id=186, 2168.1pt x 1409.265pt>
-File: figures//lms-market.jpg Graphic file (type jpg)
-<use figures//lms-market.jpg>
-Package pdftex.def Info: figures//lms-market.jpg  used on input line 38.
-(pdftex.def)             Requested size: 325.20097pt x 211.38063pt.
- [3 <./figures//lms-market.jpg>] [4] [5]) [6]
-Ch\uhorn \ohorn ng 2.
-(./chapters/chap2-co-so-ly-thuyet.tex [7
-
-] [8] [9] [10] [11] [12] [13]) [14]
-Ch\uhorn \ohorn ng 3.
-(./chapters/chap3-phan-tich-yeu-cau.tex [15
-
-] [16] [17]) [18] [19]
-
-LaTeX Warning: Empty bibliography on input line 137.
-
+] [2] [3]
 
 Package glossaries Warning: No \printnoidxglossary or \printnoidxglossaries
  found. (Remove \makenoidxglossaries if you don't want any glossaries.)
 This document will not have a glossary.
 
-(./Thesis.aux)
-
-LaTeX Warning: There were undefined references.
-
-Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: FFF4C7BD29B39639587E8F0019D95C85;6971.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                Thesis
-(biblatex)                and rerun LaTeX afterwards.
-
-Package logreq Info: Writing requests to 'Thesis.run.xml'.
-\openout1 = `Thesis.run.xml'.
+[4] (./chap3-phan-tich-yeu-cau.aux)
+Package rerunfilecheck Info: File `chap3-phan-tich-yeu-cau.out' has not changed.
+(rerunfilecheck)             Checksum: 70FB649A4F6CB8F96E94CB329534B8D4;2672.
+Package logreq Info: Writing requests to 'chap3-phan-tich-yeu-cau.run.xml'.
+\openout1 = `chap3-phan-tich-yeu-cau.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26900 strings out of 476025
- 471565 string characters out of 5790018
- 1862388 words of memory out of 5000000
- 46826 multiletter control sequences out of 15000+600000
- 544513 words of font info for 67 fonts, out of 8000000 for 9000
+ 26653 strings out of 476025
+ 468109 string characters out of 5790018
+ 1864388 words of memory out of 5000000
+ 46677 multiletter control sequences out of 15000+600000
+ 527137 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,10n,90p,2303b,854s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/urwvn/utmb8v.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.pfb>
-Output written on Thesis.pdf (22 pages, 1045391 bytes).
+ 114i,12n,107p,2369b,854s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/urwvn/utmb8v.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.pfb>
+Output written on chap3-phan-tich-yeu-cau.pdf (4 pages, 57254 bytes).
 PDF statistics:
- 309 PDF objects out of 1000 (max. 8388607)
- 273 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 500000)
- 259 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 92 PDF objects out of 1000 (max. 8388607)
+ 81 compressed objects within 1 object stream
+ 18 named destinations out of 1000 (max. 500000)
+ 105 words of extra memory for PDF output out of 10000 (max. 10000000)
 

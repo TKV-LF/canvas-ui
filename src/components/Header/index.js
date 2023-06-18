@@ -1,10 +1,22 @@
 import { Transition } from '@headlessui/react';
-import Tooltip from '@mui/material/Tooltip';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { AiOutlineBell, AiOutlineUser } from 'react-icons/ai';
 import { NavLink, useLocation } from 'react-router-dom';
 import { HEADER_MENU_LIST } from '~/constants';
 import History from '~/pages/History';
+import Box from '@mui/material/Box';
+import Tooltip from '@mui/material/Tooltip';
+import Avatar from '@mui/material/Avatar';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import Divider from '@mui/material/Divider';
+import IconButton from '@mui/material/IconButton';
+import Typography from '@mui/material/Typography';
+import PersonAdd from '@mui/icons-material/PersonAdd';
+import Settings from '@mui/icons-material/Settings';
+import Logout from '@mui/icons-material/Logout';
 
 function Header() {
     const [open, setOpen] = useState(false);
@@ -15,6 +27,22 @@ function Header() {
     };
 
     const path = useLocation().pathname;
+
+    const [anchorEl, setAnchorEl] = useState(null);
+    const openUser = Boolean(anchorEl);
+    const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
+
+    const handleLogout = () => {
+        localStorage.removeItem('access_token');
+        localStorage.removeItem('refresh_token');
+        localStorage.removeItem('user');
+        window.location.href = '/';
+    };
 
     return (
         <nav className="bg-gray-800">
@@ -93,16 +121,86 @@ function Header() {
                         </button>
                     </div>
                     <div className="flex items-center">
-                        <div className="mr-4">
-                            <AiOutlineBell
-                                className={`cursor-pointer text-3xl text-white 
-                                             `}
-                                onClick={toggleNotification}
-                            />
-                            <History display={notification} left={'right-0 top-16'} />
-                        </div>
                         <div>
-                            <AiOutlineUser className={`cursor-pointer text-3xl text-white`} />
+                            <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
+                                <Typography sx={{ minWidth: 8 }}>
+                                    <AiOutlineBell
+                                        className={`cursor-pointer text-3xl text-white 
+                                             `}
+                                        onClick={toggleNotification}
+                                    />
+                                    <History display={notification} left={'right-0 top-16'} />
+                                </Typography>
+                                <Tooltip title="Quản lý tài khoản">
+                                    <IconButton
+                                        onClick={handleClick}
+                                        size="small"
+                                        sx={{ ml: 2 }}
+                                        aria-controls={open ? 'account-menu' : undefined}
+                                        aria-haspopup="true"
+                                        aria-expanded={open ? 'true' : undefined}
+                                    >
+                                        <Avatar sx={{ width: 32, height: 32 }}>
+                                            <AiOutlineUser />
+                                        </Avatar>
+                                    </IconButton>
+                                </Tooltip>
+                            </Box>
+                            <Menu
+                                anchorEl={anchorEl}
+                                id="account-menu"
+                                open={openUser}
+                                onClose={handleClose}
+                                onClick={handleClose}
+                                PaperProps={{
+                                    elevation: 0,
+                                    sx: {
+                                        overflow: 'visible',
+                                        filter: 'drop-shadow(0px 2px 8px rgba(0,0,0,0.32))',
+                                        mt: 1.5,
+                                        '& .MuiAvatar-root': {
+                                            width: 32,
+                                            height: 32,
+                                            ml: -0.5,
+                                            mr: 1,
+                                        },
+                                        '&:before': {
+                                            content: '""',
+                                            display: 'block',
+                                            position: 'absolute',
+                                            top: 0,
+                                            right: 14,
+                                            width: 10,
+                                            height: 10,
+                                            bgcolor: 'background.paper',
+                                            transform: 'translateY(-50%) rotate(45deg)',
+                                            zIndex: 0,
+                                        },
+                                    },
+                                }}
+                                transformOrigin={{ horizontal: 'right', vertical: 'top' }}
+                                anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
+                            >
+                                {/* <MenuItem onClick={handleClose}>
+                                    <Avatar /> Profile
+                                </MenuItem>
+                                <MenuItem onClick={handleClose}>
+                                    <Avatar /> My account
+                                </MenuItem>
+                                <Divider /> */}
+                                <MenuItem onClick={handleClose}>
+                                    <ListItemIcon>
+                                        <Settings fontSize="small" />
+                                    </ListItemIcon>
+                                    <Link to="/profile">Cài đặt</Link>
+                                </MenuItem>
+                                <MenuItem onClick={handleLogout}>
+                                    <ListItemIcon>
+                                        <Logout fontSize="small" />
+                                    </ListItemIcon>
+                                    Đăng xuất
+                                </MenuItem>
+                            </Menu>
                         </div>
                     </div>
                 </div>

@@ -99,10 +99,10 @@ const Course = () => {
                     </Grid>
                     <Grid item xs={8}>
                         <Grid item xs={12}>
-                            <AssignmentsMenu/>
+                            <AssignmentsMenu />
                         </Grid>
                         <Grid item xs={12}>
-                            <Group data={groups} assignments={[]} />
+                            {/* <Group courseId={id} data={groups} assignments={[]} /> */}
                         </Grid>
                     </Grid>
                     <Grid item xs={2}>

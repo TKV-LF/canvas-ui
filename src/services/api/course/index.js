@@ -114,6 +114,28 @@ const CourseApi = {
         }
     },
 
+    // Delete assignment groups
+    deleteAssignmentGroup: async (payload) => {
+        try {
+            const response = await apiClient.delete(
+                `/api/v1/courses/${payload.courseId}/assignment_groups/${payload.assignmentGroupId}`,
+            );
+            return response.data;
+        } catch (error) {
+            throw error;
+        }
+    },
+
+    // Create assignment
+    createAssignment: async (payload) => {
+        try {
+            const response = await apiClient.post(`/api/v1/courses/${payload.courseId}/assignments`, payload);
+            return response;
+        } catch (error) {
+            throw error;
+        }
+    },
+
     // Enrollments
     enrollCourse: async (payload) => {
         try {

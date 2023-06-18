@@ -4,6 +4,7 @@ import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import { Assignment } from '~/pages/Course/Assignments';
 import { faCaretRight, faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { CourseApi } from '~/services/api';
 
 const Container = styled.div`
     display: flex;
@@ -52,8 +53,17 @@ const reorder = (list, startIndex, endIndex) => {
 
     return result;
 };
-const Group = ({ assignments }) => {
-    const [items, setItems] = useState([]);
+
+async function getAssignments(payload) {
+    try {
+        const assignments = await CourseApi.getAssignments(payload);
+        return assignments;
+    } catch (error) {
+        console.log(error);
+    }
+}
+const Group = ({ courseId, assignmentGroups }) => {
+    const [items, setItems] = useState(assignmentGroups);
     const [visibleItems, setVisibleItems] = useState([]);
     const onDragEnd = (result) => {
         if (!result.destination) {
@@ -73,8 +83,21 @@ const Group = ({ assignments }) => {
     }
 
     useEffect(() => {
-        setItems(assignments);
+        let payload = {
+            courseId: courseId,
+        };
+        getAssignments(payload).then((data) => {
+            const assignmentGroupsWithAssignments = assignmentGroups.reduce((result, group) => {
+                const groupAssignments = data.filter((assignment) => assignment.assignment_group_id === group.id);
+                result.push({ ...group, assignments: groupAssignments });
+
+                return result;
+            }, []);
+            console.log(assignmentGroupsWithAssignments);
+            setItems(assignmentGroupsWithAssignments);
+        });
     }, []);
+
     return (
         <DragDropContext onDragEnd={onDragEnd}>
             <Container>

@@ -17,14 +17,6 @@ async function getAssignmentGroups(payload) {
         console.log(error);
     }
 }
-async function getAssignments(payload) {
-    try {
-        const assignments = await CourseApi.getAssignments(payload);
-        return assignments;
-    } catch (error) {
-        console.log(error);
-    }
-}
 
 const Assignments = () => {
     const [items, setItems] = useState([]);
@@ -35,20 +27,10 @@ const Assignments = () => {
             courseId: id,
         };
         getAssignmentGroups(payload).then((data) => {
-            getAssignments(payload).then((assignments) => {
-                let groups = data.map((group) => {
-                    let groupAssignments = assignments.filter(
-                        (assignment) => assignment.assignment_group_id === group.id,
-                    );
-                    return {
-                        ...group,
-                        assignments: groupAssignments,
-                    };
-                });
-                setItems(groups);
-            });
+            setItems(data);
         });
     }, []);
+
     return (
         <div className="grid grid-cols-1 gap-4">
             <div className="flex flex-col">
@@ -72,10 +54,14 @@ const Assignments = () => {
                     </Grid>
                     <Grid item xs={10}>
                         <Grid item xs={12}>
-                            <AssignmentsMenu courseId={id} assignments={items} />
+                            {items ? (
+                                <AssignmentsMenu courseId={id} assignmentGroups={items} />
+                            ) : (
+                                console.log('loading...')
+                            )}
                         </Grid>
                         <Grid item xs={12}>
-                            <Group courseId={id} assignments={items} />
+                            {items ? <Group courseId={id} assignmentGroups={items} /> : <div>Loading...</div>}
                         </Grid>
                     </Grid>
                 </Grid>

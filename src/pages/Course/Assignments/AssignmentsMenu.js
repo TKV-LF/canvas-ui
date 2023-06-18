@@ -8,10 +8,9 @@ import { notification } from 'antd';
 import { set } from 'store';
 import CreateAssignment from './CreateAssignment';
 
-const AssignmentsMenu = ({ courseId, assignments }) => {
+const AssignmentsMenu = ({ courseId, assignmentGroups }) => {
     const [open, setOpen] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
-    const [assignmentGroups, setAssignmentGroups] = useState([]);
 
     const handleFormSubmit = async (formData) => {
         try {
@@ -38,9 +37,7 @@ const AssignmentsMenu = ({ courseId, assignments }) => {
         }
     };
 
-    useEffect(() => {
-        setAssignmentGroups(assignments);
-    }, []);
+    useEffect(() => {}, []);
     return (
         <div className="flex border-b border-[#c7cdd1] mb-6 pb-3">
             <div className="flex flex-col w-1/6">
@@ -69,7 +66,7 @@ const AssignmentsMenu = ({ courseId, assignments }) => {
                     </div>
                     <div className="ml-5">
                         <Link to="#">
-                            <CreateAssignment title="Tạo bài tập" assignments={assignmentGroups} />
+                            <CreateAssignment title="Tạo bài tập" assignmentGroups={assignmentGroups} />
                         </Link>
                     </div>
                 </div>
