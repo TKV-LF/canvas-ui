@@ -1,80 +1,80 @@
 import React from 'react';
 
 const LoginButton = () => {
-    const handleLogin = () => {
-        // Redirect the user to the Canvas LMS authorization endpoint
-        window.location.href = `${process.env.REACT_APP_CANVAS_API}/login/oauth2/auth?client_id=${process.env.REACT_APP_CANVAS_CLIENT_ID}&response_type=code&redirect_uri=${process.env.REACT_APP_REDIRECT_URI}`;
-    };
+	const handleLogin = () => {
+		// Redirect the user to the Canvas LMS authorization endpoint
+		window.location.href = `${process.env.REACT_APP_CANVAS_API}/login/oauth2/auth?client_id=${process.env.REACT_APP_CANVAS_CLIENT_ID}&response_type=code&redirect_uri=${process.env.REACT_APP_REDIRECT_URI}`;
+	};
 
-    return (
-        <button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded" onClick={handleLogin}>
-            Login
-        </button>
-    );
+	return (
+		<button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded" onClick={handleLogin}>
+			Đăng nhập
+		</button>
+	);
 };
 
 const Home = () => {
-    const courses = [
-        { id: 1, title: 'Course 1' },
-        { id: 2, title: 'Course 2' },
-        { id: 3, title: 'Course 3' },
-    ];
+	const courses = [
+		{ id: 1, title: 'Khóa học PHP' },
+		{ id: 2, title: 'Khóa học JS' },
+		{ id: 3, title: 'Khóa học Java' },
+	];
 
-    const announcements = [
-        { id: 1, title: 'Announcement 1' },
-        { id: 2, title: 'Announcement 2' },
-        { id: 3, title: 'Announcement 3' },
-    ];
+	const announcements = null;
 
-    return (
-        <div className="flex flex-col items-center justify-center bg-gray-100">
-            <header className="w-full bg-white py-4 shadow-md">
-                <div className="container mx-auto flex justify-between items-center">
-                    <h1 className="text-2xl font-bold text-gray-800">Canvas LMS</h1>
-                    <div>
-                        <LoginButton />
-                        <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 py-2 px-4 rounded ml-2">
-                            Logout
-                        </button>
-                    </div>
-                </div>
-            </header>
+	return (
+		<div className="flex flex-col items-center justify-center bg-gray-100">
+			<header className="w-full bg-white py-4 shadow-md">
+				<div className="container mx-auto flex justify-between items-center">
+					<h1 className="text-2xl font-bold text-gray-800">TLU</h1>
+					<div>
+						<LoginButton />
 
-            <main className="container mx-auto mt-8">
-                <section className="mb-8">
-                    <h2 className="text-2xl font-bold text-gray-800 mb-4">Public Courses</h2>
-                    <ul className="bg-white rounded shadow">
-                        {courses.map((course) => (
-                            <li key={course.id} className="border-b last:border-b-0">
-                                <a href="#" className="block px-6 py-4 hover:bg-gray-100">
-                                    {course.title}
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
-                </section>
+					</div>
+				</div>
+			</header>
 
-                <section>
-                    <h2 className="text-2xl font-bold text-gray-800 mb-4">Public Announcements</h2>
-                    <ul className="bg-white rounded shadow">
-                        {announcements.map((announcement) => (
-                            <li key={announcement.id} className="border-b last:border-b-0">
-                                <a href="#" className="block px-6 py-4 hover:bg-gray-100">
-                                    {announcement.title}
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
-                </section>
-            </main>
+			<main className="container mx-auto mt-8 mb-96">
+				<section className="mb-8">
+					<h2 className="text-2xl font-bold text-gray-800 mb-4">Khóa học công khai</h2>
+					<ul className="bg-white rounded shadow">
+						{courses.map((course) => (
+							<li key={course.id} className="border-b last:border-b-0">
+								<a href="#" className="block px-6 py-4 hover:bg-gray-100">
+									{course.title}
+								</a>
+							</li>
+						))}
+					</ul>
+				</section>
 
-            <footer className="w-full bg-gray-200 py-4">
-                <div className="container mx-auto text-center text-gray-600">
-                    &copy; 2023 Canvas LMS. All rights reserved.
-                </div>
-            </footer>
-        </div>
-    );
+				<section>
+					<h2 className="text-2xl font-bold text-gray-800 mb-4">Thông báo công khai</h2>
+					<ul className="bg-white rounded shadow">
+						{announcements ? announcements.map((announcement) => (
+							<li key={announcement.id} className="border-b last:border-b-0">
+								<a href="#" className="block px-6 py-4 hover:bg-gray-100">
+									{announcement.title}
+								</a>
+							</li>
+						)) :
+							(<li className="border-b last:border-b-0">
+								<a href="#" className="block px-6 py-4 hover:bg-gray-100">
+								Không thông báo
+								</a>
+							</li>)
+						}
+					</ul>
+				</section>
+			</main>
+
+			<footer className="w-full bg-gray-200 py-4">
+				<div className="container mx-auto text-center text-gray-600">
+					&copy; 2023 TLU.
+				</div>
+			</footer>
+		</div>
+	);
 };
 
 export default Home;
