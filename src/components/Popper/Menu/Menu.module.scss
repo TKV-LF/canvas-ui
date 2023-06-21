@@ -1,0 +1,21 @@
+// Menu Wrapper
+.menu-list {
+    width: 223px;
+    background-color: rgb(37, 37, 37);
+    border-radius: 8px;
+    .menu-item {
+        width: 100%;
+        height: 42px;
+        margin-left: 0 !important;
+        background-color: transparent;
+        padding: 11px 16px;
+        justify-content: flex-start;
+        font-size: 14px;
+        font-weight: 600;
+        border: none;
+    }
+}
+
+.menu-popper {
+    padding-bottom: 8px;
+}

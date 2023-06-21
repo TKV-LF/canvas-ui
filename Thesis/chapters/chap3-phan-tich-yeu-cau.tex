@@ -1,0 +1,176 @@
+\documentclass[../Thesis.tex]{subfiles}
+\begin{document}
+\section{Phân tích yêu cầu}
+    \subsection{Yêu cầu chung}
+        Phần này tập trung vào việc xác định yêu cầu chung của đề tài phát triển một hệ thống học tập mới dựa trên Canvas LMS. Những yêu cầu này được xác định dựa trên nhu cầu và mong muốn của cộng đồng giáo dục, nhằm nâng cao trải nghiệm học tập và quản lý học tập trước đại học ở Việt Nam. Dưới đây là những yêu cầu chính mà hệ thống phải đáp ứng:
+
+        \begin{enumerate}
+        
+            \item Giao diện người dùng thân thiện và dễ sử dụng:
+            Hệ thống cần có giao diện người dùng trực quan, dễ sử dụng và thân thiện với người dùng, bao gồm cả giảng viên và sinh viên.
+            Giao diện phải được tối ưu hóa để người dùng có thể dễ dàng tìm kiếm, truy cập và tương tác với các khóa học và tài liệu học tập.
+            
+            \item Tính linh hoạt và tùy chỉnh:
+            Hệ thống cần hỗ trợ tính linh hoạt và tùy chỉnh để phù hợp với các đặc thù và yêu cầu của các tổ chức giáo dục trước đại học ở Việt Nam.
+            Cần cung cấp các công cụ và chức năng cho phép giảng viên tùy chỉnh và quản lý nội dung học tập theo phong cách và quy trình của mình.
+            
+            \item Quản lý khóa học và nội dung học tập:
+            
+            Hệ thống cần hỗ trợ quản lý khóa học và nội dung học tập một cách hiệu quả.
+            Cần có khả năng tạo, chỉnh sửa và xóa khóa học, cũng như quản lý tài liệu, bài giảng, bài tập và tài nguyên học tập khác.
+            
+            \item Tương tác và giao tiếp:
+            Hệ thống phải hỗ trợ các tính năng tương tác và giao tiếp giữa giảng viên và sinh viên, cũng như giữa sinh viên với nhau.
+            Cần có khả năng gửi thông báo, thảo luận trực tuyến, chia sẻ tài liệu và tương tác qua các công cụ và phương tiện truyền thông khác nhau.
+            
+            \item Quản lý người dùng:
+            Hệ thống cần cung cấp chức năng quản lý người dùng, bao gồm đăng ký, xác thực, cấp quyền truy cập và quản lý thông tin cá nhân.
+            Cần có khả năng phân quyền truy cập dựa trên vai trò và trình độ của người dùng.
+            
+            \item Tính bảo mật và bảo mật thông tin:
+            Hệ thống phải đảm bảo tính bảo mật và bảo mật thông tin của người dùng và dữ liệu học tập.
+            Cần có các biện pháp bảo mật như xác thực, mã hóa và kiểm soát quyền truy cập để bảo vệ thông tin cá nhân và dữ liệu nhạy cảm.
+        \end{enumerate}
+
+        Qua việc phân tích yêu cầu chung này, chúng ta sẽ tạo ra một hệ thống học tập phù hợp với thị trường giáo dục trước đại học ở Việt Nam, cung cấp một trải nghiệm học tập tốt hơn và đáp ứng nhu cầu của cả giảng viên và sinh viên.  
+    
+    \subsection{Yêu cầu chức năng}
+    \renewcommand{\thesubsubsection}{\alph{subsubsection}.}
+        \subsubsection{Quản lý khoá học}
+            \begin{enumerate}
+                \item Tạo khoá học
+                    \begin{itemize}[label=$\bullet$]
+                        \item Hệ thống nên cho phép người quản trị chỉnh sửa thông tin của khoá học một cách linh hoạt và nhanh chóng.
+                        \item Người quản trị ƒcần có khả năng thay đổi thông tin như tên khoá học, mô tả, và giảng viên chịu trách nhiệm.
+                        \item Giao diện chỉnh sửa khoá học nên cho phép người quản trị cập nhật thông tin liên quan đến thời gian và mục tiêu học tập, cũng như quản lý danh sách sinh viên đã đăng ký và thiết lập các ràng buộc về số lượng sinh viên.
+                    \end{itemize}
+
+                \item Chỉnh sửa khoá học
+                    \begin{itemize}[label=$\bullet$]
+                        \item Hệ thống cần cung cấp giao diện cho phép người quản trị tạo mới khoá học một cách dễ dàng và linh hoạt.
+                        \item Người quản trị nên có khả năng nhập các thông tin cần thiết về khoá học như tên khoá học, mô tả, mục tiêu học tập, và giảng viên chịu trách nhiệm.
+                        \item Giao diện tạo khoá học cần cho phép người quản trị thiết lập thời gian bắt đầu và kết thúc của khoá học, quy định các đợt đăng ký, và thiết lập các ràng buộc về số lượng sinh viên tối đa.
+                    \end{itemize}
+                \item Xoá khoá học
+                    \begin{itemize}[label=$\bullet$]
+                        \item Hệ thống cần cung cấp giao diện cho phép người quản trị xoá khoá học một cách dễ dàng và linh hoạt.
+                        \item Người quản trị nên có khả năng xoá khoá học một cách nhanh chóng và dễ dàng.
+                        \item Giao diện xoá khoá học cần cho phép người quản trị xác nhận lại thông tin của khoá học trước khi xoá.
+                    \end{itemize}
+            \end{enumerate}
+
+        \subsubsection{Quản lý nội dung học tập}
+
+            \begin{enumerate}
+                \item Tạo và quản lý các tài liệu học tập:
+                    \begin{itemize}[label=$\bullet$]
+                        
+                        \item Hệ thống cần cung cấp giao diện cho phép giảng viên tạo mới tài liệu học tập một cách dễ dàng và linh hoạt.
+                        
+                        \item Giao diện quản lý nội dung học tập nên cho phép người quản trị tổ chức, phân loại, và đánh dấu các tài liệu theo danh mục, chủ đề, và khóa học tương ứng.
+                    \end{itemize}
+
+                \item Tạo và quản lý các bài tập:
+                    \begin{itemize}[label=$\bullet$]
+                        \item Hệ thống cần cung cấp giao diện cho phép giảng viên tạo mới bài tập một cách dễ dàng và linh hoạt.
+                        \item Người quản trị nên có khả
+                        \item Giao diện quản lý nội dung học tập nên cho phép người quản trị tổ chức, phân loại, và đánh dấu các bài tập theo danh mục, chủ đề, và khóa học tương ứng.
+                    \end{itemize}
+            \end{enumerate}
+
+        \subsubsection{Tương tác và giao tiếp}
+
+            Hệ thống cần hỗ trợ các tính năng tương tác và giao tiếp giữa giảng viên và sinh viên, bao gồm:
+
+            \begin{enumerate}
+                \item {Phần thảo luận}
+                
+                    Hệ thống cần hỗ trợ tính năng gửi thông báo và nhắc nhở đến người dùng để thông báo các sự kiện quan trọng trong quá trình học tập, bao gồm:
+                    \begin{itemize}[label=$\bullet$]
+                        \item Thảo luận trong khóa học: Hệ thống nên cho phép tạo các diễn đàn thảo luận hoặc bài viết để giảng viên và sinh viên có thể chia sẻ ý kiến, bình luận và trao đổi thông tin với nhau. Điều này giúp tạo ra một không gian trao đổi ý kiến, khám phá ý kiến đa dạng và khuyến khích sự tương tác trong quá trình học tập.
+
+                        \item Chat trực tuyến: Hệ thống cần hỗ trợ tính năng chat trực tuyến để giảng viên và sinh viên có thể trò chuyện và trao đổi thông tin nhanh chóng. Chat trực tuyến giúp tạo ra một kênh giao tiếp trực tiếp giữa người dùng, giúp hỗ trợ giảng dạy và giải đáp thắc mắc một cách nhanh nhất.
+
+                        \item Tạo và quản lý nhóm thảo luận: Hệ thống nên cho phép giảng viên tạo và quản lý các nhóm thảo luận để sinh viên có thể làm việc nhóm, thảo luận và chia sẻ tài liệu. Tính năng này giúp tạo ra một môi trường học tập cộng đồng, khuyến khích sự hợp tác và trao đổi thông tin giữa các thành viên trong nhóm.
+
+                    \end{itemize}
+
+                \item {Phần gửi thông báo}
+                
+                    Hệ thống cần hỗ trợ tính năng gửi thông báo và nhắc nhở đến người dùng để thông báo về các sự kiện, nhiệm vụ, hoặc tin tức quan trọng khác. Các tính năng trong phần này bao gồm:
+                    \begin{itemize}[label=$\bullet$]
+                    
+                        \item Gửi thông báo cá nhân: Hệ thống nên cho phép giảng viên gửi thông báo cá nhân đến từng sinh viên, thông báo về các thay đổi trong lịch học, nhắc nhở về các deadline hoặc cập nhật thông tin quan trọng. Điều này giúp đảm bảo thông tin được truyền tải một cách hiệu quả và đồng bộ giữa giảng viên và sinh viên.
+                        
+                        \item Thông báo khóa học: Hệ thống nên cho phép giảng viên gửi thông báo đến toàn bộ lớp học hoặc nhóm sinh viên, thông báo về những thay đổi quan trọng, thông tin chung về khóa học, hoặc cung cấp các thông tin phụ trợ liên quan đến quá trình học tập.
+                        
+                        \item Tính năng nhắc nhở: Hệ thống nên có tính năng nhắc nhở để gửi thông báo nhắc nhở đến người dùng về các nhiệm vụ, bài tập hoặc sự kiện quan trọng. Nhắc nhở giúp đảm bảo người dùng không bỏ qua các hoạt động quan trọng và giúp duy trì sự đồng bộ trong quá trình học tập.
+                    \end{itemize}
+            
+            \end{enumerate}
+
+        \subsubsection{Quản lý người dùng}
+            \begin{enumerate}
+                \item Đăng ký và xác thực:
+                    \begin{itemize}[label=$\bullet$]
+                        \item Hệ thống cần cung cấp giao diện đăng ký tài khoản mới cho người dùng. Giao diện này nên yêu cầu người dùng nhập thông tin cần thiết như tên, địa chỉ email, mật khẩu và các thông tin cá nhân khác.
+                        \item Sau khi người dùng đăng ký, hệ thống phải tiến hành quá trình xác thực tài khoản để đảm bảo tính bảo mật và tránh truy cập trái phép. Quá trình này có thể bao gồm việc gửi email xác nhận hoặc mã xác thực qua tin nhắn SMS.
+                    \end{itemize}
+
+                \item Quản lý thông tin cá nhân:
+                    \begin{itemize}[label=$\bullet$]
+                        \item Hệ thống cần cung cấp giao diện cho phép người dùng quản lý thông tin cá nhân của mình. Người dùng nên có khả năng cập nhật và chỉnh sửa thông tin cá nhân như địa chỉ, số điện thoại, ngày sinh, giới tính và hình ảnh đại diện.
+                        \item Ngoài ra, hệ thống cần cho phép người dùng cung cấp thông tin về học tập như trường học, ngành học, khóa học đang tham gia và quá trình học tập trước đây. Thông tin này giúp cung cấp cái nhìn tổng quan về hồ sơ học tập của người dùng.
+                    \end{itemize}
+
+                \item Phân quyền truy cập:
+                    \begin{itemize}[label=$\bullet$]
+                        \item Hệ thống cần hỗ trợ phân quyền truy cập dựa trên vai trò và trình độ của người dùng. Điều này đảm bảo rằng mỗi người dùng chỉ có quyền truy cập vào những khóa học và nội dung tương ứng với vai trò và trình độ của họ.
+
+                        \item Hệ thống cũng nên hỗ trợ chức năng phân nhóm người dùng, cho phép quản trị viên tổ chức người dùng thành các nhóm dựa trên tiêu chí như khóa học, khoa, ngành học, v.v. Điều này giúp quản lý và tương tác với người dùng dễ dàng hơn.
+                    \end{itemize}
+
+                \item Quản lý danh sách người dùng
+                    \begin{itemize}[label=$\bullet$]
+                        \item Hệ thống cần cung cấp chức năng quản lý danh sách người dùng, bao gồm giảng viên và sinh viên. Quản trị viên hệ thống nên có khả năng tìm kiếm, xem và chỉnh sửa thông tin của người dùng.
+
+                        \item Quản trị viên hệ thống cần có quyền kiểm soát và quản lý các vai trò người dùng, bao gồm việc thêm mới, chỉnh sửa và xóa vai trò. Quản trị viên cũng có khả năng thiết lập các quyền truy cập cho từng vai trò, đảm bảo tính linh hoạt và an toàn của hệ thống.
+                    \end{itemize}
+
+                \item Ghi nhận hoạt động người dùng
+                    \begin{itemize}[label=$\bullet$]
+                        \item Hệ thống cần có khả năng ghi nhận hoạt động của người dùng, bao gồm lịch sử đăng nhập, thao tác trên giao diện, và các tương tác khác. Việc ghi nhận này giúp theo dõi và kiểm tra hoạt động của người dùng, đảm bảo tính an toàn và chính xác của dữ liệu.
+                    \end{itemize}
+            \end{enumerate}
+
+        \subsubsection{Tính bảo mật và bảo mật thông tin}
+
+    \subsection{Yêu cầu phi chức năng}
+        \subsubsection{Yêu cầu hiệu suất}
+
+        \subsubsection{Yêu cầu bảo mật}
+
+        \subsubsection{Yêu cầu quản lý}
+
+        \subsubsection{Yêu cầu hệ thống}
+
+        \subsubsection{Yêu cầu phát triển}
+
+        \subsubsection{Yêu cầu hỗ trợ}
+
+        \subsubsection{Yêu cầu bảo trì}
+
+    \subsection{Yêu cầu hệ thống}
+
+
+  
+  
+  
+  
+    % \subsection{Phương pháp nghiên cứu}
+    % Trong quá trình nghiên cứu, chúng ta sẽ sử dụng phương pháp nghiên cứu kết hợp giữa phương pháp định tính và phương pháp định lượng. Đầu tiên, chúng ta sẽ tiến hành phỏng vấn và cuộc trao đổi với các chuyên gia giáo dục, giảng viên và sinh viên để hiểu rõ hơn về nhu cầu và yêu cầu của các tổ chức giáo dục trước đại học ở Việt Nam. Những thông tin thu thập từ cuộc phỏng vấn sẽ giúp xác định các yếu tố cần thiết trong thiết kế giao diện người dùng và các tính năng cần có trong hệ thống LMS.
+
+    % Tiếp theo, chúng ta sẽ tiến hành một cuộc khảo sát trực tuyến để thu thập ý kiến từ cộng đồng giảng viên và sinh viên về sự hài lòng và khó khăn khi sử dụng các hệ thống LMS hiện có. Kết quả từ cuộc khảo sát sẽ giúp định hình và đánh giá các vấn đề cần giải quyết trong quá trình phát triển hệ thống quản lý học tập tùy chỉnh.
+
+    % Ngoài ra, chúng ta cũng sẽ tiến hành thử nghiệm thực tế với một số tổ chức giáo dục trước đại học ở Việt Nam để kiểm tra tính khả dụng và hiệu quả của hệ thống LMS được phát triển. Các cuộc thử nghiệm này sẽ cho phép chúng ta thu thập phản hồi từ giảng viên và sinh viên, từ đó đánh giá và cải thiện hệ thống theo hướng tốt nhất.
+    
