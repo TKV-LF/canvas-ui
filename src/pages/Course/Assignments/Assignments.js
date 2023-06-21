@@ -12,6 +12,7 @@ import { CourseApi } from '~/services/api';
 async function getAssignmentGroups(payload) {
     try {
         const data = await CourseApi.getAssignmentGroups(payload);
+        
         return data;
     } catch (error) {
         console.log(error);
@@ -26,11 +27,10 @@ const Assignments = () => {
         let payload = {
             courseId: courseId,
         };
+
         getAssignmentGroups(payload).then((data) => {
             setItems(data);
         });
-
-        
     }, []);
 
     return (

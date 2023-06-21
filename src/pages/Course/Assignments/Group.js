@@ -5,7 +5,6 @@ import { AssignmentList } from '~/pages/Course/Assignments';
 import { faCaretRight, faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { CourseApi } from '~/services/api';
-import { Button } from 'antd';
 
 const Container = styled.div`
     display: flex;
@@ -73,6 +72,7 @@ const Group = ({ courseId, assignmentGroups }) => {
         }
 
         let orderItems = reorder(items, result.source.index, result.destination.index);
+
         setItems(orderItems);
     };
 
@@ -92,16 +92,13 @@ const Group = ({ courseId, assignmentGroups }) => {
             const assignmentGroupsWithAssignments = assignmentGroups.reduce((result, group) => {
                 const groupAssignments = data.filter((assignment) => assignment.assignment_group_id === group.id);
                 result.push({ ...group, assignments: groupAssignments });
-
                 return result;
             }, []);
-            console.log('data', data);
+
             setItems(assignmentGroupsWithAssignments);
-            setLoaded(true);
-            console.log('assignmentGroupsWithAssignments', assignmentGroupsWithAssignments);
         });
-    }, []);
-    console.log(items);
+    }, [assignmentGroups]);
+
     return { loaded } ? (
         <DragDropContext onDragEnd={onDragEnd}>
             <Container>

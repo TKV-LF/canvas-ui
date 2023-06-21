@@ -106,7 +106,6 @@
                         
                         \item Tính năng nhắc nhở: Hệ thống nên có tính năng nhắc nhở để gửi thông báo nhắc nhở đến người dùng về các nhiệm vụ, bài tập hoặc sự kiện quan trọng. Nhắc nhở giúp đảm bảo người dùng không bỏ qua các hoạt động quan trọng và giúp duy trì sự đồng bộ trong quá trình học tập.
                     \end{itemize}
-            
             \end{enumerate}
 
         \subsubsection{Quản lý người dùng}
@@ -145,22 +144,32 @@
 
         \subsubsection{Tính bảo mật và bảo mật thông tin}
 
-    \subsection{Yêu cầu phi chức năng}
-        \subsubsection{Yêu cầu hiệu suất}
+            \begin{enumerate}
+                \item Xác thực:
+                    \begin{itemize}[label=$\bullet$]
+                        \item Hệ thống cần cung cấp quy trình xác thực cho người dùng, đảm bảo rằng chỉ những người dùng được phép mới có thể truy cập vào hệ thống.
+                        \item Phương pháp xác thực thông thường bao gồm đăng nhập bằng tên người dùng và mật khẩu. Tuy nhiên, hệ thống cũng nên hỗ trợ các phương thức xác thực bổ sung như xác thực hai yếu tố (2FA) hoặc sử dụng mã OTP (One-Time Password).
+                    \end{itemize}
 
-        \subsubsection{Yêu cầu bảo mật}
+                \item Mã hóa dữ liệu
+                    \begin{itemize}[label=$\bullet$]
+                        \item Dữ liệu của người dùng và dữ liệu học tập cần được mã hóa để đảm bảo rằng chỉ những người có quyền truy cập mới có thể đọc được.
+                    \end{itemize}
 
-        \subsubsection{Yêu cầu quản lý}
+                \item Kiểm soát quyền truy cập
+                \begin{itemize}[label=$\bullet$]
+                    \item Hệ thống cần có khả năng kiểm soát quyền truy cập dựa trên vai trò và phân quyền của người dùng.
+                    
+                    \item Quản trị viên hệ thống nên có quyền điều chỉnh và quản lý quyền truy cập của người dùng vào các khóa học và nội dung tương ứng. Điều này đảm bảo rằng chỉ những người dùng có quyền truy cập mới có thể xem và tương tác với các thông tin và tài liệu quan trọng.
+                \end{itemize}
 
-        \subsubsection{Yêu cầu hệ thống}
-
-        \subsubsection{Yêu cầu phát triển}
-
-        \subsubsection{Yêu cầu hỗ trợ}
-
-        \subsubsection{Yêu cầu bảo trì}
-
-    \subsection{Yêu cầu hệ thống}
+                \item Theo dõi và ghi lại lịch sử hoạt động
+                \begin{itemize}[label=$\bullet$]
+                    \item Hệ thống nên có chức năng theo dõi và ghi nhật ký hoạt động của người dùng.
+                    
+                    \item Việc ghi nhận các hoạt động như đăng nhập, thao tác trên giao diện và các tương tác khác giúp phát hiện và ngăn chặn các hành vi đáng ngờ và bất thường.
+                \end{itemize}
+            \end{enumerate}
 
 
   
