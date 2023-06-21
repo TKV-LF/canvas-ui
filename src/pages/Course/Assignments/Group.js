@@ -95,9 +95,10 @@ const Group = ({ courseId, assignmentGroups }) => {
 
                 return result;
             }, []);
-            console.log('assign ', assignmentGroupsWithAssignments);
+            console.log('data', data);
             setItems(assignmentGroupsWithAssignments);
             setLoaded(true);
+            console.log('assignmentGroupsWithAssignments', assignmentGroupsWithAssignments);
         });
     }, []);
     console.log(items);

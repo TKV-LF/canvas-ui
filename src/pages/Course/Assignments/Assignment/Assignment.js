@@ -58,7 +58,7 @@ const Assignment = () => {
         getAssignmentGroup({ courseId }).then((data) => {
             setAssignmentGroups(data);
         });
-    });
+    }, []);
 
     if (!assignment) {
         return null;
@@ -83,7 +83,6 @@ const Assignment = () => {
     const handleEdit = () => {
         console.log('edit');
     };
-    
 
     const options = [
         {
@@ -153,13 +152,25 @@ const Assignment = () => {
                                     <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                                         <dt className="text-sm font-medium text-gray-500">Điểm</dt>
                                         <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                            {assignment.points}
+                                            {assignment.points_possible}
                                         </dd>
                                     </div>
                                     <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                                         <dt className="text-sm font-medium text-gray-500">Hạn nộp</dt>
                                         <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                            {assignment.dueDate}
+                                            {assignment.due_at.substring(0, 10)}
+                                        </dd>
+                                    </div>
+                                    <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                                        <dt className="text-sm font-medium text-gray-500">Bắt đầu</dt>
+                                        <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                                            {assignment.unlock_at.substring(0, 10)}
+                                        </dd>
+                                    </div>
+                                    <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                                        <dt className="text-sm font-medium text-gray-500">Kết thúc</dt>
+                                        <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                                            {assignment.lock_at.substring(0, 10)}
                                         </dd>
                                     </div>
                                 </dl>

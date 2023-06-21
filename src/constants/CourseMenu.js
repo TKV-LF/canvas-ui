@@ -13,10 +13,6 @@ export const COURSE_MENU = [
         path: '/courses/:courseId/assignments',
     },
     {
-        label: 'Thảo luận',
-        path: '/courses/:courseId/discussions',
-    },
-    {
         label: 'Điểm',
         path: '/courses/:courseId/grades',
     },
@@ -28,10 +24,7 @@ export const COURSE_MENU = [
         label: 'Các trang',
         path: '/courses/:courseId/wiki',
     },
-    {
-        label: 'Tập tin',
-        path: '/courses/:courseId/files',
-    },
+    
     {
         label: 'Chương trình học',
         path: '/courses/:courseId/assignments/syllabus',
@@ -48,18 +41,7 @@ export const COURSE_MENU = [
         label: 'Các câu hỏi kiểm tra',
         path: '/courses/:courseId/quizzes',
     },
-    {
-        label: 'Các học phần',
-        path: '/courses/:courseId/modules',
-    },
-    {
-        label: 'BigBlueButton',
-        path: '/courses/:courseId/conferences',
-    },
-    {
-        label: 'Cộng tác',
-        path: '/courses/:courseId/collaborations',
-    },
+
     // {
     // 	label: 'Attendance',
     // 	path: '/courses/:courseId/attendance',

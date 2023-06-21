@@ -29,6 +29,8 @@ const Assignments = () => {
         getAssignmentGroups(payload).then((data) => {
             setItems(data);
         });
+
+        
     }, []);
 
     return (

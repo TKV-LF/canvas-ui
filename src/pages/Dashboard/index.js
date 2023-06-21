@@ -42,14 +42,12 @@ const Dashboard = () => {
         <div className="grid grid-cols-7 ">
             <div className="left col-span-6 px-5 pr-8">
                 <div className="flex flex-col border-b">
-                    <Typography variant="h4" component="h1" gutterBottom>
-                        Breadcrumb
-                    </Typography>
+                    <Typography variant="h4" component="h1" gutterBottom></Typography>
                 </div>
                 <div className="mx-8">
                     <div className="grid grid-cols-1 mb-10">
                         <div className="grid grid-cols-1 border-b mb-7 pb-1">
-                            <h2 className="text-2xl font-bold">Publish Courses ({publishCourses.length})</h2>
+                            <h2 className="text-2xl font-bold">Khoá học công khai({publishCourses.length})</h2>
                         </div>
                         <div className="grid grid-cols-5 gap-4">
                             {publishCourses.map((course) => (
@@ -74,7 +72,7 @@ const Dashboard = () => {
                     </div>
                     <div className="grid grid-cols-1">
                         <div className="grid grid-cols-1 border-b mb-7 pb-1">
-                            <h2 className="text-2xl font-bold">Unpublished Courses ({unpublishCourses.length})</h2>
+                            <h2 className="text-2xl font-bold">Khoá học chưa công khai ({unpublishCourses.length})</h2>
                         </div>
                         <div className="grid grid-cols-5 gap-4">
                             {unpublishCourses.map((course) => (
@@ -102,25 +100,25 @@ const Dashboard = () => {
             <div className="right col-span-1 p-4">
                 <RightSide>
                     <div className="grid grid-cols-2 border-b pb-2">
-                        <div className="grid col-span-1 font-bold">Coming up</div>
+                        <div className="grid col-span-1 font-bold">Sắp tới</div>
                         <div className="grid col-span-1">
                             <Link to="/calendar" className="flex group">
                                 <FaRegCalendarAlt />
                                 <span className="ml-1 text-xs underline group-hover:no-underline group-hover:text-sky-400 flex">
-                                    View Calendar
+                                    Xem Lịch
                                 </span>
                             </Link>
                         </div>
                     </div>
-                    <span className="text-sm">Nothing for the next week</span>
+                    <span className="text-sm">Không có sự kiện trong tuần tới</span>
 
                     <div className="mt-4">
                         <div className="mb-2">
-                            <CreateCourse title="Start a New Course" />
+                            <CreateCourse title="Tạo khoá học mới" />
                         </div>
                         <div>
                             <Button variant="outlined" className="w-full text-left">
-                                <Link to="grades">View grades</Link>
+                                <Link to="grades">Xem điểm</Link>
                             </Button>
                         </div>
                     </div>

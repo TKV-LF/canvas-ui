@@ -38,9 +38,9 @@ function Inbox() {
                 <div className="flex flex-row" style={{ height: 'calc(100% - 84px)' }}>
                     <div className="flex flex-col bg-dark-500 w-1/4 mr-1 px-0 h-full border-r">
                         <div className="flex items-center py-6 px-10">
-                            <span className="font-light text-xl text-light-200">Inbox</span>
+                            <span className="font-light text-xl text-light-200">Tin nhắn</span>
                             <div className="ml-2 w-5 h-4 rounded-full bg-gradient-to-br from-blue-200 to-blue-300 flex items-center justify-center text-2xs font-normal text-light-200">
-                                3
+                                0
                             </div>
                             <FontAwesomeIcon
                                 icon={faPlus}
@@ -48,7 +48,7 @@ function Inbox() {
                             />
                         </div>
                         <div className="px-10 pb-5 border-b">
-                            <span className="text-xs text-light-200">Recent</span>
+                            <span className="text-xs text-light-200">Gần nhất</span>
                             <FontAwesomeIcon icon={faCaretDown} className="text-light-200 text-xs ml-2" />
                         </div>
                         <div className="flex flex-col pb-10 overflow-y-auto">
@@ -67,7 +67,7 @@ function Inbox() {
                     ) : (
                         <div className="flex flex-col bg-dark-500 w-3/4 mx-auto px-auto text-center mt-16">
                             <AiOutlineInbox className="text-[124px] mx-auto" />
-                            No conversation selected
+                            Không có tin nhắn nào
                         </div>
                     )}
                 </div>

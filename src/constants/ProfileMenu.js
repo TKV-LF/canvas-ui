@@ -16,30 +16,11 @@ export const PROFILE_MENU_LIST = [
         path: '/profile/communication',
         icon: <NotificationsIcon></NotificationsIcon>,
     },
-    {
-        label: 'Thư mục',
-        path: '/files',
-        icon: <ArticleIcon></ArticleIcon>,
-    },
+ 
     {
         label: 'Cài đặt',
         path: '/profile/settings',
         icon: <SettingsIcon></SettingsIcon>,
-    },
-    {
-        label: 'ePortfolios',
-        path: '/dashboard/eportfolios',
-        icon: <NotificationsIcon></NotificationsIcon>,
-    },
-    {
-        label: 'Shared Content',
-        path: '/profile/content_shares',
-        icon: <NotificationsIcon></NotificationsIcon>,
-    },
-    {
-        label: 'Mã QR đăng nhập',
-        path: '/profile/qr_mobile_login',
-        icon: <QrCodeIcon></QrCodeIcon>,
     },
     {
         label: 'Thông báo tổng',

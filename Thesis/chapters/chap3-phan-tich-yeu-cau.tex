@@ -1,55 +1,176 @@
 \documentclass[../Thesis.tex]{subfiles}
 \begin{document}
 \section{Phân tích yêu cầu}
-    \subsection{Mục tiêu nghiên cứu}
-    Mục tiêu chính của nghiên cứu này là phát triển một hệ thống quản lý học tập tùy chỉnh dựa trên Canvas LMS để phục vụ cho các tổ chức giáo dục trước đại học ở Việt Nam. Để đạt được mục tiêu này, chúng ta sẽ tập trung vào việc thiết kế giao diện người dùng hấp dẫn, dễ sử dụng và phù hợp với đặc điểm địa phương và văn hóa của Việt Nam. Ngoài ra, chúng ta cũng sẽ xem xét các yếu tố quan trọng khác như trải nghiệm người dùng và tương tác giữa giảng viên và sinh viên trong môi trường học tập trực tuyến.
-    \subsection{Phương pháp nghiên cứu}
-    Trong quá trình nghiên cứu, chúng ta sẽ sử dụng phương pháp nghiên cứu kết hợp giữa phương pháp định tính và phương pháp định lượng. Đầu tiên, chúng ta sẽ tiến hành phỏng vấn và cuộc trao đổi với các chuyên gia giáo dục, giảng viên và sinh viên để hiểu rõ hơn về nhu cầu và yêu cầu của các tổ chức giáo dục trước đại học ở Việt Nam. Những thông tin thu thập từ cuộc phỏng vấn sẽ giúp xác định các yếu tố cần thiết trong thiết kế giao diện người dùng và các tính năng cần có trong hệ thống LMS.
+    \subsection{Yêu cầu chung}
+        Phần này tập trung vào việc xác định yêu cầu chung của đề tài phát triển một hệ thống học tập mới dựa trên Canvas LMS. Những yêu cầu này được xác định dựa trên nhu cầu và mong muốn của cộng đồng giáo dục, nhằm nâng cao trải nghiệm học tập và quản lý học tập trước đại học ở Việt Nam. Dưới đây là những yêu cầu chính mà hệ thống phải đáp ứng:
 
-    Tiếp theo, chúng ta sẽ tiến hành một cuộc khảo sát trực tuyến để thu thập ý kiến từ cộng đồng giảng viên và sinh viên về sự hài lòng và khó khăn khi sử dụng các hệ thống LMS hiện có. Kết quả từ cuộc khảo sát sẽ giúp định hình và đánh giá các vấn đề cần giải quyết trong quá trình phát triển hệ thống quản lý học tập tùy chỉnh.
+        \begin{enumerate}
+        
+            \item Giao diện người dùng thân thiện và dễ sử dụng:
+            Hệ thống cần có giao diện người dùng trực quan, dễ sử dụng và thân thiện với người dùng, bao gồm cả giảng viên và sinh viên.
+            Giao diện phải được tối ưu hóa để người dùng có thể dễ dàng tìm kiếm, truy cập và tương tác với các khóa học và tài liệu học tập.
+            
+            \item Tính linh hoạt và tùy chỉnh:
+            Hệ thống cần hỗ trợ tính linh hoạt và tùy chỉnh để phù hợp với các đặc thù và yêu cầu của các tổ chức giáo dục trước đại học ở Việt Nam.
+            Cần cung cấp các công cụ và chức năng cho phép giảng viên tùy chỉnh và quản lý nội dung học tập theo phong cách và quy trình của mình.
+            
+            \item Quản lý khóa học và nội dung học tập:
+            
+            Hệ thống cần hỗ trợ quản lý khóa học và nội dung học tập một cách hiệu quả.
+            Cần có khả năng tạo, chỉnh sửa và xóa khóa học, cũng như quản lý tài liệu, bài giảng, bài tập và tài nguyên học tập khác.
+            
+            \item Tương tác và giao tiếp:
+            Hệ thống phải hỗ trợ các tính năng tương tác và giao tiếp giữa giảng viên và sinh viên, cũng như giữa sinh viên với nhau.
+            Cần có khả năng gửi thông báo, thảo luận trực tuyến, chia sẻ tài liệu và tương tác qua các công cụ và phương tiện truyền thông khác nhau.
+            
+            \item Quản lý người dùng:
+            Hệ thống cần cung cấp chức năng quản lý người dùng, bao gồm đăng ký, xác thực, cấp quyền truy cập và quản lý thông tin cá nhân.
+            Cần có khả năng phân quyền truy cập dựa trên vai trò và trình độ của người dùng.
+            
+            \item Tính bảo mật và bảo mật thông tin:
+            Hệ thống phải đảm bảo tính bảo mật và bảo mật thông tin của người dùng và dữ liệu học tập.
+            Cần có các biện pháp bảo mật như xác thực, mã hóa và kiểm soát quyền truy cập để bảo vệ thông tin cá nhân và dữ liệu nhạy cảm.
+        \end{enumerate}
 
-    Ngoài ra, chúng ta cũng sẽ tiến hành thử nghiệm thực tế với một số tổ chức giáo dục trước đại học ở Việt Nam để kiểm tra tính khả dụng và hiệu quả của hệ thống LMS được phát triển. Các cuộc thử nghiệm này sẽ cho phép chúng ta thu thập phản hồi từ giảng viên và sinh viên, từ đó đánh giá và cải thiện hệ thống theo hướng tốt nhất.
-    \subsection{Phạm vi nghiên cứu}
-    Phạm vi của nghiên cứu sẽ tập trung vào việc phát triển một hệ thống quản lý học tập tùy chỉnh dựa trên Canvas LMS cho các tổ chức giáo dục trước đại học ở Việt Nam. Chúng ta sẽ tìm hiểu và phân tích các yêu cầu và nhu cầu của các tổ chức giáo dục này, từ đó xây dựng giao diện người dùng phù hợp và tích hợp các tính năng cần thiết để nâng cao trải nghiệm học tập trực tuyến. Nghiên cứu cũng sẽ xem xét các yếu tố địa phương và văn hóa trong thiết kế giao diện người dùng, nhằm đảm bảo tính tương thích và thân thiện với người dùng tại Việt Nam.
+        Qua việc phân tích yêu cầu chung này, chúng ta sẽ tạo ra một hệ thống học tập phù hợp với thị trường giáo dục trước đại học ở Việt Nam, cung cấp một trải nghiệm học tập tốt hơn và đáp ứng nhu cầu của cả giảng viên và sinh viên.  
+    
+    \subsection{Yêu cầu chức năng}
+    \renewcommand{\thesubsubsection}{\alph{subsubsection}.}
+        \subsubsection{Quản lý khoá học}
+            \begin{enumerate}
+                \item Tạo khoá học
+                    \begin{itemize}[label=$\bullet$]
+                        \item Hệ thống nên cho phép người quản trị chỉnh sửa thông tin của khoá học một cách linh hoạt và nhanh chóng.
+                        \item Người quản trị ƒcần có khả năng thay đổi thông tin như tên khoá học, mô tả, và giảng viên chịu trách nhiệm.
+                        \item Giao diện chỉnh sửa khoá học nên cho phép người quản trị cập nhật thông tin liên quan đến thời gian và mục tiêu học tập, cũng như quản lý danh sách sinh viên đã đăng ký và thiết lập các ràng buộc về số lượng sinh viên.
+                    \end{itemize}
 
-    Hạn chế về thời gian và nguồn lực sẽ hạn chế phạm vi nghiên cứu chỉ trong phạm vi các tổ chức giáo dục trước đại học ở Việt Nam. Tuy nhiên, các kết quả và phương pháp nghiên cứu có thể được áp dụng và mở rộng sang các tổ chức giáo dục khác và các quốc gia khác trong tương lai.
+                \item Chỉnh sửa khoá học
+                    \begin{itemize}[label=$\bullet$]
+                        \item Hệ thống cần cung cấp giao diện cho phép người quản trị tạo mới khoá học một cách dễ dàng và linh hoạt.
+                        \item Người quản trị nên có khả năng nhập các thông tin cần thiết về khoá học như tên khoá học, mô tả, mục tiêu học tập, và giảng viên chịu trách nhiệm.
+                        \item Giao diện tạo khoá học cần cho phép người quản trị thiết lập thời gian bắt đầu và kết thúc của khoá học, quy định các đợt đăng ký, và thiết lập các ràng buộc về số lượng sinh viên tối đa.
+                    \end{itemize}
+                \item Xoá khoá học
+                    \begin{itemize}[label=$\bullet$]
+                        \item Hệ thống cần cung cấp giao diện cho phép người quản trị xoá khoá học một cách dễ dàng và linh hoạt.
+                        \item Người quản trị nên có khả năng xoá khoá học một cách nhanh chóng và dễ dàng.
+                        \item Giao diện xoá khoá học cần cho phép người quản trị xác nhận lại thông tin của khoá học trước khi xoá.
+                    \end{itemize}
+            \end{enumerate}
 
-    Trên cơ sở phạm vi nghiên cứu được xác định, chúng ta sẽ tiến hành các bước nghiên cứu chi tiết như đã trình bày trong các mục sau để đạt được mục tiêu nghiên cứu và giải quyết các vấn đề đã đề ra.
-\section{Phương pháp thu thập dữ liệu}
-Trong phần này, chúng tôi mô tả phương pháp thu thập dữ liệu được sử dụng trong nghiên cứu của chúng tôi để thu thập thông tin liên quan đến việc phát triển hệ thống quản lý học tập tùy chỉnh dựa trên Canvas LMS cho các tổ chức giáo dục trước đại học ở Việt Nam.
-    \subsection{Phương pháp nghiên cứu đánh giá}
-    Để đạt được mục tiêu nghiên cứu, chúng tôi áp dụng phương pháp nghiên cứu đánh giá để thu thập thông tin cần thiết. Điều này bao gồm việc xây dựng một mô hình đánh giá toàn diện để đo lường hiệu quả của hệ thống quản lý học tập tùy chỉnh dựa trên Canvas LMS trong việc cải thiện quá trình giảng dạy và học tập tại các tổ chức giáo dục trước đại học.
-    \subsection{Phương pháp khảo sát}
-    Chúng tôi cũng sử dụng phương pháp khảo sát để thu thập dữ liệu từ các giảng viên và sinh viên trong các tổ chức giáo dục trước đại học. Chúng tôi thiết kế một bộ câu hỏi khảo sát để đánh giá ý kiến, quan điểm và trải nghiệm của họ về việc sử dụng hệ thống quản lý học tập tùy chỉnh dựa trên Canvas LMS. Các câu hỏi trong khảo sát được xây dựng một cách cân nhắc để thu thập thông tin chi tiết về các yếu tố như tương tác người dùng, giao diện người dùng, tính năng và chức năng, hiệu quả giảng dạy và học tập, và sự tương thích với nhu cầu của các tổ chức giáo dục.
-\section{Phương pháp phân tích dữ liệu}
-Trong phần này, chúng tôi mô tả phương pháp phân tích dữ liệu được áp dụng trong nghiên cứu của chúng tôi để xử lý và hiểu thông tin thu thập từ các phương pháp thu thập dữ liệu đã được đề cập ở phần trước.
-    \subsection{Phân tích dữ liệu định lượng}
-    Chúng tôi sử dụng phương pháp phân tích dữ liệu định lượng để xử lý các dữ liệu thu thập từ khảo sát. Sau khi thu thập được câu trả lời từ các khảo sát, chúng tôi sẽ sắp xếp và tổ chức dữ liệu một cách cẩn thận. Tiếp theo, chúng tôi sẽ sử dụng các phương pháp thống kê và phân tích số liệu như phân tích tần số, phân tích tương quan và phân tích đa biến để hiểu rõ hơn về quan điểm, ý kiến và trải nghiệm của giảng viên và sinh viên về hệ thống quản lý học tập tùy chỉnh dựa trên Canvas LMS.
-    \subsection{Phân tích nội dung}
-    Đối với phương pháp thu thập dữ liệu từ tài liệu và các nguồn thông tin trực tuyến, chúng tôi sử dụng phương pháp phân tích nội dung. Chúng tôi tiến hành đọc và nghiên cứu các tài liệu liên quan, bài viết, sách và các nguồn thông tin khác để xác định các yếu tố quan trọng, tiêu chuẩn và quy trình liên quan đến việc phát triển hệ thống quản lý học tập tùy chỉnh dựa trên Canvas LMS. Chúng tôi rút ra các khái niệm, xu hướng và phương pháp từ tài liệu để đánh giá và so sánh với kết quả của nghiên cứu của chúng tôi.
-    \subsection{Phân tích chất lượng dữ liệu}
-    Cuối cùng, chúng tôi cũng thực hiện phân tích chất lượng dữ liệu để đảm bảo tính tin cậy và khả năng diễn giải của kết quả nghiên cứu. Chúng tôi kiểm tra các yếu tố như độ tin cậy của dữ liệu, độ đo và độ chính xác của kết quả thu thập để đảm bảo rằng dữ liệu thu được là đáng tin cậy và có thể sử dụng để đưa ra những
-\section{Thiết kế lấy người dùng làm trung tâm}
-Trong phần này, chúng tôi trình bày về tiếp cận thiết kế tập trung người dùng (User-Centered Design - UCD) được áp dụng trong quá trình phát triển hệ thống quản lý học tập tùy chỉnh dựa trên Canvas LMS. UCD là một phương pháp thiết kế dựa trên nghiên cứu và hiểu rõ nhu cầu, mong muốn, và hành vi của người dùng cuối để tạo ra một giao diện người dùng thân thiện, dễ sử dụng và mang lại trải nghiệm tốt cho người dùng.
+        \subsubsection{Quản lý nội dung học tập}
 
-Đầu tiên, chúng tôi tiến hành việc thu thập thông tin về người dùng tiềm năng của hệ thống quản lý học tập trước đại học. Chúng tôi tiến hành các cuộc phỏng vấn, khảo sát và quan sát người dùng để hiểu rõ nhu cầu, yêu cầu và thói quen của họ trong việc sử dụng hệ thống quản lý học tập.
+            \begin{enumerate}
+                \item Tạo và quản lý các tài liệu học tập:
+                    \begin{itemize}[label=$\bullet$]
+                        
+                        \item Hệ thống cần cung cấp giao diện cho phép giảng viên tạo mới tài liệu học tập một cách dễ dàng và linh hoạt.
+                        
+                        \item Giao diện quản lý nội dung học tập nên cho phép người quản trị tổ chức, phân loại, và đánh dấu các tài liệu theo danh mục, chủ đề, và khóa học tương ứng.
+                    \end{itemize}
 
-Tiếp theo, chúng tôi thực hiện quá trình phân tích và xử lý dữ liệu thu thập từ người dùng. Chúng tôi sử dụng các phương pháp như phân tích người dùng, phân tích tác vụ và phân tích yêu cầu để định rõ các chức năng và tính năng cần có trong giao diện người dùng của hệ thống.
+                \item Tạo và quản lý các bài tập:
+                    \begin{itemize}[label=$\bullet$]
+                        \item Hệ thống cần cung cấp giao diện cho phép giảng viên tạo mới bài tập một cách dễ dàng và linh hoạt.
+                        \item Người quản trị nên có khả
+                        \item Giao diện quản lý nội dung học tập nên cho phép người quản trị tổ chức, phân loại, và đánh dấu các bài tập theo danh mục, chủ đề, và khóa học tương ứng.
+                    \end{itemize}
+            \end{enumerate}
 
-Dựa trên thông tin thu thập được và các phân tích trên, chúng tôi tiến hành quá trình thiết kế giao diện người dùng. Chúng tôi sử dụng các phương pháp như thiết kế dựa trên nguyên tắc, thiết kế người dùng và kiểm định để tạo ra các bản thiết kế giao diện người dùng sáng tạo và phù hợp với nhu cầu và mong muốn của người dùng.
+        \subsubsection{Tương tác và giao tiếp}
 
-Sau đó, chúng tôi thực hiện các vòng lặp thử nghiệm và đánh giá để kiểm tra và cải thiện giao diện người dùng. Chúng tôi tiến hành các cuộc thử nghiệm người dùng, thu thập phản hồi và tiến hành các điều chỉnh và cải tiến dựa trên phản hồi đó để đảm bảo rằng giao diện người dùng đáp ứng tốt nhu cầu và yêu cầu của người dùng.
+            Hệ thống cần hỗ trợ các tính năng tương tác và giao tiếp giữa giảng viên và sinh viên, bao gồm:
 
-Cuối cùng, chúng tôi tạo ra một thiết kế giao diện người dùng cuối cùng cho hệ thống quản lý học tập tùy chỉnh dựa trên Canvas LMS dựa trên quá trình thiết kế tập trung người dùng. Thiết kế này sẽ tối ưu hóa trải nghiệm người dùng, cung cấp tính tương thích, tùy chỉnh và dễ sử dụng cho các tổ chức giáo dục trước đại học ở Việt Nam.
+            \begin{enumerate}
+                \item {Phần thảo luận}
+                
+                    Hệ thống cần hỗ trợ tính năng gửi thông báo và nhắc nhở đến người dùng để thông báo các sự kiện quan trọng trong quá trình học tập, bao gồm:
+                    \begin{itemize}[label=$\bullet$]
+                        \item Thảo luận trong khóa học: Hệ thống nên cho phép tạo các diễn đàn thảo luận hoặc bài viết để giảng viên và sinh viên có thể chia sẻ ý kiến, bình luận và trao đổi thông tin với nhau. Điều này giúp tạo ra một không gian trao đổi ý kiến, khám phá ý kiến đa dạng và khuyến khích sự tương tác trong quá trình học tập.
 
-\section{Phát triển nguyên mẫu}
-Trong phần này, chúng tôi trình bày về quá trình phát triển nguyên mẫu của hệ thống quản lý học tập tùy chỉnh dựa trên Canvas LMS cho các tổ chức giáo dục trước đại học ở Việt Nam. Phát triển nguyên mẫu là một giai đoạn quan trọng trong quá trình thiết kế và phát triển hệ thống, nó giúp chúng tôi kiểm tra và đánh giá hiệu quả của các tính năng và chức năng được đề xuất.
+                        \item Chat trực tuyến: Hệ thống cần hỗ trợ tính năng chat trực tuyến để giảng viên và sinh viên có thể trò chuyện và trao đổi thông tin nhanh chóng. Chat trực tuyến giúp tạo ra một kênh giao tiếp trực tiếp giữa người dùng, giúp hỗ trợ giảng dạy và giải đáp thắc mắc một cách nhanh nhất.
 
-Đầu tiên, chúng tôi xây dựng một nguyên mẫu tương tác (interactive prototype) dựa trên thiết kế giao diện người dùng đã hoàn thiện từ giai đoạn trước. Nguyên mẫu tương tác cho phép người dùng tương tác với giao diện và trải nghiệm các tính năng và chức năng của hệ thống trong môi trường ảo.
+                        \item Tạo và quản lý nhóm thảo luận: Hệ thống nên cho phép giảng viên tạo và quản lý các nhóm thảo luận để sinh viên có thể làm việc nhóm, thảo luận và chia sẻ tài liệu. Tính năng này giúp tạo ra một môi trường học tập cộng đồng, khuyến khích sự hợp tác và trao đổi thông tin giữa các thành viên trong nhóm.
 
-Tiếp theo, chúng tôi tiến hành quá trình thử nghiệm nguyên mẫu với người dùng thực tế. Chúng tôi tổ chức các buổi thảo luận, phỏng vấn và thu thập phản hồi từ người dùng để đánh giá sự tương tác, trải nghiệm và hiệu quả của nguyên mẫu.
+                    \end{itemize}
 
-Dựa trên phản hồi từ người dùng, chúng tôi tiến hành điều chỉnh và cải tiến nguyên mẫu, bao gồm cả giao diện người dùng và các tính năng, để đảm bảo rằng hệ thống đáp ứng tốt nhu cầu và mong muốn của người dùng.
+                \item {Phần gửi thông báo}
+                
+                    Hệ thống cần hỗ trợ tính năng gửi thông báo và nhắc nhở đến người dùng để thông báo về các sự kiện, nhiệm vụ, hoặc tin tức quan trọng khác. Các tính năng trong phần này bao gồm:
+                    \begin{itemize}[label=$\bullet$]
+                    
+                        \item Gửi thông báo cá nhân: Hệ thống nên cho phép giảng viên gửi thông báo cá nhân đến từng sinh viên, thông báo về các thay đổi trong lịch học, nhắc nhở về các deadline hoặc cập nhật thông tin quan trọng. Điều này giúp đảm bảo thông tin được truyền tải một cách hiệu quả và đồng bộ giữa giảng viên và sinh viên.
+                        
+                        \item Thông báo khóa học: Hệ thống nên cho phép giảng viên gửi thông báo đến toàn bộ lớp học hoặc nhóm sinh viên, thông báo về những thay đổi quan trọng, thông tin chung về khóa học, hoặc cung cấp các thông tin phụ trợ liên quan đến quá trình học tập.
+                        
+                        \item Tính năng nhắc nhở: Hệ thống nên có tính năng nhắc nhở để gửi thông báo nhắc nhở đến người dùng về các nhiệm vụ, bài tập hoặc sự kiện quan trọng. Nhắc nhở giúp đảm bảo người dùng không bỏ qua các hoạt động quan trọng và giúp duy trì sự đồng bộ trong quá trình học tập.
+                    \end{itemize}
+            
+            \end{enumerate}
 
-Qua quá trình phát triển nguyên mẫu, chúng tôi nhận được phản hồi quan trọng từ người dùng và cải thiện đáng kể giao diện người dùng và trải nghiệm người dùng của hệ thống quản lý học tập. Nguyên mẫu tương tác cung cấp một cái nhìn trực quan về cách hệ thống sẽ hoạt động và cho phép chúng tôi thực hiện các điều chỉnh cuối cùng trước khi tiến hành giai đoạn triển khai và triển khai thực tế.
-\end{document}
+        \subsubsection{Quản lý người dùng}
+            \begin{enumerate}
+                \item Đăng ký và xác thực:
+                    \begin{itemize}[label=$\bullet$]
+                        \item Hệ thống cần cung cấp giao diện đăng ký tài khoản mới cho người dùng. Giao diện này nên yêu cầu người dùng nhập thông tin cần thiết như tên, địa chỉ email, mật khẩu và các thông tin cá nhân khác.
+                        \item Sau khi người dùng đăng ký, hệ thống phải tiến hành quá trình xác thực tài khoản để đảm bảo tính bảo mật và tránh truy cập trái phép. Quá trình này có thể bao gồm việc gửi email xác nhận hoặc mã xác thực qua tin nhắn SMS.
+                    \end{itemize}
+
+                \item Quản lý thông tin cá nhân:
+                    \begin{itemize}[label=$\bullet$]
+                        \item Hệ thống cần cung cấp giao diện cho phép người dùng quản lý thông tin cá nhân của mình. Người dùng nên có khả năng cập nhật và chỉnh sửa thông tin cá nhân như địa chỉ, số điện thoại, ngày sinh, giới tính và hình ảnh đại diện.
+                        \item Ngoài ra, hệ thống cần cho phép người dùng cung cấp thông tin về học tập như trường học, ngành học, khóa học đang tham gia và quá trình học tập trước đây. Thông tin này giúp cung cấp cái nhìn tổng quan về hồ sơ học tập của người dùng.
+                    \end{itemize}
+
+                \item Phân quyền truy cập:
+                    \begin{itemize}[label=$\bullet$]
+                        \item Hệ thống cần hỗ trợ phân quyền truy cập dựa trên vai trò và trình độ của người dùng. Điều này đảm bảo rằng mỗi người dùng chỉ có quyền truy cập vào những khóa học và nội dung tương ứng với vai trò và trình độ của họ.
+
+                        \item Hệ thống cũng nên hỗ trợ chức năng phân nhóm người dùng, cho phép quản trị viên tổ chức người dùng thành các nhóm dựa trên tiêu chí như khóa học, khoa, ngành học, v.v. Điều này giúp quản lý và tương tác với người dùng dễ dàng hơn.
+                    \end{itemize}
+
+                \item Quản lý danh sách người dùng
+                    \begin{itemize}[label=$\bullet$]
+                        \item Hệ thống cần cung cấp chức năng quản lý danh sách người dùng, bao gồm giảng viên và sinh viên. Quản trị viên hệ thống nên có khả năng tìm kiếm, xem và chỉnh sửa thông tin của người dùng.
+
+                        \item Quản trị viên hệ thống cần có quyền kiểm soát và quản lý các vai trò người dùng, bao gồm việc thêm mới, chỉnh sửa và xóa vai trò. Quản trị viên cũng có khả năng thiết lập các quyền truy cập cho từng vai trò, đảm bảo tính linh hoạt và an toàn của hệ thống.
+                    \end{itemize}
+
+                \item Ghi nhận hoạt động người dùng
+                    \begin{itemize}[label=$\bullet$]
+                        \item Hệ thống cần có khả năng ghi nhận hoạt động của người dùng, bao gồm lịch sử đăng nhập, thao tác trên giao diện, và các tương tác khác. Việc ghi nhận này giúp theo dõi và kiểm tra hoạt động của người dùng, đảm bảo tính an toàn và chính xác của dữ liệu.
+                    \end{itemize}
+            \end{enumerate}
+
+        \subsubsection{Tính bảo mật và bảo mật thông tin}
+
+    \subsection{Yêu cầu phi chức năng}
+        \subsubsection{Yêu cầu hiệu suất}
+
+        \subsubsection{Yêu cầu bảo mật}
+
+        \subsubsection{Yêu cầu quản lý}
+
+        \subsubsection{Yêu cầu hệ thống}
+
+        \subsubsection{Yêu cầu phát triển}
+
+        \subsubsection{Yêu cầu hỗ trợ}
+
+        \subsubsection{Yêu cầu bảo trì}
+
+    \subsection{Yêu cầu hệ thống}
+
+
+  
+  
+  
+  
+    % \subsection{Phương pháp nghiên cứu}
+    % Trong quá trình nghiên cứu, chúng ta sẽ sử dụng phương pháp nghiên cứu kết hợp giữa phương pháp định tính và phương pháp định lượng. Đầu tiên, chúng ta sẽ tiến hành phỏng vấn và cuộc trao đổi với các chuyên gia giáo dục, giảng viên và sinh viên để hiểu rõ hơn về nhu cầu và yêu cầu của các tổ chức giáo dục trước đại học ở Việt Nam. Những thông tin thu thập từ cuộc phỏng vấn sẽ giúp xác định các yếu tố cần thiết trong thiết kế giao diện người dùng và các tính năng cần có trong hệ thống LMS.
+
+    % Tiếp theo, chúng ta sẽ tiến hành một cuộc khảo sát trực tuyến để thu thập ý kiến từ cộng đồng giảng viên và sinh viên về sự hài lòng và khó khăn khi sử dụng các hệ thống LMS hiện có. Kết quả từ cuộc khảo sát sẽ giúp định hình và đánh giá các vấn đề cần giải quyết trong quá trình phát triển hệ thống quản lý học tập tùy chỉnh.
+
+    % Ngoài ra, chúng ta cũng sẽ tiến hành thử nghiệm thực tế với một số tổ chức giáo dục trước đại học ở Việt Nam để kiểm tra tính khả dụng và hiệu quả của hệ thống LMS được phát triển. Các cuộc thử nghiệm này sẽ cho phép chúng ta thu thập phản hồi từ giảng viên và sinh viên, từ đó đánh giá và cải thiện hệ thống theo hướng tốt nhất.
+    

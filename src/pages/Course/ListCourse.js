@@ -18,32 +18,32 @@ import CreateCourse from './CreateCourse';
 import { notification } from 'antd';
 
 const columns = [
-    { id: 'course', label: 'Course', minWidth: 170 },
-    { id: 'nickname', label: 'Nickname', minWidth: 100 },
+    { id: 'course', label: 'Khoá học', minWidth: 170 },
+    { id: 'nickname', label: 'Biệt danh', minWidth: 100 },
     {
         id: 'term',
-        label: 'Term',
+        label: 'Học kỳ',
         minWidth: 170,
         align: 'right',
         format: (value) => value.toLocaleString('en-US'),
     },
     {
         id: 'enrolled',
-        label: 'Enrolled as',
+        label: 'Vai trò',
         minWidth: 170,
         align: 'right',
         format: (value) => value.toLocaleString('en-US'),
     },
     {
         id: 'published',
-        label: 'Published',
+        label: 'Công khai',
         minWidth: 170,
         align: 'right',
         format: (value) => value.toFixed(2),
     },
     {
         id: 'action',
-        label: 'Action',
+        label: '',
         minWidth: 30,
         align: 'right',
         format: (value) => value.toFixed(2),
