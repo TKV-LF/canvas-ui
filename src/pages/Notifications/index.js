@@ -1,9 +1,9 @@
 import useHead from '~/hooks/useHead';
-function Communication() {
+function Notifications() {
     useHead({
-        title: 'Communication',
+        title: 'Thông báo',
     });
     return <h1>Hey Hey</h1>;
 }
 
-export default Communication;
+export default Notifications;

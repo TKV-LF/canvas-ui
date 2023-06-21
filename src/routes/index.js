@@ -1,19 +1,8 @@
 // upload
-import ProfileLayout from '~/components/Layouts/ProfileLayout';
-import {
-    Home,
-    Dashboard,
-    Login,
-    ListCourse,
-    Course,
-    Calendar,
-    Inbox,
-    Grades,
-    Profile,
-    Assignments,
-    Assignment,
-} from '~/pages';
-import Communication from '~/pages/Communication';
+import SettingLayout from '~/components/Layouts/SettingLayout';
+import { Home, Dashboard, Login, ListCourse, Course, Calendar, Inbox, Grades, Assignments, Assignment } from '~/pages';
+import {Notification, Profile, Announcement} from '~/pages/Settings';
+
 import withAuth from '~/components/withAuth';
 
 const publicRoutes = [
@@ -48,7 +37,7 @@ const publicRoutes = [
     {
         path: '/profile',
         component: Profile,
-        layout: ProfileLayout,
+        layout: SettingLayout,
     },
     {
         path: '/admin',
@@ -73,9 +62,25 @@ const publicRoutes = [
         component: Grades,
     },
     {
-        path: '/profile/communication',
-        component: Communication,
-        layout: ProfileLayout,
+        path: '/settings',
+        component: Profile,
+        layout: SettingLayout,
+        default: '/settings/profile',
+    },
+    {
+        path: '/settings/notifications',
+        component: Notification,
+        layout: SettingLayout,
+    },
+    {
+        path: '/settings/announcement',
+        component: Announcement,
+        layout: SettingLayout,
+    },
+    {
+        path: '/settings/profile',
+        component: Profile,
+        layout: SettingLayout,
     },
 ];
 
