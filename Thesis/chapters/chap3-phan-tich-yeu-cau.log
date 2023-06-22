@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.9)  21 JUN 2023 21:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.9)  22 JUN 2023 21:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -251,8 +251,6 @@ Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 \EndVerbatimTokens=\toks23
 \Verbatim@Outfile=\write3
 \Verbatim@Infile=\read2
-) (/usr/local/texlive/2023/texmf-dist/tex/latex/tools/indentfirst.sty
-Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks24
@@ -829,7 +827,7 @@ Package: setspace 2022/12/04 v6.7b set line spacing
 Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
 )
 
-LaTeX Warning: \include should only be used after \begin{document} on input line 37.
+LaTeX Warning: \include should only be used after \begin{document} on input line 36.
 
 (..//lstlisting.tex (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count437
@@ -970,33 +968,33 @@ Package: hypcap 2016/05/16 v1.12 Adjusting the anchors of captions (HO)
 ))
 \@quotelevel=\count458
 \@quotereset=\count459
-LaTeX Font Info:    Trying to load font information for T5+ptm on input line 2.
+LaTeX Font Info:    Trying to load font information for T5+ptm on input line 4.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/vntex/t5ptm.fd
 File: t5utm.fd 2005/08/24 Fontinst v1.929 font definitions for T5/ptm.
 )
 No file chap3-phan-tich-yeu-cau.aux.
 \openout1 = `chap3-phan-tich-yeu-cau.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1070,28 +1068,38 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'chap3-phan-tich-yeu-cau.bbl' not found.
 
 No file chap3-phan-tich-yeu-cau.bbl.
-Package biblatex Info: Reference section=0 on input line 2.
-Package biblatex Info: Reference segment=0 on input line 2.
+Package biblatex Info: Reference section=0 on input line 4.
+Package biblatex Info: Reference segment=0 on input line 4.
 \c@lstlisting=\count466
-Package hyperref Info: Link coloring OFF on input line 2.
+Package hyperref Info: Link coloring OFF on input line 4.
 \@outlinefile=\write5
 \openout5 = `chap3-phan-tich-yeu-cau.out'.
 
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 43.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 11.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 43.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 11.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 11.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/vntex/t5.enc}
+)
+/Users/thuynt/Working/canvas-ui/Thesis/chapters/chap3-phan-tich-yeu-cau.tex:41: Undefined control sequence.
+l.41         \subsubsubsection
+                              {Quản lý khoá học}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/vntex/t5.enc}
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 44.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 46.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [2{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc}] [3] [4])
@@ -1102,11 +1110,11 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 
  
 Here is how much of TeX's memory you used:
- 26844 strings out of 476025
- 471153 string characters out of 5790018
- 1866388 words of memory out of 5000000
- 46831 multiletter control sequences out of 15000+600000
+ 26816 strings out of 476025
+ 470370 string characters out of 5790018
+ 1865388 words of memory out of 5000000
+ 46813 multiletter control sequences out of 15000+600000
  535458 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,12n,107p,2369b,854s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 114i,12n,107p,2380b,854s stack positions out of 10000i,1000n,20000p,200000b,200000s
 !  ==> Fatal error occurred, no output PDF file produced!

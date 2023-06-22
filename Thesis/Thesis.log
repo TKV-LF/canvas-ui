@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.9)  21 JUN 2023 21:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.9)  22 JUN 2023 21:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -246,8 +246,6 @@ Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 \EndVerbatimTokens=\toks23
 \Verbatim@Outfile=\write3
 \Verbatim@Infile=\read2
-) (/usr/local/texlive/2023/texmf-dist/tex/latex/tools/indentfirst.sty
-Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks24
@@ -826,7 +824,7 @@ Package: setspace 2022/12/04 v6.7b set line spacing
 Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
 )
 
-LaTeX Warning: \include should only be used after \begin{document} on input line 37.
+LaTeX Warning: \include should only be used after \begin{document} on input line 36.
 
 (./lstlisting.tex (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count437
@@ -966,32 +964,32 @@ Package: hypcap 2016/05/16 v1.12 Adjusting the anchors of captions (HO)
 \c@example=\count457
 \@quotelevel=\count458
 \@quotereset=\count459
-LaTeX Font Info:    Trying to load font information for T5+ptm on input line 95.
+LaTeX Font Info:    Trying to load font information for T5+ptm on input line 93.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/vntex/t5ptm.fd
 File: t5utm.fd 2005/08/24 Fontinst v1.929 font definitions for T5/ptm.
 ) (./Thesis.aux)
 \openout1 = `Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1066,10 +1064,10 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Thesis.bbl' not found.
 
 No file Thesis.bbl.
-Package biblatex Info: Reference section=0 on input line 95.
-Package biblatex Info: Reference segment=0 on input line 95.
+Package biblatex Info: Reference section=0 on input line 93.
+Package biblatex Info: Reference segment=0 on input line 93.
 \c@lstlisting=\count466
-Package hyperref Info: Link coloring OFF on input line 95.
+Package hyperref Info: Link coloring OFF on input line 93.
 (./Thesis.out) (./Thesis.out)
 \@outlinefile=\write5
 \openout5 = `Thesis.out'.
@@ -1107,7 +1105,7 @@ Package hyperref Info: Link coloring OFF on input line 95.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
  (./cover.tex
-<figures//logo.png, id=144, 1204.5pt x 1002.74625pt>
+<figures//logo.png, id=108, 1204.5pt x 1002.74625pt>
 File: figures//logo.png Graphic file (type png)
 <use figures//logo.png>
 Package pdftex.def Info: figures//logo.png  used on input line 14.
@@ -1127,19 +1125,36 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
-
-
-])
+))
 \tf@toc=\write6
 \openout6 = `Thesis.toc'.
+
+ [1
+
+
+] (./Thesis.lof)
+\tf@lof=\write7
+\openout7 = `Thesis.lof'.
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.116 \newpage
-               [2]
+l.104 \newpage
+               [2
+
+] (./Thesis.lot)
+\tf@lot=\write8
+\openout8 = `Thesis.lot'.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.114 \newpage
+               [3
+
+]
 Ch\uhorn \ohorn ng 1.
 (./chapters/chap1-tong-quan.tex
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
@@ -1153,7 +1168,7 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 25
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-<figures//lms-market.jpg, id=201, 2168.1pt x 1409.265pt>
+<figures//lms-market.jpg, id=162, 2168.1pt x 1409.265pt>
 File: figures//lms-market.jpg Graphic file (type jpg)
 <use figures//lms-market.jpg>
 Package pdftex.def Info: figures//lms-market.jpg  used on input line 38.
@@ -1166,9 +1181,9 @@ Ch\uhorn \ohorn ng 2.
 Ch\uhorn \ohorn ng 3.
 (./chapters/chap3-phan-tich-yeu-cau.tex [14
 
-] [15] [16] [17]) [18] [19]
+] [15] [16] [17]) [18]
 
-LaTeX Warning: Empty bibliography on input line 139.
+LaTeX Warning: Empty bibliography on input line 137.
 
 
 Package glossaries Warning: No \printnoidxglossary or \printnoidxglossaries
@@ -1179,8 +1194,14 @@ This document will not have a glossary.
 
 LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: CAB43274B06795108A84698B60FC899C;7337.
+
+Package rerunfilecheck Warning: File `Thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Thesis.out':
+(rerunfilecheck)             Before: C10AB8587427A2F9E8C348EE31BCB98F;5781
+(rerunfilecheck)             After:  1C96C19E5E750A0126126FCAC202827F;5782.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                Thesis
@@ -1191,18 +1212,24 @@ Package logreq Info: Writing requests to 'Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27043 strings out of 476025
- 473990 string characters out of 5790018
- 1863388 words of memory out of 5000000
- 46939 multiletter control sequences out of 15000+600000
+ 26998 strings out of 476025
+ 472922 string characters out of 5790018
+ 1862388 words of memory out of 5000000
+ 46918 multiletter control sequences out of 15000+600000
  544513 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,9n,90p,2303b,854s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,10n,90p,2303b,854s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{paragraph.3.1.2.0.2} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{paragraph.3.1.2.0.1} has been referenced but does not exist, replaced by a fixed one
+
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/urwvn/utmb8v.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.pfb>
-Output written on Thesis.pdf (22 pages, 1055423 bytes).
+Output written on Thesis.pdf (22 pages, 1053514 bytes).
 PDF statistics:
- 362 PDF objects out of 1000 (max. 8388607)
- 323 compressed objects within 4 object streams
- 95 named destinations out of 1000 (max. 500000)
- 291 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 294 PDF objects out of 1000 (max. 8388607)
+ 256 compressed objects within 3 object streams
+ 68 named destinations out of 1000 (max. 500000)
+ 219 words of extra memory for PDF output out of 10000 (max. 10000000)
 

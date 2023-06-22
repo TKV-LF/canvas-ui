@@ -3,7 +3,6 @@
 \usepackage[top=2.5cm, bottom=2.5cm, left=3cm, right=2cm] {geometry} % Canh lề trang
 \usepackage{graphicx} % Cho phép chèn hỉnh ảnh
 \usepackage{fancybox} % Tạo khung box
-\usepackage{indentfirst} % Thụt đầu dòng ở dòng đầu tiên trong đoạn
 \usepackage{amsthm} % Cho phép thêm các môi trường định nghĩa
 \usepackage{latexsym} % Các kí hiệu toán học
 \usepackage{amsmath} % Hỗ trợ một số biểu thức toán học
@@ -82,15 +81,14 @@ pdfmenubar=false % Ẩn đi menu bar trong PDF viewer
 \title{\bf \TITLE}
 \author{\AUTHOR}
 
-\setcounter{secnumdepth}{3} % Cho phép subsubsection trong report
-\setcounter{tocdepth}{3} % Chèn subsubsection vào bảng mục lục
+\setcounter{secnumdepth}{4} % Cho phép subsubsection trong report
+\setcounter{tocdepth}{4} % Chèn subsubsection vào bảng mục lục
 
 \theoremstyle{definition}
 \newtheorem{example}{Ví dụ}[chapter] % Định nghĩa môi trường ví dụ
 
 \onehalfspacing
 \setlength{\parskip}{6pt}
-\setlength{\parindent}{15pt}
 
 \begin{document}
 \newgeometry{top=2cm, bottom=2cm, left=2cm, right=2cm}
@@ -101,10 +99,10 @@ pdfmenubar=false % Ẩn đi menu bar trong PDF viewer
 \newpage
 \pagenumbering{gobble} % Xóa page numbering ở cuối trang
 \tableofcontents % Mục lục
-% \newpage
-% \listoffigures % Danh sách các hình ảnh
-% \newpage
-% \listoftables % Danh sách bảng biểu
+\newpage
+\listoffigures % Danh sách các hình ảnh
+\newpage
+\listoftables % Danh sách bảng biểu
 
 \glsaddall
 % \renewcommand*{\glossaryname}{Danh sách thuật ngữ}

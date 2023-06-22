@@ -80,10 +80,10 @@ export default function CreateAssignmentForm({ title, css, assignmentGroups }) {
             return;
         }
 
-        if (attempt < 0 || isNaN(attempt)) {
+        if (isNaN(attempt)) {
             notification.error({
                 message: 'Lỗi',
-                description: 'Số lần thử phải là số nguyên dương',
+                description: 'Số lần thử phải là số',
             });
             return;
         }
@@ -156,7 +156,7 @@ export default function CreateAssignmentForm({ title, css, assignmentGroups }) {
                 lock_at: isoAvailableUntil,
                 published: isPublished,
                 description: content,
-                allowed_attemp: attempt,
+                allowed_attemp: parseInt(attempt),
             },
         };
 

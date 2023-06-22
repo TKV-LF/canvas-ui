@@ -158,19 +158,25 @@ const Assignment = () => {
                                     <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                                         <dt className="text-sm font-medium text-gray-500">Hạn nộp</dt>
                                         <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                            {assignment.due_at.substring(0, 10)}
+                                            {assignment.due_at
+                                                ? assignment.due_at.substring(0, 10)
+                                                : 'Không có hạn nộp'}
                                         </dd>
                                     </div>
                                     <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                                         <dt className="text-sm font-medium text-gray-500">Bắt đầu</dt>
                                         <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                            {assignment.unlock_at.substring(0, 10)}
+                                            {assignment.unlock_at
+                                                ? assignment.unlock_at.substring(0, 10)
+                                                : 'Không có hạn nộp'}
                                         </dd>
                                     </div>
                                     <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                                         <dt className="text-sm font-medium text-gray-500">Kết thúc</dt>
                                         <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                            {assignment.lock_at.substring(0, 10)}
+                                            {assignment.lock_at
+                                                ? assignment.lock_at.substring(0, 10)
+                                                : 'Không có hạn nộp'}
                                         </dd>
                                     </div>
                                 </dl>
