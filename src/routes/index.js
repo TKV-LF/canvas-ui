@@ -4,6 +4,7 @@ import { Home, Dashboard, Login, ListCourse, Course, Calendar, Inbox, Grades, As
 import {Notification, Profile, Announcement} from '~/pages/Settings';
 
 import withAuth from '~/components/withAuth';
+import EditAssignmentForm from '~/pages/Course/Assignments/Assignment/EditAssignment'
 
 const publicRoutes = [
     {
@@ -33,6 +34,10 @@ const publicRoutes = [
     {
         path: '/courses/:courseId/assignments/:assignmentId',
         component: Assignment,
+    },
+    {
+        path: '/courses/:courseId/assignments/:assignmentId/edit',
+        component: EditAssignmentForm,
     },
     {
         path: '/profile',

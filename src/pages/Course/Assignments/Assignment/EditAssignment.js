@@ -1,22 +1,11 @@
-import React, { useState, useEffect, useRef } from 'react';
-import {
-    TextField,
-    Button,
-    Select,
-    MenuItem,
-    DialogTitle,
-    Checkbox,
-    FormGroup,
-    FormControlLabel,
-    InputLabel,
-} from '@mui/material';
-import Dialog from '@mui/material/Dialog';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
+import moment from 'moment';
+import { TextField, Button, Select, MenuItem, Checkbox, FormGroup, FormControlLabel, InputLabel } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import { notification } from 'antd';
 import { Editor } from '@tinymce/tinymce-react';
-import { useParams } from 'react-router-dom';
-import { CourseApi, AccountApi } from '~/services/api';
-import { assign } from '@fluentui/react';
+import { generatePath, useNavigate, useParams } from 'react-router-dom';
+import { CourseApi } from '~/services/api';
 
 const useStyles = makeStyles(() => ({
     button: {
@@ -34,20 +23,94 @@ const useStyles = makeStyles(() => ({
     },
 }));
 
-export default function EditAssignmentForm({ title, css, assignmentGroups, assignment }) {
+async function getAssignment({ courseId, assignmentId }) {
+    try {
+        const response = await CourseApi.getAssignment({ courseId, assignmentId });
+        return response.data;
+    } catch (error) {
+        // Rethrow the error to allow error handling further up the call stack
+        throw error;
+    }
+}
+
+async function getAssignmentGroups({ courseId }) {
+    try {
+        const response = await CourseApi.getAssignmentGroups({ courseId });
+
+        return response;
+    } catch (error) {
+        // Rethrow the error to allow error handling further up the call stack
+        throw error;
+    }
+}
+
+const useGet = (params, getter, enable) => {
+    const [state, setState] = useState();
+
+    const callApi = useCallback(async () => {
+        try {
+            const res = await getter(params);
+
+            setState(res);
+        } catch (e) {
+            throw e;
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [JSON.stringify(params), getter]);
+
+    useEffect(() => {
+        if (enable) {
+            callApi();
+        }
+    }, [enable, callApi]);
+
+    return {
+        data: state,
+    };
+};
+
+export default function EditAssignment() {
+    const { courseId, assignmentId } = useParams();
+    const { data: assignment } = useGet(
+        { courseId, assignmentId },
+        getAssignment,
+        courseId !== undefined && assignmentId !== undefined,
+    );
+    const { data: assignmentGroups = [] } = useGet({ courseId }, getAssignmentGroups, courseId !== undefined);
+
+    console.log({
+        assignment,
+        assignmentGroups,
+    });
+
+    if (!assignment) {
+        return null;
+    }
+
+    return <EditAssignmentForm assignment={assignment} assignmentGroups={assignmentGroups} />;
+}
+
+const toLocalDate = (dateStr) => {
+    if (!dateStr) {
+        return;
+    }
+
+    return moment(dateStr).format('YYYY-MM-DDTHH:mm');
+};
+
+function EditAssignmentForm({ assignmentGroups, assignment }) {
     const classes = useStyles();
-    const [name, setName] = useState('');
-    const [assignmentGroup, setAssignmentGroup] = useState();
-    const [group, setGroup] = useState([]);
-    const [attempt, setAttempt] = useState(1);
-    const [score, setScore] = useState(0);
-    const [open, setOpen] = useState(false);
-    const [dueDate, setDueDate] = useState('');
-    const [availableFrom, setAvailableFrom] = useState('');
-    const [availableUntil, setAvailableUntil] = useState('');
-    const [isPublished, setIsPublished] = useState(false);
+    const [name, setName] = useState(assignment.name);
+    const [assignmentGroup, setAssignmentGroup] = useState(assignment.assignment_group_id);
+    const [attempts, setAttempts] = useState(assignment.allowed_attempts);
+    const [score, setScore] = useState(assignment.points_possible);
+    const [dueDate, setDueDate] = useState(toLocalDate(assignment.due_at));
+    const [availableFrom, setAvailableFrom] = useState(toLocalDate(assignment.unlock_at));
+    const [availableUntil, setAvailableUntil] = useState(toLocalDate(assignment.lock_at));
+    const [isPublished, setIsPublished] = useState(assignment.published);
     const editorRef = useRef(null);
     const { courseId } = useParams();
+    const navigate = useNavigate();
 
     const handleNameChange = (event) => {
         setName(event.target.value);
@@ -80,10 +143,10 @@ export default function EditAssignmentForm({ title, css, assignmentGroups, assig
             return;
         }
 
-        if (attempt < 0 || isNaN(attempt)) {
+        if (isNaN(attempts)) {
             notification.error({
                 message: 'Lỗi',
-                description: 'Số lần thử phải là số nguyên dương',
+                description: 'Số lần thử phải là số nguyên',
             });
             return;
         }
@@ -144,7 +207,8 @@ export default function EditAssignmentForm({ title, css, assignmentGroups, assig
         const content = editorRef.current.getContent();
 
         const payload = {
-            courseId: courseId,
+            courseId,
+            assignmentId: assignment.id,
             assignment: {
                 name,
                 submission_types: ['online_text_entry'],
@@ -156,7 +220,7 @@ export default function EditAssignmentForm({ title, css, assignmentGroups, assig
                 lock_at: isoAvailableUntil,
                 published: isPublished,
                 description: content,
-                allowed_attemp: attempt,
+                allowed_attempts: attempts,
             },
         };
 
@@ -170,9 +234,12 @@ export default function EditAssignmentForm({ title, css, assignmentGroups, assig
                 });
             }
 
-            setOpen(false);
-
-            window.location.reload();
+            navigate(
+                generatePath('/courses/:courseId/assignments/:assignmentId', {
+                    assignmentId: assignment.id,
+                    courseId,
+                }),
+            );
         } catch (err) {
             notification.error({
                 message: 'Lỗi',
@@ -181,16 +248,8 @@ export default function EditAssignmentForm({ title, css, assignmentGroups, assig
         }
     };
 
-    const handleClickOpen = () => {
-        setOpen(true);
-    };
-
     const handleAssignmentGroupChange = (event) => {
         setAssignmentGroup(event.target.value);
-    };
-
-    const handleClose = () => {
-        setOpen(false);
     };
 
     const handleScoreChange = (event) => {
@@ -214,177 +273,155 @@ export default function EditAssignmentForm({ title, css, assignmentGroups, assig
     };
 
     const handleAttemptChange = (event) => {
-        setAttempt(event.target.value);
+        setAttempts(Number(event.target.value));
     };
 
-    useEffect(() => {
-        setGroup(assignmentGroups);
-    }, []);
-
     return (
-        <div>
-            <Button variant="outlined" onClick={handleClickOpen} className={css}>
-                {title}
-            </Button>
-            <Dialog
-                open={open}
-                onClose={handleClose}
-                PaperProps={{
-                    style: {
-                        width: '900px', // Set the desired width here
-                    },
-                }}
-            >
-                <div className="p-6">
-                    <DialogTitle classes={{ root: classes.title }}>{title}</DialogTitle>
-                    <form onSubmit={handleSubmit}>
-                        <TextField
-                            id="name"
-                            label="Tên bài tập"
-                            autoFocus
-                            variant="standard"
-                            fullWidth
-                            sx={{ mb: 3 }}
-                            onChange={handleNameChange}
-                        />
-                        <Editor
-                            onInit={(evt, editor) => (editorRef.current = editor)}
-                            init={{
-                                height: 500,
-                                menubar: false,
-                                plugins: [
-                                    'advlist autolink lists link image charmap print preview anchor',
-                                    'searchreplace visualblocks code fullscreen',
-                                    'insertdatetime media table paste code help wordcount',
-                                ],
-                                toolbar:
-                                    'undo redo | formatselect | ' +
-                                    'bold italic backcolor | alignleft aligncenter ' +
-                                    'alignright alignjustify | bullist numlist outdent indent | ' +
-                                    'removeformat | help',
-                                content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }',
-                            }}
-                        />
-                        <InputLabel id="score-label" className="mt-5">
-                            Điểm
-                        </InputLabel>
-                        <TextField
-                            id="score"
-                            labelId="score-label"
-                            autoFocus
-                            variant="standard"
-                            fullWidth
-                            sx={{ mb: 3, mt: 1 }}
-                            onChange={handleScoreChange}
-                        />
-                        <Select
-                            id="grading_type"
-                            labelId="grading-label"
-                            defaultValue="points"
-                            disabled
-                            hidden
-                            fullWidth
-                            sx={{ mb: 3 }}
-                        >
-                            <MenuItem value="points">Điểm thành phần</MenuItem>
-                        </Select>
-                        <InputLabel id="assignment-label">Nhóm bài tập</InputLabel>
-                        <Select
-                            id="assignment"
-                            labelId="assignment-label"
-                            fullWidth
-                            sx={{ mb: 5 }}
-                            onChange={handleAssignmentGroupChange}
-                            defaultValue="0"
-                        >
-                            <MenuItem value="0">---Vui lòng chọn nhóm bài tập---</MenuItem>
-                            {assignmentGroups && assignmentGroups.length > 0 ? (
-                                assignmentGroups.map((group) => (
-                                    <MenuItem key={group.id} value={group.id}>
-                                        {group.name}
-                                    </MenuItem>
-                                ))
-                            ) : (
-                                <MenuItem value="0">Không có nhóm bài tập nào</MenuItem>
-                            )}
-                        </Select>
-                        <InputLabel id="type-label">Kiểu nộp</InputLabel>
-                        <Select
-                            id="submisstionType"
-                            labelId="type-label"
-                            defaultValue="online_text_entry"
-                            disabled
-                            fullWidth
-                            sx={{ mb: 3 }}
-                        >
-                            <MenuItem value="online_text_entry">Online</MenuItem>
-                        </Select>
-                        <InputLabel id="attemp-label">Số lần nộp</InputLabel>
-                        <Select
-                            labelId="attemp-label"
-                            id="attempt"
-                            defaultValue={attempt}
-                            fullWidth
-                            label="Số lần nộp"
-                            onChange={handleAttemptChange}
-                            sx={{ mb: 3 }}
-                        >
-                            <MenuItem value="1">Giới hạn 1 lần</MenuItem>
-                            <MenuItem value="-1">Không giới hạn</MenuItem>
-                        </Select>
-                        <br />
-                        <TextField
-                            label="Đến hạn"
-                            type="datetime-local"
-                            value={dueDate}
-                            onChange={handleDueDateChange}
-                            fullWidth
-                            sx={{ mb: 3 }}
-                            InputLabelProps={{
-                                shrink: true,
-                            }}
-                        />
-                        <br />
-                        <TextField
-                            label="Bắt đầu"
-                            type="datetime-local"
-                            value={availableFrom}
-                            fullWidth
-                            sx={{ mb: 3 }}
-                            onChange={handleAvailableFromChange}
-                            InputLabelProps={{
-                                shrink: true,
-                            }}
-                        />
-                        <br />
-                        <TextField
-                            label="Kết thúc"
-                            type="datetime-local"
-                            value={availableUntil}
-                            fullWidth
-                            sx={{ mb: 3 }}
-                            onChange={handleAvailableUntilChange}
-                            InputLabelProps={{
-                                shrink: true,
-                            }}
-                        />
-                        <FormGroup>
-                            <FormControlLabel
-                                control={<Checkbox checked={isPublished} onChange={handlePublishedChange} />}
-                                label="Công khai"
-                            />
-                        </FormGroup>{' '}
-                        <Button
-                            type="submit"
-                            variant="contained"
-                            classes={{ root: classes.button }}
-                            onClick={handleSubmit}
-                        >
-                            Tạo
-                        </Button>
-                    </form>
-                </div>
-            </Dialog>
+        <div className="p-6">
+            <form onSubmit={handleSubmit}>
+                <TextField
+                    id="name"
+                    label="Tên bài tập"
+                    autoFocus
+                    variant="standard"
+                    fullWidth
+                    sx={{ mb: 3 }}
+                    onChange={handleNameChange}
+                    value={name}
+                />
+                <Editor
+                    onInit={(evt, editor) => (editorRef.current = editor)}
+                    init={{
+                        height: 500,
+                        menubar: false,
+                        plugins: [
+                            'advlist autolink lists link image charmap print preview anchor',
+                            'searchreplace visualblocks code fullscreen',
+                            'insertdatetime media table paste code help wordcount',
+                        ],
+                        toolbar:
+                            'undo redo | formatselect | ' +
+                            'bold italic backcolor | alignleft aligncenter ' +
+                            'alignright alignjustify | bullist numlist outdent indent | ' +
+                            'removeformat | help',
+                        content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }',
+                    }}
+                    initialValue={assignment.description}
+                />
+                <InputLabel id="score-label" className="mt-5">
+                    Điểm
+                </InputLabel>
+                <TextField
+                    id="score"
+                    labelId="score-label"
+                    autoFocus
+                    variant="standard"
+                    fullWidth
+                    sx={{ mb: 3, mt: 1 }}
+                    onChange={handleScoreChange}
+                    value={score}
+                />
+                <Select
+                    id="grading_type"
+                    labelId="grading-label"
+                    defaultValue="points"
+                    disabled
+                    hidden
+                    fullWidth
+                    sx={{ mb: 3 }}
+                >
+                    <MenuItem value="points">Điểm thành phần</MenuItem>
+                </Select>
+                <InputLabel id="assignment-label">Nhóm bài tập</InputLabel>
+                <Select
+                    id="assignment"
+                    labelId="assignment-label"
+                    fullWidth
+                    sx={{ mb: 5 }}
+                    onChange={handleAssignmentGroupChange}
+                    value={assignmentGroup}
+                >
+                    <MenuItem value="0">---Vui lòng chọn nhóm bài tập---</MenuItem>
+                    {assignmentGroups && assignmentGroups.length > 0 ? (
+                        assignmentGroups.map((group) => (
+                            <MenuItem key={group.id} value={group.id}>
+                                {group.name}
+                            </MenuItem>
+                        ))
+                    ) : (
+                        <MenuItem value="0">Không có nhóm bài tập nào</MenuItem>
+                    )}
+                </Select>
+                <InputLabel id="type-label">Kiểu nộp</InputLabel>
+                <Select
+                    id="submisstionType"
+                    labelId="type-label"
+                    defaultValue="online_text_entry"
+                    disabled
+                    fullWidth
+                    sx={{ mb: 3 }}
+                >
+                    <MenuItem value="online_text_entry">Online</MenuItem>
+                </Select>
+                <InputLabel id="attemp-label">Số lần nộp</InputLabel>
+                <Select
+                    labelId="attemp-label"
+                    id="attempt"
+                    value={attempts.toString()}
+                    fullWidth
+                    label="Số lần nộp"
+                    onChange={handleAttemptChange}
+                    sx={{ mb: 3 }}
+                >
+                    <MenuItem value="1">Giới hạn 1 lần</MenuItem>
+                    <MenuItem value="-1">Không giới hạn</MenuItem>
+                </Select>
+                <br />
+                <TextField
+                    label="Đến hạn"
+                    type="datetime-local"
+                    value={dueDate}
+                    onChange={handleDueDateChange}
+                    fullWidth
+                    sx={{ mb: 3 }}
+                    InputLabelProps={{
+                        shrink: true,
+                    }}
+                />
+                <br />
+                <TextField
+                    label="Bắt đầu"
+                    type="datetime-local"
+                    value={availableFrom}
+                    fullWidth
+                    sx={{ mb: 3 }}
+                    onChange={handleAvailableFromChange}
+                    InputLabelProps={{
+                        shrink: true,
+                    }}
+                />
+                <br />
+                <TextField
+                    label="Kết thúc"
+                    type="datetime-local"
+                    value={availableUntil}
+                    fullWidth
+                    sx={{ mb: 3 }}
+                    onChange={handleAvailableUntilChange}
+                    InputLabelProps={{
+                        shrink: true,
+                    }}
+                />
+                <FormGroup>
+                    <FormControlLabel
+                        control={<Checkbox checked={isPublished} onChange={handlePublishedChange} />}
+                        label="Công khai"
+                    />
+                </FormGroup>
+                <Button type="submit" variant="contained" classes={{ root: classes.button }} onClick={handleSubmit}>
+                    Lưu
+                </Button>
+            </form>
         </div>
     );
 }

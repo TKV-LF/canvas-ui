@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { generatePath, useNavigate, useParams } from 'react-router-dom';
 import { Breadcrumbs, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 import Grid from '@mui/material/Grid';
@@ -10,7 +10,6 @@ import { ActionMenu } from '~/components/Menu';
 import { CourseApi } from '~/services/api';
 
 import { notification } from 'antd';
-import { EditAssignmentForm } from './EditAssignment';
 
 async function getAssignment({ courseId, assignmentId }) {
     try {
@@ -42,12 +41,14 @@ async function deleteAssignment({ courseId, assignmentId }) {
     }
 }
 
-const options = ['Edit', 'Delete'];
+const formatDateStr = (date) => date && date.substring(0, 10);
 
 const Assignment = () => {
     const { courseId, assignmentId } = useParams();
     const [assignment, setAssignment] = useState(null);
     const [assignmentGroups, setAssignmentGroups] = useState(null);
+
+    const navigate = useNavigate();
 
     useEffect(() => {
         getAssignment({ courseId, assignmentId }).then((data) => {
@@ -81,7 +82,12 @@ const Assignment = () => {
     };
 
     const handleEdit = () => {
-        console.log('edit');
+        navigate(
+            generatePath('/courses/:courseId/assignments/:assignmentId/edit', {
+                assignmentId,
+                courseId,
+            }),
+        );
     };
 
     const options = [
@@ -89,6 +95,7 @@ const Assignment = () => {
             key: 'Edit',
             name: 'Chỉnh sửa',
             icon: 'edit',
+            handleFunction: handleEdit,
         },
         {
             key: 'Delete',
