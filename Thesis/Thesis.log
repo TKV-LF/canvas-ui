@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.9)  22 JUN 2023 21:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.9)  22 JUN 2023 23:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -964,32 +964,32 @@ Package: hypcap 2016/05/16 v1.12 Adjusting the anchors of captions (HO)
 \c@example=\count457
 \@quotelevel=\count458
 \@quotereset=\count459
-LaTeX Font Info:    Trying to load font information for T5+ptm on input line 93.
+LaTeX Font Info:    Trying to load font information for T5+ptm on input line 97.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/vntex/t5ptm.fd
 File: t5utm.fd 2005/08/24 Fontinst v1.929 font definitions for T5/ptm.
 ) (./Thesis.aux)
 \openout1 = `Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1064,10 +1064,10 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Thesis.bbl' not found.
 
 No file Thesis.bbl.
-Package biblatex Info: Reference section=0 on input line 93.
-Package biblatex Info: Reference segment=0 on input line 93.
+Package biblatex Info: Reference section=0 on input line 97.
+Package biblatex Info: Reference segment=0 on input line 97.
 \c@lstlisting=\count466
-Package hyperref Info: Link coloring OFF on input line 93.
+Package hyperref Info: Link coloring OFF on input line 97.
 (./Thesis.out) (./Thesis.out)
 \@outlinefile=\write5
 \openout5 = `Thesis.out'.
@@ -1105,7 +1105,7 @@ Package hyperref Info: Link coloring OFF on input line 93.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
  (./cover.tex
-<figures//logo.png, id=108, 1204.5pt x 1002.74625pt>
+<figures//logo.png, id=164, 1204.5pt x 1002.74625pt>
 File: figures//logo.png Graphic file (type png)
 <use figures//logo.png>
 Package pdftex.def Info: figures//logo.png  used on input line 14.
@@ -1113,46 +1113,40 @@ Package pdftex.def Info: figures//logo.png  used on input line 14.
  [1
 
 
-{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/vntex/t5.enc} <./figures//logo.png>]) (./Thesis.toc
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 2.
+{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/vntex/t5.enc} <./figures//logo.png>]) [1
+
+
+] [2
+
+] (./Thesis.toc
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 4.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+) [3
+
+])
 \tf@toc=\write6
 \openout6 = `Thesis.toc'.
 
- [1
-
-
-] (./Thesis.lof)
+ [4] (./Thesis.lof)
 \tf@lof=\write7
 \openout7 = `Thesis.lof'.
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.104 \newpage
-               [2
+ [5
 
 ] (./Thesis.lot)
 \tf@lot=\write8
 \openout8 = `Thesis.lot'.
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.114 \newpage
-               [3
+ [6
 
 ]
 Ch\uhorn \ohorn ng 1.
@@ -1168,22 +1162,27 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 25
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-<figures//lms-market.jpg, id=162, 2168.1pt x 1409.265pt>
+<figures//lms-market.jpg, id=249, 2168.1pt x 1409.265pt>
 File: figures//lms-market.jpg Graphic file (type jpg)
 <use figures//lms-market.jpg>
 Package pdftex.def Info: figures//lms-market.jpg  used on input line 38.
 (pdftex.def)             Requested size: 325.20097pt x 211.38063pt.
  [2{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc}] [3 <./figures//lms-market.jpg>] [4] [5]) [6]
 Ch\uhorn \ohorn ng 2.
-(./chapters/chap2-co-so-ly-thuyet.tex [7
+(./chapters/chap2-co-so-ly-thuyet-va-cong-nghe.tex [7
 
-] [8] [9] [10] [11] [12]) [13]
+] [8] [9]
+Overfull \hbox (5.56958pt too wide) in paragraph at lines 68--68
+|[]\T5/ptm/b/n/14.4 T¦m quan trång cõa Thi¸t k¸ Giao di»n ng÷íi dòng trong E-Learning| 
+ []
+
+[10] [11] [12] [13] [14] [15]) [16]
 Ch\uhorn \ohorn ng 3.
-(./chapters/chap3-phan-tich-yeu-cau.tex [14
+(./chapters/chap3-phan-tich-yeu-cau.tex [17
 
-] [15] [16] [17]) [18]
+] [18] [19] [20]) [21]
 
-LaTeX Warning: Empty bibliography on input line 137.
+LaTeX Warning: Empty bibliography on input line 160.
 
 
 Package glossaries Warning: No \printnoidxglossary or \printnoidxglossaries
@@ -1194,14 +1193,8 @@ This document will not have a glossary.
 
 LaTeX Warning: There were undefined references.
 
-
-Package rerunfilecheck Warning: File `Thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Thesis.out':
-(rerunfilecheck)             Before: C10AB8587427A2F9E8C348EE31BCB98F;5781
-(rerunfilecheck)             After:  1C96C19E5E750A0126126FCAC202827F;5782.
+Package rerunfilecheck Info: File `Thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 47DE917A2122DC97CA3129EB87975031;7709.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                Thesis
@@ -1212,24 +1205,18 @@ Package logreq Info: Writing requests to 'Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26998 strings out of 476025
- 472922 string characters out of 5790018
+ 27012 strings out of 476025
+ 473407 string characters out of 5790018
  1862388 words of memory out of 5000000
- 46918 multiletter control sequences out of 15000+600000
+ 46928 multiletter control sequences out of 15000+600000
  544513 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,10n,90p,2303b,854s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{paragraph.3.1.2.0.2} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{paragraph.3.1.2.0.1} has been referenced but does not exist, replaced by a fixed one
-
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/urwvn/utmb8v.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.pfb>
-Output written on Thesis.pdf (22 pages, 1053514 bytes).
+ 94i,10n,90p,2303b,867s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/urwvn/utmb8v.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.pfb>
+Output written on Thesis.pdf (28 pages, 1057984 bytes).
 PDF statistics:
- 294 PDF objects out of 1000 (max. 8388607)
- 256 compressed objects within 3 object streams
- 68 named destinations out of 1000 (max. 500000)
- 219 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 370 PDF objects out of 1000 (max. 8388607)
+ 327 compressed objects within 4 object streams
+ 72 named destinations out of 1000 (max. 500000)
+ 331 words of extra memory for PDF output out of 10000 (max. 10000000)
 

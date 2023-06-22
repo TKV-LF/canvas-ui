@@ -58,6 +58,7 @@
 \titlespacing{\subsection}{0pt}{\parskip}{0.5\parskip}
 \titlespacing{\subsubsection}{0pt}{\parskip}{0.5\parskip}
 
+
 \usepackage[pdftex, % Sử dụng PDF TeX
 bookmarks=true, % Tạo bookmarks trong tập tin PDF
 colorlinks=false, % Chữ có màu
@@ -71,6 +72,9 @@ pdfmenubar=false % Ẩn đi menu bar trong PDF viewer
 
 \hypersetup{pdftitle={\TITLE},
 	pdfauthor={\AUTHOR}}
+
+\hypersetup{pdfborder={0 0 0}, citecolor=Black}
+
 
 \usepackage[all]{hypcap} % Cho phép tham chiếu chính xác đến hình ảnh và bảng biểu
 
@@ -95,14 +99,33 @@ pdfmenubar=false % Ẩn đi menu bar trong PDF viewer
 \subfile{cover} % Phần bìa
 \restoregeometry
 
+\pagenumbering{roman} % Đánh số i, ii, iii, iv, v,..
+
+\chapter*{Lời cam đoan}
+
+xzcxzcx
+\newpage
+
+\chapter*{Lời cảm ơn}
+
+Để hoàn thành Đồ án tốt nghiệp với đề tài “Phát triển hệ thống học tập tuỳ chỉnh dựa trên Canvas LMS cho các tổ chức giáo dục trước đại học”. Trước tiên, tôi xin gửi lời cảm ơn chân thành đến Giáo viên hướng dẫn đồ án Thạc sĩ Kiều Tuấn Dũng và Trường Đại học Thuỷ lợi vì sự hỗ trợ và định hướng quan trọng trong quá trình thực hiện đồ án của tôi.
+
+Giảng viên Kiều Tuấn Dũng đã cung cấp sự chỉ dẫn chuyên môn và hướng dẫn cần thiết để tôi có thể nắm bắt được bối cảnh và phạm vi của đề tài. Nhờ những kiến thức và kinh nghiệm của thầy, tôi đã nhận được sự hỗ trợ và động viên liên tục trong quá trình nghiên cứu và phát triển đề tài.
+
+Tôi cũng muốn bày tỏ lòng biết ơn sâu sắc đến Trường Đại học Thuỷ lợi đã cung cấp cho tôi một môi trường học tập và nghiên cứu thuận lợi.
+
+Tôi rất biết ơn vì sự hỗ trợ và cảm giác được đồng hành trong suốt quá trình thực hiện đồ án của tôi. Sự giúp đỡ và định hướng từ Giáo viên hướng dẫn và Trường Đại học Thuỷ lợi đã góp phần quan trọng vào sự hoàn thiện và thành công của đồ án.
+
 \pagestyle{empty} % Header và footer rỗng
 \newpage
-\pagenumbering{gobble} % Xóa page numbering ở cuối trang
 \tableofcontents % Mục lục
-\newpage
+
 \listoffigures % Danh sách các hình ảnh
+\addcontentsline{toc}{chapter}{Danh mục hình ảnh}
+
 \newpage
 \listoftables % Danh sách bảng biểu
+\addcontentsline{toc}{chapter}{Danh mục bảng biểu}
 
 \glsaddall
 % \renewcommand*{\glossaryname}{Danh sách thuật ngữ}
@@ -122,8 +145,8 @@ pdfmenubar=false % Ẩn đi menu bar trong PDF viewer
 
 \newpage
 \pagestyle{fancy} % Áp dụng header và footer
-\chapter{Cơ sở lý thuyết}
-\subfile{chapters/chap2-co-so-ly-thuyet}
+\chapter{Cơ sở lý thuyết và công nghệ}
+\subfile{chapters/chap2-co-so-ly-thuyet-va-cong-nghe}
 
 \newpage
 \pagestyle{fancy} % Áp dụng header và footer

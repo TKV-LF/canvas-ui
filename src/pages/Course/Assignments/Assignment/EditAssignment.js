@@ -277,7 +277,7 @@ function EditAssignmentForm({ assignmentGroups, assignment }) {
     };
 
     return (
-        <div className="p-6">
+        <div className="mx-72 py-8 px-12 border">
             <form onSubmit={handleSubmit}>
                 <TextField
                     id="name"
