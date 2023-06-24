@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.9)  24 JUN 2023 00:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.9)  25 JUN 2023 04:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -971,8 +971,7 @@ Package: hypcap 2016/05/16 v1.12 Adjusting the anchors of captions (HO)
 LaTeX Font Info:    Trying to load font information for T5+ptm on input line 2.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/vntex/t5ptm.fd
 File: t5utm.fd 2005/08/24 Fontinst v1.929 font definitions for T5/ptm.
-)
-No file chap4-xay-dung-he-thong-va-cai-dat.aux.
+) (./chap4-xay-dung-he-thong-va-cai-dat.aux)
 \openout1 = `chap4-xay-dung-he-thong-va-cai-dat.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
@@ -995,6 +994,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 2.
 LaTeX Font Info:    ... okay on input line 2.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 2.
 LaTeX Font Info:    ... okay on input line 2.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1072,19 +1072,20 @@ Package biblatex Info: Reference section=0 on input line 2.
 Package biblatex Info: Reference segment=0 on input line 2.
 \c@lstlisting=\count466
 Package hyperref Info: Link coloring OFF on input line 2.
+(./chap4-xay-dung-he-thong-va-cai-dat.out) (./chap4-xay-dung-he-thong-va-cai-dat.out)
 \@outlinefile=\write5
 \openout5 = `chap4-xay-dung-he-thong-va-cai-dat.out'.
 
-<../figures//1-google-cloud-console.png, id=4, 1445.4pt x 825.0825pt>
+<../figures//1-google-cloud-console.png, id=24, 1445.4pt x 825.0825pt>
 File: ../figures//1-google-cloud-console.png Graphic file (type png)
 <use ../figures//1-google-cloud-console.png>
 Package pdftex.def Info: ../figures//1-google-cloud-console.png  used on input line 9.
 (pdftex.def)             Requested size: 216.80064pt x 123.75703pt.
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 17.
-(/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-<../figures//google-create-instance.png, id=6, 3854.4pt x 2168.1pt>
+<../figures//google-create-instance.png, id=26, 3854.4pt x 2168.1pt>
 File: ../figures//google-create-instance.png Graphic file (type png)
 <use ../figures//google-create-instance.png>
 Package pdftex.def Info: ../figures//google-create-instance.png  used on input line 23.
@@ -1094,7 +1095,7 @@ Overfull \hbox (122.89096pt too wide) in paragraph at lines 23--24
  [][] 
  []
 
-<../figures//google-network.png, id=7, 3854.4pt x 2168.1pt>
+<../figures//google-network.png, id=27, 3854.4pt x 2168.1pt>
 File: ../figures//google-network.png Graphic file (type png)
 <use ../figures//google-network.png>
 Package pdftex.def Info: ../figures//google-network.png  used on input line 35.
@@ -1107,42 +1108,42 @@ Overfull \hbox (122.89096pt too wide) in paragraph at lines 35--36
 [1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/vntex/t5.enc}
 
 {/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc} <../figures//1-google-cloud-console.png>]
-<../figures//2-landing-page.png, id=23, 1444.39626pt x 822.07124pt>
+<../figures//2-landing-page.png, id=41, 1444.39626pt x 822.07124pt>
 File: ../figures//2-landing-page.png Graphic file (type png)
 <use ../figures//2-landing-page.png>
 Package pdftex.def Info: ../figures//2-landing-page.png  used on input line 51.
 (pdftex.def)             Requested size: 216.65009pt x 123.30536pt.
-<../figures//3-dang-nhap.png, id=24, 1445.4pt x 822.07124pt>
+<../figures//3-dang-nhap.png, id=42, 1445.4pt x 822.07124pt>
 File: ../figures//3-dang-nhap.png Graphic file (type png)
 <use ../figures//3-dang-nhap.png>
 Package pdftex.def Info: ../figures//3-dang-nhap.png  used on input line 57.
 (pdftex.def)             Requested size: 216.80064pt x 123.30536pt.
-<../figures//4-trang-chu.png, id=25, 1445.4pt x 822.07124pt>
+<../figures//4-trang-chu.png, id=43, 1445.4pt x 822.07124pt>
 File: ../figures//4-trang-chu.png Graphic file (type png)
 <use ../figures//4-trang-chu.png>
 Package pdftex.def Info: ../figures//4-trang-chu.png  used on input line 63.
 (pdftex.def)             Requested size: 216.80064pt x 123.30536pt.
-<../figures//5-tao-khoa-hoc.png, id=26, 1445.4pt x 823.075pt>
+<../figures//5-tao-khoa-hoc.png, id=44, 1445.4pt x 823.075pt>
 File: ../figures//5-tao-khoa-hoc.png Graphic file (type png)
 <use ../figures//5-tao-khoa-hoc.png>
 Package pdftex.def Info: ../figures//5-tao-khoa-hoc.png  used on input line 69.
 (pdftex.def)             Requested size: 216.80064pt x 123.45592pt.
-<../figures//6-danh-sach-khoa-hoc.png, id=27, 1445.4pt x 821.0675pt>
+<../figures//6-danh-sach-khoa-hoc.png, id=45, 1445.4pt x 821.0675pt>
 File: ../figures//6-danh-sach-khoa-hoc.png Graphic file (type png)
 <use ../figures//6-danh-sach-khoa-hoc.png>
 Package pdftex.def Info: ../figures//6-danh-sach-khoa-hoc.png  used on input line 74.
 (pdftex.def)             Requested size: 216.80064pt x 123.1548pt.
-<../figures//7-danh-sach-nhom-va-bai-tap.png, id=28, 1445.4pt x 818.05624pt>
+<../figures//7-danh-sach-nhom-va-bai-tap.png, id=46, 1445.4pt x 818.05624pt>
 File: ../figures//7-danh-sach-nhom-va-bai-tap.png Graphic file (type png)
 <use ../figures//7-danh-sach-nhom-va-bai-tap.png>
 Package pdftex.def Info: ../figures//7-danh-sach-nhom-va-bai-tap.png  used on input line 80.
 (pdftex.def)             Requested size: 216.80064pt x 122.70314pt.
-<../figures//8-tao-moi-nhom-bai-tap.png, id=29, 1445.4pt x 822.07124pt>
+<../figures//8-tao-moi-nhom-bai-tap.png, id=47, 1445.4pt x 822.07124pt>
 File: ../figures//8-tao-moi-nhom-bai-tap.png Graphic file (type png)
 <use ../figures//8-tao-moi-nhom-bai-tap.png>
 Package pdftex.def Info: ../figures//8-tao-moi-nhom-bai-tap.png  used on input line 87.
 (pdftex.def)             Requested size: 216.80064pt x 123.30536pt.
-<../figures//9-tao-bai-tap.png, id=30, 3854.4pt x 2168.1pt>
+<../figures//9-tao-bai-tap.png, id=48, 3854.4pt x 2168.1pt>
 File: ../figures//9-tao-bai-tap.png Graphic file (type png)
 <use ../figures//9-tao-bai-tap.png>
 Package pdftex.def Info: ../figures//9-tao-bai-tap.png  used on input line 93.
@@ -1152,7 +1153,7 @@ Overfull \hbox (122.89096pt too wide) in paragraph at lines 93--94
  [][] 
  []
 
-<../figures//10-chi-tiet-bai-tap.png, id=31, 3854.4pt x 2168.1pt>
+<../figures//10-chi-tiet-bai-tap.png, id=49, 3854.4pt x 2168.1pt>
 File: ../figures//10-chi-tiet-bai-tap.png Graphic file (type png)
 <use ../figures//10-chi-tiet-bai-tap.png>
 Package pdftex.def Info: ../figures//10-chi-tiet-bai-tap.png  used on input line 99.
@@ -1162,7 +1163,7 @@ Overfull \hbox (122.89096pt too wide) in paragraph at lines 99--100
  [][] 
  []
 
-<../figures//11-chinh-sua-bai-tap.png, id=32, 3854.4pt x 3095.565pt>
+<../figures//11-chinh-sua-bai-tap.png, id=50, 3854.4pt x 3095.565pt>
 File: ../figures//11-chinh-sua-bai-tap.png Graphic file (type png)
 <use ../figures//11-chinh-sua-bai-tap.png>
 Package pdftex.def Info: ../figures//11-chinh-sua-bai-tap.png  used on input line 105.
@@ -1172,149 +1173,160 @@ Overfull \hbox (122.89096pt too wide) in paragraph at lines 105--106
  [][] 
  []
 
-<../figures//12-lich-su-kien.png, id=33, 3854.4pt x 2168.1pt>
-File: ../figures//12-lich-su-kien.png Graphic file (type png)
-<use ../figures//12-lich-su-kien.png>
-Package pdftex.def Info: ../figures//12-lich-su-kien.png  used on input line 111.
+<../figures//cau-hoi-kiem-tra.png, id=51, 3854.4pt x 2168.1pt>
+File: ../figures//cau-hoi-kiem-tra.png Graphic file (type png)
+<use ../figures//cau-hoi-kiem-tra.png>
+Package pdftex.def Info: ../figures//cau-hoi-kiem-tra.png  used on input line 111.
 (pdftex.def)             Requested size: 578.13507pt x 325.20097pt.
 
 Overfull \hbox (122.89096pt too wide) in paragraph at lines 111--112
  [][] 
  []
 
-<../figures//13-tao-su-kien-lich.png, id=34, 3854.4pt x 2168.1pt>
-File: ../figures//13-tao-su-kien-lich.png Graphic file (type png)
-<use ../figures//13-tao-su-kien-lich.png>
-Package pdftex.def Info: ../figures//13-tao-su-kien-lich.png  used on input line 117.
-(pdftex.def)             Requested size: 578.13507pt x 325.20097pt.
+<../figures//them-moi-cau-hoi-kiem-tra.png, id=52, 3854.4pt x 2949.0175pt>
+File: ../figures//them-moi-cau-hoi-kiem-tra.png Graphic file (type png)
+<use ../figures//them-moi-cau-hoi-kiem-tra.png>
+Package pdftex.def Info: ../figures//them-moi-cau-hoi-kiem-tra.png  used on input line 117.
+(pdftex.def)             Requested size: 578.13507pt x 442.33354pt.
 
 Overfull \hbox (122.89096pt too wide) in paragraph at lines 117--118
  [][] 
  []
 
-<../figures//14-danh-sach-su-kien.png, id=35, 3854.4pt x 2168.1pt>
-File: ../figures//14-danh-sach-su-kien.png Graphic file (type png)
-<use ../figures//14-danh-sach-su-kien.png>
-Package pdftex.def Info: ../figures//14-danh-sach-su-kien.png  used on input line 123.
-(pdftex.def)             Requested size: 578.13507pt x 325.20097pt.
+<../figures//chinh-sua-cau-hoi-kiem-tra.png, id=53, 3854.4pt x 2949.0175pt>
+File: ../figures//chinh-sua-cau-hoi-kiem-tra.png Graphic file (type png)
+<use ../figures//chinh-sua-cau-hoi-kiem-tra.png>
+Package pdftex.def Info: ../figures//chinh-sua-cau-hoi-kiem-tra.png  used on input line 123.
+(pdftex.def)             Requested size: 578.13507pt x 442.33354pt.
 
 Overfull \hbox (122.89096pt too wide) in paragraph at lines 123--124
  [][] 
  []
 
-<../figures//15-tin-nhan.png, id=36, 3854.4pt x 2296.58pt>
-File: ../figures//15-tin-nhan.png Graphic file (type png)
-<use ../figures//15-tin-nhan.png>
-Package pdftex.def Info: ../figures//15-tin-nhan.png  used on input line 129.
-(pdftex.def)             Requested size: 578.13507pt x 344.47214pt.
+<../figures//chi-tiet-cau-hoi-kiem-tra.png, id=54, 3854.4pt x 2565.585pt>
+File: ../figures//chi-tiet-cau-hoi-kiem-tra.png Graphic file (type png)
+<use ../figures//chi-tiet-cau-hoi-kiem-tra.png>
+Package pdftex.def Info: ../figures//chi-tiet-cau-hoi-kiem-tra.png  used on input line 129.
+(pdftex.def)             Requested size: 578.13507pt x 384.82115pt.
 
 Overfull \hbox (122.89096pt too wide) in paragraph at lines 129--130
  [][] 
  []
 
-<../figures//16-chi-tiet-tin-nhan.png, id=37, 3854.4pt x 2296.58pt>
-File: ../figures//16-chi-tiet-tin-nhan.png Graphic file (type png)
-<use ../figures//16-chi-tiet-tin-nhan.png>
-Package pdftex.def Info: ../figures//16-chi-tiet-tin-nhan.png  used on input line 135.
-(pdftex.def)             Requested size: 578.13507pt x 344.47214pt.
+<../figures//them-cau-hoi.png, id=55, 3854.4pt x 2802.47pt>
+File: ../figures//them-cau-hoi.png Graphic file (type png)
+<use ../figures//them-cau-hoi.png>
+Package pdftex.def Info: ../figures//them-cau-hoi.png  used on input line 135.
+(pdftex.def)             Requested size: 578.13507pt x 420.35237pt.
 
 Overfull \hbox (122.89096pt too wide) in paragraph at lines 135--136
  [][] 
  []
 
-<../figures//17-thong-bao.png, id=38, 1445.4pt x 764.8575pt>
+<../figures//chinh-sua-cau-hoi.png, id=56, 3854.4pt x 2987.16pt>
+File: ../figures//chinh-sua-cau-hoi.png Graphic file (type png)
+<use ../figures//chinh-sua-cau-hoi.png>
+Package pdftex.def Info: ../figures//chinh-sua-cau-hoi.png  used on input line 141.
+(pdftex.def)             Requested size: 578.13507pt x 448.05467pt.
+
+Overfull \hbox (122.89096pt too wide) in paragraph at lines 141--142
+ [][] 
+ []
+
+<../figures//12-lich-su-kien.png, id=57, 3854.4pt x 2168.1pt>
+File: ../figures//12-lich-su-kien.png Graphic file (type png)
+<use ../figures//12-lich-su-kien.png>
+Package pdftex.def Info: ../figures//12-lich-su-kien.png  used on input line 148.
+(pdftex.def)             Requested size: 578.13507pt x 325.20097pt.
+
+Overfull \hbox (122.89096pt too wide) in paragraph at lines 148--149
+ [][] 
+ []
+
+<../figures//13-tao-su-kien-lich.png, id=58, 3854.4pt x 2168.1pt>
+File: ../figures//13-tao-su-kien-lich.png Graphic file (type png)
+<use ../figures//13-tao-su-kien-lich.png>
+Package pdftex.def Info: ../figures//13-tao-su-kien-lich.png  used on input line 154.
+(pdftex.def)             Requested size: 578.13507pt x 325.20097pt.
+
+Overfull \hbox (122.89096pt too wide) in paragraph at lines 154--155
+ [][] 
+ []
+
+<../figures//14-danh-sach-su-kien.png, id=59, 3854.4pt x 2168.1pt>
+File: ../figures//14-danh-sach-su-kien.png Graphic file (type png)
+<use ../figures//14-danh-sach-su-kien.png>
+Package pdftex.def Info: ../figures//14-danh-sach-su-kien.png  used on input line 160.
+(pdftex.def)             Requested size: 578.13507pt x 325.20097pt.
+
+Overfull \hbox (122.89096pt too wide) in paragraph at lines 160--161
+ [][] 
+ []
+
+<../figures//15-tin-nhan.png, id=60, 3854.4pt x 2296.58pt>
+File: ../figures//15-tin-nhan.png Graphic file (type png)
+<use ../figures//15-tin-nhan.png>
+Package pdftex.def Info: ../figures//15-tin-nhan.png  used on input line 166.
+(pdftex.def)             Requested size: 578.13507pt x 344.47214pt.
+
+Overfull \hbox (122.89096pt too wide) in paragraph at lines 166--167
+ [][] 
+ []
+
+<../figures//16-chi-tiet-tin-nhan.png, id=61, 3854.4pt x 2296.58pt>
+File: ../figures//16-chi-tiet-tin-nhan.png Graphic file (type png)
+<use ../figures//16-chi-tiet-tin-nhan.png>
+Package pdftex.def Info: ../figures//16-chi-tiet-tin-nhan.png  used on input line 172.
+(pdftex.def)             Requested size: 578.13507pt x 344.47214pt.
+
+Overfull \hbox (122.89096pt too wide) in paragraph at lines 172--173
+ [][] 
+ []
+
+<../figures//cai-dat.png, id=62, 3854.4pt x 2168.1pt>
+File: ../figures//cai-dat.png Graphic file (type png)
+<use ../figures//cai-dat.png>
+Package pdftex.def Info: ../figures//cai-dat.png  used on input line 178.
+(pdftex.def)             Requested size: 578.13507pt x 325.20097pt.
+
+Overfull \hbox (122.89096pt too wide) in paragraph at lines 178--179
+ [][] 
+ []
+
+<../figures//17-thong-bao.png, id=63, 1445.4pt x 764.8575pt>
 File: ../figures//17-thong-bao.png Graphic file (type png)
 <use ../figures//17-thong-bao.png>
-Package pdftex.def Info: ../figures//17-thong-bao.png  used on input line 141.
+Package pdftex.def Info: ../figures//17-thong-bao.png  used on input line 184.
 (pdftex.def)             Requested size: 216.80064pt x 114.72366pt.
 
 Package glossaries Warning: No \printnoidxglossary or \printnoidxglossaries
  found. (Remove \makenoidxglossaries if you don't want any glossaries.)
 This document will not have a glossary.
 
+[2 <../figures//google-create-instance.png>]
 
-/Users/thuynt/Working/canvas-ui/Thesis/chapters/chap4-xay-dung-he-thong-va-cai-dat.tex:146: LaTeX Error: \begin{figure} on input line 140 ended by \end{document}.
+LaTeX Warning: Text page 3 contains only floats.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.146 \end{document}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-(./chap4-xay-dung-he-thong-va-cai-dat.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `chap4-xay-dung-he-thong-va-cai-dat.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `chap4-xay-dung-he-thong-va-cai-dat.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  01DC48B518E37019A2FD100EFA82A537;567.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                chap4-xay-dung-he-thong-va-cai-dat
-(biblatex)                and rerun LaTeX afterwards.
-
+[3 <../figures//google-network.png> <../figures//2-landing-page.png> <../figures//3-dang-nhap.png>] [4 <../figures//4-trang-chu.png> <../figures//5-tao-khoa-hoc.png> <../figures//6-danh-sach-khoa-hoc.png> <../figures//7-danh-sach-nhom-va-bai-tap.png>] [5 <../figures//8-tao-moi-nhom-bai-tap.png> <../figures//9-tao-bai-tap.png>] [6 <../figures//10-chi-tiet-bai-tap.png>] [7 <../figures//11-chinh-sua-bai-tap.png>] [8 <../figures//cau-hoi-kiem-tra.png>] [9 <../figures//them-moi-cau-hoi-kiem-tra.png>] [10 <../figures//chinh-sua-cau-hoi-kiem-tra.png>] [11 <../figures//chi-tiet-cau-hoi-kiem-tra.png>] [12 <../figures//them-cau-hoi.png>] [13 <../figures//chinh-sua-cau-hoi.png>] [14 <../figures//12-lich-su-kien.png>] [15 <../figures//13-tao-su-kien-lich.png>] [16 <../figures//14-danh-sach-su-kien.png>] [17 <../figures//15-tin-nhan.png>] [18 <../figures//16-chi-tiet-tin-nhan.png>] [19 <../figures//cai-dat.png> <../figures//17-thong-bao.png>] (./chap4-xay-dung-he-thong-va-cai-dat.aux)
+Package rerunfilecheck Info: File `chap4-xay-dung-he-thong-va-cai-dat.out' has not changed.
+(rerunfilecheck)             Checksum: C7570223F56332F597B73874E1161B55;1254.
 Package logreq Info: Writing requests to 'chap4-xay-dung-he-thong-va-cai-dat.run.xml'.
 \openout1 = `chap4-xay-dung-he-thong-va-cai-dat.run.xml'.
 
-/Users/thuynt/Working/canvas-ui/Thesis/chapters/chap4-xay-dung-he-thong-va-cai-dat.tex:146: You can't use `\end' in internal vertical mode.
-\AP@enddocument ...ent/end}\deadcycles \z@ \@@end 
-                                                  
-l.146 \end{document}
-                    
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-/Users/thuynt/Working/canvas-ui/Thesis/chapters/chap4-xay-dung-he-thong-va-cai-dat.tex:146: LaTeX Error: \begin{figure} on input line 140 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.146 \end{document}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-/Users/thuynt/Working/canvas-ui/Thesis/chapters/chap4-xay-dung-he-thong-va-cai-dat.tex:146: Missing } inserted.
-<inserted text> 
-                }
-l.146 \end{document}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-)
-! Emergency stop.
-<*> ...chapters/chap4-xay-dung-he-thong-va-cai-dat
-                                                  
-*** (job aborted, no legal \end found)
-
- 
+ ) 
 Here is how much of TeX's memory you used:
- 26955 strings out of 476025
- 476445 string characters out of 5790018
+ 27116 strings out of 476025
+ 480416 string characters out of 5790018
  1864388 words of memory out of 5000000
- 46984 multiletter control sequences out of 15000+600000
+ 47092 multiletter control sequences out of 15000+600000
  528529 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  114i,12n,107p,2380b,854s stack positions out of 10000i,1000n,20000p,200000b,200000s
-!  ==> Fatal error occurred, no output PDF file produced!
+</usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/urwvn/utmb8v.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.pfb>
+Output written on chap4-xay-dung-he-thong-va-cai-dat.pdf (19 pages, 3834592 bytes).
+PDF statistics:
+ 223 PDF objects out of 1000 (max. 8388607)
+ 142 compressed objects within 2 object streams
+ 55 named destinations out of 1000 (max. 500000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
+
