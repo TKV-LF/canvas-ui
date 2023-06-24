@@ -14,10 +14,7 @@ export default function ActionMenu({ options }) {
         setAnchorEl(null);
     };
 
-    const handleAction = (action) => {
-        console.log('action', action);
-        action();
-    };
+   
 
     return (
         <div>

@@ -175,7 +175,7 @@ const Assignment = () => {
                                         <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
                                             {assignment.unlock_at
                                                 ? assignment.unlock_at.substring(0, 10)
-                                                : 'Không có hạn nộp'}
+                                                : 'Không có thời gian bắt đầu'}
                                         </dd>
                                     </div>
                                     <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -183,7 +183,7 @@ const Assignment = () => {
                                         <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
                                             {assignment.lock_at
                                                 ? assignment.lock_at.substring(0, 10)
-                                                : 'Không có hạn nộp'}
+                                                : 'Không có thời gian kết thúc'}
                                         </dd>
                                     </div>
                                 </dl>

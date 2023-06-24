@@ -181,6 +181,173 @@ const CourseApi = {
             throw error;
         }
     },
+    getQuizzes: async (payload) => {
+        try {
+            const response = await apiClient.get(`/api/v1/courses/${payload.courseId}/quizzes`);
+            return response;
+        } catch (error) {
+            throw error;
+        }
+    },
+    getQuiz: async (payload) => {
+        try {
+            const response = await apiClient.get(`/api/v1/courses/${payload.courseId}/quizzes/${payload.quizId}`);
+            return response;
+        } catch (error) {
+            throw error;
+        }
+    },
+    createQuiz: async (payload) => {
+        try {
+            const response = await apiClient.post(`/api/v1/courses/${payload.courseId}/quizzes`, payload);
+            return response;
+        } catch (error) {
+            throw error;
+        }
+    },
+    editQuiz: async (payload) => {
+        try {
+            const response = await apiClient.put(
+                `/api/v1/courses/${payload.courseId}/quizzes/${payload.quizId}`,
+                payload,
+            );
+            return response;
+        } catch (error) {
+            throw error;
+        }
+    },
+    deleteQuiz: async (payload) => {
+        try {
+            const response = await apiClient.delete(`/api/v1/courses/${payload.courseId}/quizzes/${payload.quizId}`);
+            return response;
+        } catch (error) {
+            throw error;
+        }
+    },
+    getQuizQuestions: async (payload) => {
+        try {
+            const response = await apiClient.get(
+                `/api/v1/courses/${payload.courseId}/quizzes/${payload.quizId}/questions`,
+            );
+            return response;
+        } catch (error) {
+            throw error;
+        }
+    },
+    getQuizQuestion: async (payload) => {
+        try {
+            const response = await apiClient.get(
+                `/api/v1/courses/${payload.courseId}/quizzes/${payload.quizId}/questions/${payload.questionId}`,
+            );
+            return response;
+        } catch (error) {
+            throw error;
+        }
+    },
+    createQuizQuestion: async (payload) => {
+        try {
+            const response = await apiClient.post(
+                `/api/v1/courses/${payload.courseId}/quizzes/${payload.quizId}/questions`,
+                payload,
+            );
+            return response;
+        } catch (error) {
+            throw error;
+        }
+    },
+    editQuizQuestion: async (payload) => {
+        try {
+            const response = await apiClient.put(
+                `/api/v1/courses/${payload.courseId}/quizzes/${payload.quiz_id}/questions/${payload.id}`,
+                payload,
+            );
+            return response;
+        } catch (error) {
+            throw error;
+        }
+    },
+    deleteQuizQuestion: async (payload) => {
+        try {
+            const response = await apiClient.delete(
+                `/api/v1/courses/${payload.courseId}/quizzes/${payload.quiz_id}/questions/${payload.question_id}`,
+            );
+            return response;
+        } catch (error) {
+            throw error;
+        }
+    },
+    getQuizQuestionGroup: async (payload) => {
+        try {
+            const response = await apiClient.get(
+                `/api/v1/courses/${payload.courseId}/quizzes/${payload.quizId}/groups/${payload.questionGroupId}`,
+            );
+            return response;
+        } catch (error) {
+            throw error;
+        }
+    },
+    createQuizQuestionGroup: async (payload) => {
+        try {
+            const response = await apiClient.post(
+                `/api/v1/courses/${payload.courseId}/quizzes/${payload.quizId}/groups`,
+                payload,
+            );
+            return response;
+        } catch (error) {
+            throw error;
+        }
+    },
+    editQuizQuestionGroup: async (payload) => {
+        try {
+            const response = await apiClient.put(
+                `/api/v1/courses/${payload.courseId}/quizzes/${payload.quizId}/groups/${payload.questionGroupId}`,
+                payload,
+            );
+            return response;
+        } catch (error) {
+            throw error;
+        }
+    },
+    deleteQuizQuestionGroup: async (payload) => {
+        try {
+            const response = await apiClient.delete(
+                `/api/v1/courses/${payload.courseId}/quizzes/${payload.quizId}/groups/${payload.questionGroupId}`,
+            );
+            return response;
+        } catch (error) {
+            throw error;
+        }
+    },
+    getQuizQuestionGroupQuestions: async (payload) => {
+        try {
+            const response = await apiClient.get(
+                `/api/v1/courses/${payload.courseId}/quizzes/${payload.quizId}/groups/${payload.questionGroupId}/questions`,
+            );
+            return response;
+        } catch (error) {
+            throw error;
+        }
+    },
+    getQuizSubmissions: async (payload) => {
+        try {
+            const response = await apiClient.get(
+                `/api/v1/courses/${payload.courseId}/quizzes/${payload.quizId}/submissions`,
+            );
+            return response;
+        } catch (error) {
+            throw error;
+        }
+    },
+    getQuizSubmission: async (payload) => {
+        try {
+            const response = await apiClient.get(
+                `/api/v1/courses/${payload.courseId}/quizzes/${payload.quizId}/submissions/${payload.submissionId}`,
+            );
+            return response;
+        } catch (error) {
+            throw error;
+        }
+    },
 };
 
 export default CourseApi;

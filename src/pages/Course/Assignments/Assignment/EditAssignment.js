@@ -230,7 +230,7 @@ function EditAssignmentForm({ assignmentGroups, assignment }) {
             if (res.status === 201) {
                 notification.success({
                     message: 'Thành công',
-                    description: 'Tạo bài tập thành công',
+                    description: 'Sửa bài tập thành công',
                 });
             }
 
@@ -243,7 +243,7 @@ function EditAssignmentForm({ assignmentGroups, assignment }) {
         } catch (err) {
             notification.error({
                 message: 'Lỗi',
-                description: 'Tạo bài tập thất bại',
+                description: 'Sửa bài tập thất bại',
             });
         }
     };
