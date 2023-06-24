@@ -13,6 +13,26 @@ const UserApi = {
             throw error;
         }
     },
+
+    getUserInformation: async (userId) => {
+        try {
+            const response = await apiClient.get(`/api/v1/users/${userId}`);
+            return response.data;
+        } catch (error) {
+            // Rethrow the error to allow error handling further up the call stack
+            throw error;
+        }
+    },
+
+    updateUserInformation: async (userId, payload) => {
+        try {
+            const response = await apiClient.put(`/api/v1/users/${userId}`, payload);
+            return response.data;
+        } catch (error) {
+            // Rethrow the error to allow error handling further up the call stack
+            throw error;
+        }
+    },
 };
 
 export default UserApi;

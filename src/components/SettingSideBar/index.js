@@ -8,8 +8,9 @@ const SettingSideBar = () => {
             {PROFILE_MENU_LIST.map((item) => {
                 return (
                     <ListItemButton
-                    sx={{ borderRadius: '6px' }}
-                    component={NavLink}
+                        key={item.path}
+                        sx={{ borderRadius: '6px' }}
+                        component={NavLink}
                         to={item.path}
                         style={({ isActive }) => (isActive ? { backgroundColor: '#c3ccdb' } : null)}
                     >
