@@ -15,6 +15,7 @@
 # dotenv environment variables file
 
 .yarnrc
+.env
 
 # misc
 .DS_Store

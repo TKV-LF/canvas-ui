@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.9)  22 JUN 2023 23:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.9)  24 JUN 2023 00:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -967,7 +967,8 @@ Package: hypcap 2016/05/16 v1.12 Adjusting the anchors of captions (HO)
 LaTeX Font Info:    Trying to load font information for T5+ptm on input line 97.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/vntex/t5ptm.fd
 File: t5utm.fd 2005/08/24 Fontinst v1.929 font definitions for T5/ptm.
-) (./Thesis.aux)
+)
+No file Thesis.aux.
 \openout1 = `Thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
@@ -990,7 +991,6 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 97.
 LaTeX Font Info:    ... okay on input line 97.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 97.
 LaTeX Font Info:    ... okay on input line 97.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1068,7 +1068,6 @@ Package biblatex Info: Reference section=0 on input line 97.
 Package biblatex Info: Reference segment=0 on input line 97.
 \c@lstlisting=\count466
 Package hyperref Info: Link coloring OFF on input line 97.
-(./Thesis.out) (./Thesis.out)
 \@outlinefile=\write5
 \openout5 = `Thesis.out'.
 
@@ -1104,8 +1103,8 @@ Package hyperref Info: Link coloring OFF on input line 97.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- (./cover.tex
-<figures//logo.png, id=164, 1204.5pt x 1002.74625pt>
+(./cover.tex
+<figures//logo.png, id=4, 1204.5pt x 1002.74625pt>
 File: figures//logo.png Graphic file (type png)
 <use figures//logo.png>
 Package pdftex.def Info: figures//logo.png  used on input line 14.
@@ -1118,35 +1117,26 @@ Package pdftex.def Info: figures//logo.png  used on input line 14.
 
 ] [2
 
-] (./Thesis.toc
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 4.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/base/ulasy.fd
-File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [3
-
-])
+]
+No file Thesis.toc.
 \tf@toc=\write6
 \openout6 = `Thesis.toc'.
 
- [4] (./Thesis.lof)
+[3
+
+]
+No file Thesis.lof.
 \tf@lof=\write7
 \openout7 = `Thesis.lof'.
 
- [5
+[4
 
-] (./Thesis.lot)
+]
+No file Thesis.lot.
 \tf@lot=\write8
 \openout8 = `Thesis.lot'.
 
- [6
+[5
 
 ]
 Ch\uhorn \ohorn ng 1.
@@ -1162,7 +1152,7 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 25
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-<figures//lms-market.jpg, id=249, 2168.1pt x 1409.265pt>
+<figures//lms-market.jpg, id=45, 2168.1pt x 1409.265pt>
 File: figures//lms-market.jpg Graphic file (type jpg)
 <use figures//lms-market.jpg>
 Package pdftex.def Info: figures//lms-market.jpg  used on input line 38.
@@ -1181,42 +1171,185 @@ Ch\uhorn \ohorn ng 3.
 (./chapters/chap3-phan-tich-yeu-cau.tex [17
 
 ] [18] [19] [20]) [21]
+Ch\uhorn \ohorn ng 4.
+(./chapters/chap4-xay-dung-he-thong-va-cai-dat.tex
+<figures//1-google-cloud-console.png, id=168, 1445.4pt x 825.0825pt>
+File: figures//1-google-cloud-console.png Graphic file (type png)
+<use figures//1-google-cloud-console.png>
+Package pdftex.def Info: figures//1-google-cloud-console.png  used on input line 9.
+(pdftex.def)             Requested size: 216.80064pt x 123.75703pt.
+ [22
 
-LaTeX Warning: Empty bibliography on input line 160.
+ <./figures//1-google-cloud-console.png>]
+<figures//google-create-instance.png, id=180, 3854.4pt x 2168.1pt>
+File: figures//google-create-instance.png Graphic file (type png)
+<use figures//google-create-instance.png>
+Package pdftex.def Info: figures//google-create-instance.png  used on input line 23.
+(pdftex.def)             Requested size: 578.13507pt x 325.20097pt.
+
+Overfull \hbox (122.89096pt too wide) in paragraph at lines 23--24
+ [][] 
+ []
+
+<figures//google-network.png, id=181, 3854.4pt x 2168.1pt>
+File: figures//google-network.png Graphic file (type png)
+<use figures//google-network.png>
+Package pdftex.def Info: figures//google-network.png  used on input line 35.
+(pdftex.def)             Requested size: 578.13507pt x 325.20097pt.
+
+Overfull \hbox (122.89096pt too wide) in paragraph at lines 35--36
+ [][] 
+ []
+
+[23 <./figures//google-create-instance.png>]
+<figures//2-landing-page.png, id=190, 1444.39626pt x 822.07124pt>
+File: figures//2-landing-page.png Graphic file (type png)
+<use figures//2-landing-page.png>
+Package pdftex.def Info: figures//2-landing-page.png  used on input line 51.
+(pdftex.def)             Requested size: 216.65009pt x 123.30536pt.
+<figures//3-dang-nhap.png, id=191, 1445.4pt x 822.07124pt>
+File: figures//3-dang-nhap.png Graphic file (type png)
+<use figures//3-dang-nhap.png>
+Package pdftex.def Info: figures//3-dang-nhap.png  used on input line 57.
+(pdftex.def)             Requested size: 216.80064pt x 123.30536pt.
+<figures//4-trang-chu.png, id=192, 1445.4pt x 822.07124pt>
+File: figures//4-trang-chu.png Graphic file (type png)
+<use figures//4-trang-chu.png>
+Package pdftex.def Info: figures//4-trang-chu.png  used on input line 63.
+(pdftex.def)             Requested size: 216.80064pt x 123.30536pt.
+<figures//5-tao-khoa-hoc.png, id=193, 1445.4pt x 823.075pt>
+File: figures//5-tao-khoa-hoc.png Graphic file (type png)
+<use figures//5-tao-khoa-hoc.png>
+Package pdftex.def Info: figures//5-tao-khoa-hoc.png  used on input line 69.
+(pdftex.def)             Requested size: 216.80064pt x 123.45592pt.
+<figures//6-danh-sach-khoa-hoc.png, id=194, 1445.4pt x 821.0675pt>
+File: figures//6-danh-sach-khoa-hoc.png Graphic file (type png)
+<use figures//6-danh-sach-khoa-hoc.png>
+Package pdftex.def Info: figures//6-danh-sach-khoa-hoc.png  used on input line 74.
+(pdftex.def)             Requested size: 216.80064pt x 123.1548pt.
+<figures//7-danh-sach-nhom-va-bai-tap.png, id=195, 1445.4pt x 818.05624pt>
+File: figures//7-danh-sach-nhom-va-bai-tap.png Graphic file (type png)
+<use figures//7-danh-sach-nhom-va-bai-tap.png>
+Package pdftex.def Info: figures//7-danh-sach-nhom-va-bai-tap.png  used on input line 80.
+(pdftex.def)             Requested size: 216.80064pt x 122.70314pt.
+<figures//8-tao-moi-nhom-bai-tap.png, id=196, 1445.4pt x 822.07124pt>
+File: figures//8-tao-moi-nhom-bai-tap.png Graphic file (type png)
+<use figures//8-tao-moi-nhom-bai-tap.png>
+Package pdftex.def Info: figures//8-tao-moi-nhom-bai-tap.png  used on input line 87.
+(pdftex.def)             Requested size: 216.80064pt x 123.30536pt.
+<figures//9-tao-bai-tap.png, id=197, 3854.4pt x 2168.1pt>
+File: figures//9-tao-bai-tap.png Graphic file (type png)
+<use figures//9-tao-bai-tap.png>
+Package pdftex.def Info: figures//9-tao-bai-tap.png  used on input line 93.
+(pdftex.def)             Requested size: 578.13507pt x 325.20097pt.
+
+Overfull \hbox (122.89096pt too wide) in paragraph at lines 93--94
+ [][] 
+ []
+
+<figures//10-chi-tiet-bai-tap.png, id=198, 3854.4pt x 2168.1pt>
+File: figures//10-chi-tiet-bai-tap.png Graphic file (type png)
+<use figures//10-chi-tiet-bai-tap.png>
+Package pdftex.def Info: figures//10-chi-tiet-bai-tap.png  used on input line 99.
+(pdftex.def)             Requested size: 578.13507pt x 325.20097pt.
+
+Overfull \hbox (122.89096pt too wide) in paragraph at lines 99--100
+ [][] 
+ []
+
+<figures//11-chinh-sua-bai-tap.png, id=199, 3854.4pt x 3095.565pt>
+File: figures//11-chinh-sua-bai-tap.png Graphic file (type png)
+<use figures//11-chinh-sua-bai-tap.png>
+Package pdftex.def Info: figures//11-chinh-sua-bai-tap.png  used on input line 105.
+(pdftex.def)             Requested size: 578.13507pt x 464.31473pt.
+
+Overfull \hbox (122.89096pt too wide) in paragraph at lines 105--106
+ [][] 
+ []
+
+<figures//12-lich-su-kien.png, id=200, 3854.4pt x 2168.1pt>
+File: figures//12-lich-su-kien.png Graphic file (type png)
+<use figures//12-lich-su-kien.png>
+Package pdftex.def Info: figures//12-lich-su-kien.png  used on input line 111.
+(pdftex.def)             Requested size: 578.13507pt x 325.20097pt.
+
+Overfull \hbox (122.89096pt too wide) in paragraph at lines 111--112
+ [][] 
+ []
+
+<figures//13-tao-su-kien-lich.png, id=201, 3854.4pt x 2168.1pt>
+File: figures//13-tao-su-kien-lich.png Graphic file (type png)
+<use figures//13-tao-su-kien-lich.png>
+Package pdftex.def Info: figures//13-tao-su-kien-lich.png  used on input line 117.
+(pdftex.def)             Requested size: 578.13507pt x 325.20097pt.
+
+Overfull \hbox (122.89096pt too wide) in paragraph at lines 117--118
+ [][] 
+ []
+
+<figures//14-danh-sach-su-kien.png, id=202, 3854.4pt x 2168.1pt>
+File: figures//14-danh-sach-su-kien.png Graphic file (type png)
+<use figures//14-danh-sach-su-kien.png>
+Package pdftex.def Info: figures//14-danh-sach-su-kien.png  used on input line 123.
+(pdftex.def)             Requested size: 578.13507pt x 325.20097pt.
+
+Overfull \hbox (122.89096pt too wide) in paragraph at lines 123--124
+ [][] 
+ []
+
+<figures//15-tin-nhan.png, id=203, 3854.4pt x 2296.58pt>
+File: figures//15-tin-nhan.png Graphic file (type png)
+<use figures//15-tin-nhan.png>
+Package pdftex.def Info: figures//15-tin-nhan.png  used on input line 129.
+(pdftex.def)             Requested size: 578.13507pt x 344.47214pt.
+
+Overfull \hbox (122.89096pt too wide) in paragraph at lines 129--130
+ [][] 
+ []
+
+<figures//16-chi-tiet-tin-nhan.png, id=204, 3854.4pt x 2296.58pt>
+File: figures//16-chi-tiet-tin-nhan.png Graphic file (type png)
+<use figures//16-chi-tiet-tin-nhan.png>
+Package pdftex.def Info: figures//16-chi-tiet-tin-nhan.png  used on input line 135.
+(pdftex.def)             Requested size: 578.13507pt x 344.47214pt.
+
+Overfull \hbox (122.89096pt too wide) in paragraph at lines 135--136
+ [][] 
+ []
+
+<figures//17-thong-bao.png, id=205, 1445.4pt x 764.8575pt>
+File: figures//17-thong-bao.png Graphic file (type png)
+<use figures//17-thong-bao.png>
+Package pdftex.def Info: figures//17-thong-bao.png  used on input line 141.
+(pdftex.def)             Requested size: 216.80064pt x 114.72366pt.
+)
+/Users/thuynt/Working/canvas-ui/Thesis/Thesis.tex:159: Missing } inserted.
+<inserted text> 
+                }
+l.159 ...pters/chap4-xay-dung-he-thong-va-cai-dat}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
 
-Package glossaries Warning: No \printnoidxglossary or \printnoidxglossaries
- found. (Remove \makenoidxglossaries if you don't want any glossaries.)
-This document will not have a glossary.
+LaTeX Warning: Empty bibliography on input line 165.
 
-(./Thesis.aux)
+)
+! Emergency stop.
+<*> /Users/thuynt/Working/canvas-ui/Thesis/Thesis
+                                                 
+*** (job aborted, no legal \end found)
 
-LaTeX Warning: There were undefined references.
-
-Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 47DE917A2122DC97CA3129EB87975031;7709.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                Thesis
-(biblatex)                and rerun LaTeX afterwards.
-
-Package logreq Info: Writing requests to 'Thesis.run.xml'.
-\openout1 = `Thesis.run.xml'.
-
- ) 
+ 
 Here is how much of TeX's memory you used:
- 27012 strings out of 476025
- 473407 string characters out of 5790018
- 1862388 words of memory out of 5000000
- 46928 multiletter control sequences out of 15000+600000
- 544513 words of font info for 67 fonts, out of 8000000 for 9000
+ 27073 strings out of 476025
+ 477447 string characters out of 5790018
+ 1861388 words of memory out of 5000000
+ 47017 multiletter control sequences out of 15000+600000
+ 539848 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,10n,90p,2303b,867s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/urwvn/utmb8v.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.pfb>
-Output written on Thesis.pdf (28 pages, 1057984 bytes).
-PDF statistics:
- 370 PDF objects out of 1000 (max. 8388607)
- 327 compressed objects within 4 object streams
- 72 named destinations out of 1000 (max. 500000)
- 331 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+!  ==> Fatal error occurred, no output PDF file produced!

@@ -8,7 +8,7 @@ function List() {
     const columns = [
         {
             key: 'title',
-            name: 'Name',
+            name: 'Tên sự kiện',
             fieldName: 'title',
             minWidth: 200,
             maxWidth: 200,

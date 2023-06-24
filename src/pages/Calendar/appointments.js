@@ -1,5 +1,4 @@
 import { CalendarApi } from '~/services/api';
-import { useEffect, useState } from 'react';
 
 const Func = () => {
     let payload = {

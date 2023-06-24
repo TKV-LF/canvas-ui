@@ -41,13 +41,13 @@
   >
 ]>
 <requests version="1.0">
-  <internal package="biblatex" priority="9" active="0">
+  <internal package="biblatex" priority="9" active="1">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>chap2-co-so-ly-thuyet.bcf</file>
+      <file>chap4-xay-dung-he-thong-va-cai-dat.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>chap2-co-so-ly-thuyet.bbl</file>
+      <file>chap4-xay-dung-he-thong-va-cai-dat.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -64,23 +64,23 @@
       <file>english.lbx</file>
     </requires>
   </internal>
-  <external package="biblatex" priority="5" active="0">
+  <external package="biblatex" priority="5" active="1">
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>chap2-co-so-ly-thuyet</infile>
+      <infile>chap4-xay-dung-he-thong-va-cai-dat</infile>
     </cmdline>
     <input>
-      <file>chap2-co-so-ly-thuyet.bcf</file>
+      <file>chap4-xay-dung-he-thong-va-cai-dat.bcf</file>
     </input>
     <output>
-      <file>chap2-co-so-ly-thuyet.bbl</file>
+      <file>chap4-xay-dung-he-thong-va-cai-dat.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>chap2-co-so-ly-thuyet.bbl</file>
+      <file>chap4-xay-dung-he-thong-va-cai-dat.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>chap2-co-so-ly-thuyet.bcf</file>
+      <file>chap4-xay-dung-he-thong-va-cai-dat.bcf</file>
     </requires>
     <requires type="editable">
       <file>bibliography/main.bib</file>

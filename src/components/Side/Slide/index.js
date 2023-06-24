@@ -26,7 +26,7 @@ const SideSlide = ({ title, display, left, children }) => {
 	return (
 
 		open ? (
-			<div ref={wrapperRef} className={`absolute ${left} top-0 side-slide border h-screen w-80 bg-[#fff] z-50 overflow-scroll transition-2`}>
+			<div ref={wrapperRef} className={`absolute text-left ${left} top-0 side-slide border h-screen w-80 bg-[#fff] z-50 overflow-scroll transition-2`}>
 				<div className="w-full border-b h-16 mx-6 pt-5">
 					<div className="text-xl mb-2 font-bold">{title}</div>
 
