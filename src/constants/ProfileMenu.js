@@ -9,12 +9,12 @@ export const PROFILE_MENU_LIST = [
         icon: <SettingsIcon></SettingsIcon>,
     },
     {
-        label: 'Thông báo',
+        label: 'Thông báo (Coming soon)',
         path: '/settings/notifications',
         icon: <NotificationsIcon></NotificationsIcon>,
     },
     {
-        label: 'Thông báo tổng',
+        label: 'Thông báo tổng(Coming soon)',
         path: '/settings/announcement',
         icon: <CampaignIcon></CampaignIcon>,
     },

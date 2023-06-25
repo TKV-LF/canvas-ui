@@ -2,6 +2,7 @@
 \usepackage[utf8]{vietnam} % Sử dụng tiếng việt
 \usepackage[top=2.5cm, bottom=2.5cm, left=3cm, right=2cm] {geometry} % Canh lề trang
 \usepackage{graphicx} % Cho phép chèn hỉnh ảnh
+\usepackage{placeins}
 \usepackage{fancybox} % Tạo khung box
 \usepackage{amsthm} % Cho phép thêm các môi trường định nghĩa
 \usepackage{latexsym} % Các kí hiệu toán học
@@ -28,6 +29,7 @@
 \setglossarystyle{superraggedheaderborder}
 \usepackage{setspace}
 \usepackage{parskip}
+
 
 \setlength{\glsdescwidth}{9cm}
 
@@ -103,7 +105,7 @@ pdfmenubar=false % Ẩn đi menu bar trong PDF viewer
 
 \chapter*{Lời cam đoan}
 
-xzcxzcx
+Tác giả xin cam đoan đây là Đồ án tốt nghiệp của bản thân tác giả. Các kết quả trong Đồ án tốt nghiệp này là trung thực và không sao chép từ bất kỳ một nguồn nào và dưới bất kỳ hình thức nào. Việc tham khảo các nguồn tài liệu (nếu có) đã được thực hiện trích dẫn và ghi nguồn tài liệu tham khảo đúng quy định.
 \newpage
 
 \chapter*{Lời cảm ơn}
@@ -124,15 +126,6 @@ Tôi rất biết ơn vì sự hỗ trợ và cảm giác được đồng hành
 \addcontentsline{toc}{chapter}{Danh mục hình ảnh}
 
 \glsaddall
-% \renewcommand*{\glossaryname}{Danh sách thuật ngữ}
-% \renewcommand*{\acronymname}{Danh sách từ viết tắt}
-% \renewcommand*{\entryname}{Tiếng Anh}
-% \renewcommand*{\descriptionname}{Tiếng Việt}
-% \printnoidxglossary
-
-\newpage
-\pagenumbering{arabic}
-% \subfile{chapters/intro} % Phần mở đầu
 
 \newpage
 \pagestyle{fancy} % Áp dụng header và footer
@@ -155,7 +148,46 @@ Tôi rất biết ơn vì sự hỗ trợ và cảm giác được đồng hành
 \subfile{chapters/chap4-xay-dung-he-thong-va-cai-dat}
 
 \newpage
-\addcontentsline{toc}{chapter}{Tài liệu tham khảo}
+\pagestyle{fancy} % Áp dụng header và footer
+\chapter{Đánh giá và kết luận}
+\subfile{chapters/chap5-danh-gia-va-ket-luan.tex}
+
+\newpage
+\renewcommand{\bibname}{Tài liệu tham khảo}
+\begin{thebibliography}{9}
+
+  \bibitem{cassandra}
+  Apache Software Foundation. (2021). \textit{Apache Cassandra}. Retrieved from \url{https://cassandra.apache.org/}
+  
+  \bibitem{progit}
+  Chacon, S., \& Straub, B. (2014). \textit{Pro Git}. Apress.
+  
+  \bibitem{react}
+  Facebook. (2021). \textit{React - A JavaScript library for building user interfaces}. Retrieved from \url{https://reactjs.org/}
+  
+  \bibitem{gcp}
+  Google Cloud. (2021). \textit{Google Cloud Server}. Retrieved from \url{https://cloud.google.com/}
+  
+  \bibitem{mailgun}
+  Mailgun. (2021). \textit{Mailgun Documentation}. Retrieved from \url{https://documentation.mailgun.com/}
+  
+  \bibitem{canvaslms}
+  Open Source Canvas LMS. (2021). Retrieved from \url{https://github.com/instructure/canvas-lms}
+  
+  \bibitem{postgresql}
+  PostgreSQL. (2021). \textit{PostgreSQL: The world's most advanced open source database}. Retrieved from \url{https://www.postgresql.org/}
+  
+  \bibitem{html}
+  W3Schools. (2021). \textit{HTML Tutorial}. Retrieved from \url{https://www.w3schools.com/html/}
+  
+  \bibitem{css}
+  W3Schools. (2021). \textit{CSS Tutorial}. Retrieved from \url{https://www.w3schools.com/css/}
+  
+  \bibitem{javascript}
+  W3Schools. (2021). \textit{JavaScript Tutorial}. Retrieved from \url{https://www.w3schools.com/js/}
+  
+\end{thebibliography}
+  
 \nocite{*} % Tùy chọn cho phép in tất cả danh mục tài liệu tham khảo, kể cả tài liệu không được tham chiếu
 \pagestyle{plain}
 \printbibliography % In ra danh mục tài liệu tham khảo

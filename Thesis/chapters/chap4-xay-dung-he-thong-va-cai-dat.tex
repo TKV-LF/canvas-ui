@@ -5,11 +5,12 @@
     \subsection{Chuẩn bị môi trường}
     \begin{enumerate}
         \item Đăng ký tài khoản Google Cloud: Truy cập vào trang web của Google Cloud và tạo một tài khoản nếu bạn chưa có. Sau khi hoàn thành việc đăng ký, bạn sẽ được chuyển đến bảng điều khiển Google Cloud.
-        \begin{figure}[ht!]
-            \centering\includegraphics[width=300pt]{1-google-cloud-console}
+        \begin{figure}[hbt!]
+            \centering\includegraphics[width=300pt, height=200pt]{1-google-cloud-console}
             \caption{Màn hình Google Cloud Console}
             \label{fig:google-cloud-console}
         \end{figure}
+        \FloatBarrier
         \item Tạo máy ảo: Trên bảng điều khiển Google Cloud, chúng ta sẽ thực hiện việc tạo một máy ảo để chạy Canvas LMS. Để tạo máy ảo, chúng ta nhấp vào mục "Compute Engine" trên bảng điều khiển. Tiếp theo, chọn "Máy ảo" và nhấp vào nút "Tạo máy ảo".
 
         Trong trang tạo máy ảo, bạn sẽ cần cung cấp các thông tin sau:
@@ -19,11 +20,12 @@
             \item Vùng địa lý: Chọn vùng địa lý gần với địa điểm của bạn để đảm bảo tốc độ truy cập nhanh nhất.
             \item Firewall: Cấu hình các quy tắc tường lửa cho phép truy cập vào máy ảo.
         \end{itemize}
-        \begin{figure}[ht!]
-            \centering\includegraphics[width=300pt]{google-create-instance}
+        \begin{figure}[hbt!]
+            \centering\includegraphics[width=300pt, height=200pt]{google-create-instance}
             \caption{Màn hình tạo máy ảo}
             \label{fig:google-create-instance}
         \end{figure}
+        \FloatBarrier
 
         \item Cấu hình mạng: Đảm bảo rằng máy ảo của bạn được cấu hình để có địa chỉ IP công cộng và có quyền truy cập Internet. Điều này sẽ đảm bảo rằng máy ảo có thể truy cập vào các tài nguyên cần thiết và có thể phục vụ các yêu cầu từ người dùng.
 
@@ -31,11 +33,12 @@
         
         Ở đây, chúng ta có thể thực hiện các tác vụ như gán địa chỉ IP công cộng, tạo và quản lý các quy tắc tường lửa, cấu hình phân giải tên miền và nhiều hơn nữa.
 
-        \begin{figure}[ht!]
-            \centering\includegraphics[width=300pt]{google-network}
+        \begin{figure}[hbt!]
+            \centering\includegraphics[width=300pt, height=200pt]{google-network}
             \caption{Cài đặt mạng cho máy ảo}
             \label{fig:google-network}
         \end{figure}
+        \FloatBarrier
 
         \item Cài đặt và cấu hình Canvas LMS: Sau khi đã chuẩn bị môi trường, chúng ta có thể tiến hành cài đặt và cấu hình Canvas LMS trên máy ảo. Quá trình này bao gồm cài đặt Ruby, PostgreSQL, các gói phụ thuộc và mã nguồn Canvas LMS.
 
@@ -282,162 +285,248 @@
             Sau khi khởi động lại Canvas LMS, chúng ta sẽ truy cập vào địa chỉ \url{http://35.247.158.82} để kiểm tra kết quả.
         \end{enumerate}
 
-    \subsection{Xây dựng phần giao diện cho hệ thống}
-    \label{subsec:xay-dung-giao-dien}
-    \subsubsection{Xây dựng giao diện chung}
-    \label{subsubsec:xay-dung-giao-dien-chung}
-        Phần landing page của hệ thống được thể hiện ở hình:
-        \begin{figure}[ht!]
-            \centering\includegraphics[width=300pt]{landing-page}
-            \caption{Màn hình landing page của hệ thống}
-            \label{fig:landing-page}
-        \end{figure}
+\section{Xây dựng phần giao diện cho hệ thống}
+\label{subsec:xay-dung-giao-dien}
 
-    \subsubsection{Xây dựng giao diện cho phần quản trị viên}
-    \label{subsubsec:xay-dung-giao-dien-admin}
+    Trong phiên bản hiện tại của hệ thống, Tôi đã xây dựng và triển khai một số phần quan trọng nhằm đáp ứng các yêu cầu và chức năng cơ bản của một nền tảng học trực tuyến. Dưới đây là mô tả chi tiết về các phần đã được xây dựng:
+
+    \begin{itemize}
+        \item Landing page:
+            \begin{itemize}
+                \item Trang landing page được thiết kế để hiển thị các khoá học công khai, giới thiệu về nền tảng và thu hút sự quan tâm của người dùng.
+                \item Trang này cung cấp một giao diện hấp dẫn với thông tin tóm tắt về các khoá học và mô tả về chương trình học.
+            \end{itemize}
+        \item Đăng nhập:
+            \begin{itemize}
+                \item Phần đăng nhập cho phép người dùng truy cập vào tài khoản cá nhân của mình thông qua việc nhập thông tin đăng nhập.
+                \item Tôi đã tạo giao diện đơn giản và bảo mật để đảm bảo quyền riêng tư và truy cập an toàn cho người dùng.
+            \end{itemize}
     
-        Phần đăng nhập của phần quản trị viên được thể hiện ở hình:
-        \begin{figure}[ht!]
-            \centering\includegraphics[width=300pt]{dang-nhap-admin}
-            \caption{Màn hình đăng nhập của phần quản trị viên}
-            \label{fig:dang-nhap-admin}
-        \end{figure}
+        \item Hiển thị khoá học:
+            \begin{itemize}
+    
+                \item Trang hiển thị khoá học cung cấp một giao diện dễ sử dụng và thân thiện cho người dùng để tìm kiếm, xem và tham gia các khoá học.
+                \item Các khoá học được hiển thị dưới dạng danh sách hoặc lưới, kèm theo thông tin chi tiết về mô tả, giảng viên, thời gian học, và điểm số.
+            \end{itemize}
+        \item Quản lý khoá học:
+            \begin{itemize}
+                \item Tôi đã phát triển các chức năng quản lý khoá học cho giảng viên, cho phép họ thêm, sửa đổi và xoá các khoá học một cách dễ dàng.
+                \item Giảng viên có quyền quản lý thông tin, tài liệu, bài tập và câu hỏi kiểm tra trong khoá học của mình.
+            \end{itemize}
+   
+        \item Quản lý bài tập:
+            \begin{itemize}
+                \item Phần quản lý bài tập cho phép giảng viên thêm, sửa đổi và xoá bài tập trong khoá học.
+                \item Giảng viên có thể thiết lập các thông số như tiêu đề, mô tả, ngày hết hạn, và điểm số cho mỗi bài tập.
+            \end{itemize}
+        \item Quản lý câu hỏi kiểm tra:
+            \begin{itemize}
+                \item Tôi đã tạo chức năng cho giảng viên để quản lý câu hỏi kiểm tra trong khoá học.
+                \item Giảng viên có thể thêm, sửa đổi và xoá câu hỏi kiểm tra, và cũng có thể thiết lập điểm số cho từng câu hỏi.
+            \end{itemize}
+        \item Hiển thị điểm:
+            \begin{itemize}
+                \item Trang hiển thị điểm cung cấp một cái nhìn tổng quan về kết quả học tập của người dùng.
+                \item Người dùng có thể xem điểm số của mình theo từng khoá học và từng bài tập.
+            \end{itemize}
+        \item Lịch hiển thị sự kiện:
+            \begin{itemize}
+                \item Phần lịch hiển thị các sự kiện giúp người dùng có cái nhìn tổng quan về lịch trình học tập.
+                \item Các sự kiện như buổi học, bài tập đến hạn, và các sự kiện quan trọng khác được hiển thị dễ nhìn và dễ sử dụng.
+            \end{itemize}
+        \item Tin nhắn:
+            \begin{itemize}
+                \item Tôi đã tạo chức năng gửi tin nhắn cho người dùng, cho phép họ giao tiếp và trao đổi thông tin với giảng viên và sinh viên khác.
+                \item Người dùng có thể gửi tin nhắn riêng tư hoặc tham gia vào các cuộc thảo luận trong các nhóm học tập.
+            \end{itemize}
+        \item Cài đặt thông tin cá nhân:
+            \begin{itemize}
+                \item Phần cài đặt thông tin cá nhân cho phép người dùng quản lý và cập nhật thông tin cá nhân của mình.
+                \item Người dùng có thể thay đổi thông tin liên hệ, mô tả bản thân, và các tùy chọn cá nhân khác theo nhu cầu của mình.
+            \end{itemize}
+    \end{itemize}
+    
+    \subsection{Chi tiết các chức năng}
+        \subsubsection{Xây dựng giao diện chung}
+        \label{subsubsec:xay-dung-giao-dien-chung}
+            \begin{itemize}
+                \item Phần landing page của hệ thống được thể hiện ở hình \ref{fig:landing-page}:
+                \begin{figure}[hbt!]
+                    \centering\includegraphics[width=300pt, height=200pt]{landing-page}
+                    \caption{Màn hình landing page của hệ thống}
+                    \label{fig:landing-page}
+                \end{figure}
+                \FloatBarrier
 
-        Phần trang chủ của phần quản trị viên được thể hiện ở hình:
-        \begin{figure}[ht!]
-            \centering\includegraphics[width=300pt]{trang-chu-admin}
-            \caption{Màn hình trang chủ của phần quản trị viên}
-            \label{fig:trang-chu-admin}
-        \end{figure}
+            \end{itemize}
 
-        Phần danh sách khoá học của phần quản trị viên được thể hiện ở hình:
-        \begin{figure}[ht!]
-            \centering\includegraphics[width=300pt]{danh-sach-khoa-hoc}
-            \caption{Màn hình danh sách khoá học của phần quản trị viên}
-            \label{fig:danh-sach-khoa-hoc}
-        \end{figure}
+        \subsubsection{Xây dựng giao diện cho phần quản trị viên}
+        \label{subsubsec:xay-dung-giao-dien-admin}
+        
+            \begin{itemize}
+                \item Phần đăng nhập của phần quản trị viên được thể hiện ở hình \ref{fig:dang-nhap-admin}:
 
-        Phần tạo khoá học của phần quản trị viên được thể hiện ở hình:
-        \begin{figure}[ht!]
-            \centering\includegraphics[width=300pt]{tao-khoa-hoc}
-            \caption{Màn hình tạo khoá học của phần quản trị viên}
-            \label{fig:tao-khoa-hoc}
-        \end{figure}
+                \begin{figure}[hbt!]
+                    \centering\includegraphics[width=300pt, height=200pt]{dang-nhap-admin}
+                    \caption{Màn hình đăng nhập của phần quản trị viên}
+                    \label{fig:dang-nhap-admin}
+                \end{figure}
+                \FloatBarrier
 
+                \item Phần trang chủ của phần quản trị viên được thể hiện ở hình \ref{fig:trang-chu-admin}:
+                \begin{figure}[hbt!]
+                    \centering\includegraphics[width=300pt, height=200pt]{trang-chu-admin}
+                    \caption{Màn hình trang chủ của phần quản trị viên}
+                    \label{fig:trang-chu-admin}
+                \end{figure}
+                \FloatBarrier
 
-        Phần danh sách bài tập và nhóm của phần quản trị viên được thể hiện ở hình:
-        \begin{figure}[ht!]
-            \centering\includegraphics[width=300pt]{danh-sach-bai-tap}
-            \caption{Màn hình danh sách bài tập của phần quản trị viên}
-            \label{fig:danh-sach-bai-tap}
-        \end{figure}
+                \item Phần danh sách khoá học của phần quản trị viên được thể hiện ở hình \ref{fig:danh-sach-khoa-hoc}:
+                \begin{figure}[hbt!]
+                    \centering\includegraphics[width=300pt, height=200pt]{danh-sach-khoa-hoc}
+                    \caption{Màn hình danh sách khoá học của phần quản trị viên}
+                    \label{fig:danh-sach-khoa-hoc}
+                \end{figure}
+                \FloatBarrier
 
-        Phần tạo nhóm của phần quản trị viên được thể hiện ở hình:
-        \begin{figure}[ht!]
-            \centering\includegraphics[width=300pt]{tao-nhom-bai-tap}
-            \caption{Màn hình tạo nhóm của phần quản trị viên}
-            \label{fig:tao-nhom-bai-tap}
-        \end{figure}
-
-        Phần tạo bài tập của phần quản trị viên được thể hiện ở hình:
-        \begin{figure}[ht!]
-            \centering\includegraphics[width=300pt]{tao-bai-tap}
-            \caption{Màn hình tạo bài tập của phần quản trị viên}
-            \label{fig:tao-bai-tap}
-        \end{figure}
-
-        Phần chi tiết bài tập của phần quản trị viên được thể hiện ở hình:
-        \begin{figure}[ht!]
-            \centering\includegraphics[width=300pt]{chi-tiet-bai-tap}
-            \caption{Màn hình chi tiết bài tập của phần quản trị viên}
-            \label{fig:chi-tiet-bai-tap}
-        \end{figure}
-
-        Phần chỉnh sửa bài tập của phần quản trị viên được thể hiện ở hình:
-        \begin{figure}[ht!]
-            \centering\includegraphics[width=300pt]{chinh-sua-bai-tap}
-            \caption{Màn hình chỉnh sửa bài tập của phần quản trị viên}
-            \label{fig:chinh-sua-bai-tap}
-        \end{figure}
-
-        Phần câu hỏi kiểm tra của phần quản trị viên được thể hiện ở hình:
-        \begin{figure}[ht!]
-            \centering\includegraphics[width=300pt]{cau-hoi-kiem-tra}
-            \caption{Màn hình câu hỏi kiểm tra của phần quản trị viên}
-            \label{fig:cau-hoi-kiem-tra}
-        \end{figure}
-
-        Phần tạo câu hỏi kiểm tra của phần quản trị viên được thể hiện ở hình:
-        \begin{figure}[ht!]
-            \centering\includegraphics[width=300pt]{tao-cau-hoi-kiem-tra}
-            \caption{Màn hình tạo câu hỏi kiểm tra của phần quản trị viên}
-            \label{fig:tao-cau-hoi-kiem-tra}
-        \end{figure}
-
-        Phần chỉnh sửa câu hỏi kiểm tra của phần quản trị viên được thể hiện ở hình:
-        \begin{figure}[ht!]
-            \centering\includegraphics[width=300pt]{chinh-sua-cau-hoi-kiem-tra}
-            \caption{Màn hình chỉnh sửa câu hỏi kiểm tra của phần quản trị viên}
-            \label{fig:chinh-sua-cau-hoi-kiem-tra}
-        \end{figure}
-
-        Phần tạo câu hỏi trong câu hỏi kiểm tra của phần quản trị viên được thể hiện ở hình:
-        \begin{figure}[ht!]
-            \centering\includegraphics[width=300pt]{tao-cau-hoi-trong-cau-hoi-kiem-tra}
-            \caption{Màn hình tạo câu hỏi trong câu hỏi kiểm tra của phần quản trị viên}
-            \label{fig:tao-cau-hoi-trong-cau-hoi-kiem-tra}
-        \end{figure}
-
-        Phần chỉnh sửa câu hỏi trong câu hỏi kiểm tra của phần quản trị viên được thể hiện ở hình:
-        \begin{figure}[ht!]
-            \centering\includegraphics[width=300pt]{chinh-sua-cau-hoi-trong-cau-hoi-kiem-tra}
-            \caption{Màn hình chỉnh sửa câu hỏi trong câu hỏi kiểm tra của phần quản trị viên}
-            \label{fig:chinh-sua-cau-hoi-trong-cau-hoi-kiem-tra}
-        \end{figure}
-
-        Phần lịch sử của phần quản trị viên được thể hiện ở hình:
-        \begin{figure}[ht!]
-            \centering\includegraphics[width=300pt]{lich-su}
-            \caption{Màn hình lịch sử của phần quản trị viên}
-            \label{fig:lich-su}
-        \end{figure}
-
-        Phần sự kiện của phần quản trị viên được thể hiện ở hình:
-        \begin{figure}[ht!]
-            \centering\includegraphics[width=300pt]{su-kien}
-            \caption{Màn hình sự kiện của phần quản trị viên}
-            \label{fig:su-kien}
-        \end{figure}
-
-        Phần danh sách sự kiện của phần quản trị viên được thể hiện ở hình:
-        \begin{figure}[ht!]
-            \centering\includegraphics[width=300pt]{danh-sach-su-kien}
-            \caption{Màn hình danh sách sự kiện của phần quản trị viên}
-            \label{fig:danh-sach-su-kien}
-        \end{figure}
-
-        Phần tạo sự kiện của phần quản trị viên được thể hiện ở hình:
-        \begin{figure}[ht!]
-            \centering\includegraphics[width=300pt]{tao-su-kien}
-            \caption{Màn hình tạo sự kiện của phần quản trị viên}
-            \label{fig:tao-su-kien}
-        \end{figure}
+                \item Phần tạo khoá học của phần quản trị viên được thể hiện ở hình \ref{fig:tao-khoa-hoc}:
+                \begin{figure}[hbt!]
+                    \centering\includegraphics[width=300pt, height=200pt]{tao-khoa-hoc}
+                    \caption{Màn hình tạo khoá học của phần quản trị viên}
+                    \label{fig:tao-khoa-hoc}
+                \end{figure}
+                \FloatBarrier
 
 
-        Phần tin nhắn của phần quản trị viên được thể hiện ở hình:
-        \begin{figure}[ht!]
-            \centering\includegraphics[width=300pt]{tin-nhan}
-            \caption{Màn hình tin nhắn của phần quản trị viên}
-            \label{fig:tin-nhan}
-        \end{figure}
+                \item Phần danh sách bài tập và nhóm của phần quản trị viên được thể hiện ở hình \ref{fig:danh-sach-bai-tap}:
+                \begin{figure}[hbt!]
+                    \centering\includegraphics[width=300pt, height=200pt]{danh-sach-bai-tap}
+                    \caption{Màn hình danh sách bài tập của phần quản trị viên}
+                    \label{fig:danh-sach-bai-tap}
+                \end{figure}
+                \FloatBarrier
 
-        Phần chi tiết tin nhắn của phần quản trị viên được thể hiện ở hình:
-        \begin{figure}[ht!]
-            \centering\includegraphics[width=300pt]{chi-tiet-tin-nhan}
-            \caption{Màn hình chi tiết tin nhắn của phần quản trị viên}
-            \label{fig:chi-tiet-tin-nhan}
-        \end{figure}
+                \item Phần tạo nhóm của phần quản trị viên được thể hiện ở hình \ref{fig:tao-nhom-bai-tap}:
+                \begin{figure}[hbt!]
+                    \centering\includegraphics[width=300pt, height=200pt]{tao-nhom-bai-tap}
+                    \caption{Màn hình tạo nhóm của phần quản trị viên}
+                    \label{fig:tao-nhom-bai-tap}
+                \end{figure}
+                \FloatBarrier
+
+                \item Phần tạo bài tập của phần quản trị viên được thể hiện ở hình \ref{fig:tao-bai-tap}:
+                \begin{figure}[hbt!]
+                    \centering\includegraphics[width=300pt, height=200pt]{tao-bai-tap}
+                    \caption{Màn hình tạo bài tập của phần quản trị viên}
+                    \label{fig:tao-bai-tap}
+                \end{figure}
+                \FloatBarrier
+
+                \item Phần chi tiết bài tập của phần quản trị viên được thể hiện ở hình \ref{fig:chi-tiet-bai-tap}:
+                \begin{figure}[hbt!]
+                    \centering\includegraphics[width=300pt, height=200pt]{chi-tiet-bai-tap}
+                    \caption{Màn hình chi tiết bài tập của phần quản trị viên}
+                    \label{fig:chi-tiet-bai-tap}
+                \end{figure}
+                \FloatBarrier
+
+                \item Phần chỉnh sửa bài tập của phần quản trị viên được thể hiện ở hình \ref{fig:chinh-sua-bai-tap}:
+                \begin{figure}[hbt!]
+                    \centering\includegraphics[width=300pt, height=200pt]{chinh-sua-bai-tap}
+                    \caption{Màn hình chỉnh sửa bài tập của phần quản trị viên}
+                    \label{fig:chinh-sua-bai-tap}
+                \end{figure}
+                \FloatBarrier
+
+                \item Phần câu hỏi kiểm tra của phần quản trị viên được thể hiện ở hình \ref{fig:cau-hoi-kiem-tra}:
+                \begin{figure}[hbt!]
+                    \centering\includegraphics[width=300pt, height=200pt]{cau-hoi-kiem-tra}
+                    \caption{Màn hình câu hỏi kiểm tra của phần quản trị viên}
+                    \label{fig:cau-hoi-kiem-tra}
+                \end{figure}
+                \FloatBarrier
+
+                \item Phần tạo câu hỏi kiểm tra của phần quản trị viên được thể hiện ở hình \ref{fig:tao-cau-hoi-kiem-tra}:
+                \begin{figure}[hbt!]
+                    \centering\includegraphics[width=300pt, height=200pt]{tao-cau-hoi-kiem-tra}
+                    \caption{Màn hình tạo câu hỏi kiểm tra của phần quản trị viên}
+                    \label{fig:tao-cau-hoi-kiem-tra}
+                \end{figure}
+                \FloatBarrier
+
+                \item Phần chỉnh sửa câu hỏi kiểm tra của phần quản trị viên được thể hiện ở hình \ref{fig:chinh-sua-cau-hoi-kiem-tra}:
+                \begin{figure}[hbt!]
+                    \centering\includegraphics[width=300pt, height=200pt]{chinh-sua-cau-hoi-kiem-tra}
+                    \caption{Màn hình chỉnh sửa câu hỏi kiểm tra của phần quản trị viên}
+                    \label{fig:chinh-sua-cau-hoi-kiem-tra}
+                \end{figure}
+                \FloatBarrier
+
+                \item Phần tạo câu hỏi trong câu hỏi kiểm tra của phần quản trị viên được thể hiện ở hình \ref{fig:tao-cau-hoi-trong-cau-hoi-kiem-tra}:
+                \begin{figure}[hbt!]
+                    \centering\includegraphics[width=300pt, height=200pt]{tao-cau-hoi-trong-cau-hoi-kiem-tra}
+                    \caption{Màn hình tạo câu hỏi trong câu hỏi kiểm tra của phần quản trị viên}
+                    \label{fig:tao-cau-hoi-trong-cau-hoi-kiem-tra}
+                \end{figure}
+                \FloatBarrier
+
+                \item Phần chỉnh sửa câu hỏi trong câu hỏi kiểm tra của phần quản trị viên được thể hiện ở hình \ref{fig:chinh-sua-cau-hoi-trong-cau-hoi-kiem-tra}:
+                \begin{figure}[hbt!]
+                    \centering\includegraphics[width=300pt, height=200pt]{chinh-sua-cau-hoi-trong-cau-hoi-kiem-tra}
+                    \caption{Màn hình chỉnh sửa câu hỏi trong câu hỏi kiểm tra của phần quản trị viên}
+                    \label{fig:chinh-sua-cau-hoi-trong-cau-hoi-kiem-tra}
+                \end{figure}
+                \FloatBarrier
+
+                \item Phần lịch sử của phần quản trị viên được thể hiện ở hình \ref{fig:lich-su}:
+                \begin{figure}[hbt!]
+                    \centering\includegraphics[width=300pt, height=200pt]{lich-su}
+                    \caption{Màn hình lịch sử của phần quản trị viên}
+                    \label{fig:lich-su}
+                \end{figure}
+                \FloatBarrier
+
+                \item Phần sự kiện của phần quản trị viên được thể hiện ở hình \ref{fig:su-kien}:
+                \begin{figure}[hbt!]
+                    \centering\includegraphics[width=300pt, height=200pt]{su-kien}
+                    \caption{Màn hình sự kiện của phần quản trị viên}
+                    \label{fig:su-kien}
+                \end{figure}
+                \FloatBarrier
+
+                \item Phần danh sách sự kiện của phần quản trị viên được thể hiện ở hình \ref{fig:danh-sach-su-kien}:
+                \begin{figure}[hbt!]
+                    \centering\includegraphics[width=300pt, height=200pt]{danh-sach-su-kien}
+                    \caption{Màn hình danh sách sự kiện của phần quản trị viên}
+                    \label{fig:danh-sach-su-kien}
+                \end{figure}
+                \FloatBarrier
+
+                \item Phần tạo sự kiện của phần quản trị viên được thể hiện ở hình \ref{fig:tao-su-kien}:
+                \begin{figure}[hbt!]
+                    \centering\includegraphics[width=300pt, height=200pt]{tao-su-kien}
+                    \caption{Màn hình tạo sự kiện của phần quản trị viên}
+                    \label{fig:tao-su-kien}
+                \end{figure}
+                \FloatBarrier
+
+                \item Phần tin nhắn của phần quản trị viên được thể hiện ở hình \ref{fig:tin-nhan}:
+                \begin{figure}[hbt!]
+                    \centering\includegraphics[width=300pt, height=200pt]{tin-nhan}
+                    \caption{Màn hình tin nhắn của phần quản trị viên}
+                    \label{fig:tin-nhan}
+                \end{figure}
+                \FloatBarrier
+
+                \item Phần chi tiết tin nhắn của phần quản trị viên được thể hiện ở hình \ref{fig:chi-tiet-tin-nhan}:
+                \begin{figure}[hbt!]
+                    \centering\includegraphics[width=300pt, height=200pt]{chi-tiet-tin-nhan}
+                    \caption{Màn hình chi tiết tin nhắn của phần quản trị viên}
+                    \label{fig:chi-tiet-tin-nhan}
+                \end{figure}
+                \FloatBarrier
+        \end{itemize}
 
 
-
+    
 \end{document}

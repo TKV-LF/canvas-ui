@@ -4,7 +4,7 @@ export const COURSE_MENU = [
         path: '/courses/:courseId',
     },
     {
-        label: 'Thông báo chung',
+        label: 'Thông báo chung(Coming soon)',
         path: '/courses/:courseId/announcements',
         role: 'teacher',
     },
@@ -17,24 +17,24 @@ export const COURSE_MENU = [
         path: '/courses/:courseId/grades',
     },
     {
-        label: 'Mọi người',
+        label: 'Mọi người(Coming soon)',
         path: '/courses/:courseId/users',
     },
     {
-        label: 'Các trang',
+        label: 'Các trang(Coming soon)',
         path: '/courses/:courseId/wiki',
     },
     
     {
-        label: 'Chương trình học',
+        label: 'Chương trình học(Coming soon)',
         path: '/courses/:courseId/assignments/syllabus',
     },
     {
-        label: 'Kết quả',
+        label: 'Kết quả(Coming soon)',
         path: '/courses/:courseId/outcomes',
     },
     {
-        label: 'Bảng đánh giá theo tiêu chí',
+        label: 'Bảng đánh giá theo tiêu chí(Coming soon)',
         path: '/courses/:courseId/rubrics',
     },
     {
@@ -51,7 +51,7 @@ export const COURSE_MENU = [
     // 	path: '/courses/:courseId/analytics',
     // },
     {
-        label: 'Cài đặt',
+        label: 'Cài đặt(Coming soon)',
         path: '/courses/:courseId/settings',
     },
 ];

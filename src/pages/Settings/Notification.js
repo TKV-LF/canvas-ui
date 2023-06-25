@@ -5,7 +5,7 @@ function Notifications() {
         title: 'Thông báo',
     });
     
-    return <h1>le anh tuan</h1>;
+    return <h1>Thông báo </h1>;
 }
 
 export default Notifications;

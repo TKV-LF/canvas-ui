@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.9)  25 JUN 2023 12:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.9)  25 JUN 2023 15:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -233,6 +233,8 @@ File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen149
 \Gin@req@width=\dimen150
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/fancybox/fancybox.sty
 Package: fancybox 2010/05/15 1.4
 
@@ -824,7 +826,7 @@ Package: setspace 2022/12/04 v6.7b set line spacing
 Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
 )
 
-LaTeX Warning: \include should only be used after \begin{document} on input line 36.
+LaTeX Warning: \include should only be used after \begin{document} on input line 38.
 
 (./lstlisting.tex (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count437
@@ -964,32 +966,32 @@ Package: hypcap 2016/05/16 v1.12 Adjusting the anchors of captions (HO)
 \c@example=\count457
 \@quotelevel=\count458
 \@quotereset=\count459
-LaTeX Font Info:    Trying to load font information for T5+ptm on input line 97.
+LaTeX Font Info:    Trying to load font information for T5+ptm on input line 99.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/vntex/t5ptm.fd
 File: t5utm.fd 2005/08/24 Fontinst v1.929 font definitions for T5/ptm.
 ) (./Thesis.aux)
 \openout1 = `Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1064,10 +1066,10 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Thesis.bbl' not found.
 
 No file Thesis.bbl.
-Package biblatex Info: Reference section=0 on input line 97.
-Package biblatex Info: Reference segment=0 on input line 97.
+Package biblatex Info: Reference section=0 on input line 99.
+Package biblatex Info: Reference segment=0 on input line 99.
 \c@lstlisting=\count466
-Package hyperref Info: Link coloring OFF on input line 97.
+Package hyperref Info: Link coloring OFF on input line 99.
 (./Thesis.out) (./Thesis.out)
 \@outlinefile=\write5
 \openout5 = `Thesis.out'.
@@ -1097,4 +1099,434 @@ Package hyperref Info: Link coloring OFF on input line 97.
 * \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
-* 
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+ (./cover.tex
+<figures//logo.png, id=196, 1204.5pt x 1002.74625pt>
+File: figures//logo.png Graphic file (type png)
+<use figures//logo.png>
+Package pdftex.def Info: figures//logo.png  used on input line 14.
+(pdftex.def)             Requested size: 145.11053pt x 120.79868pt.
+ [1
+
+
+{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/vntex/t5.enc} <./figures//logo.png>]) [1
+
+
+] [2
+
+] (./Thesis.toc
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 3.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Overfull \hbox (3.40796pt too wide) detected at line 20
+ []\T5/ptm/m/n/12 xviii
+ []
+
+
+Overfull \hbox (3.40796pt too wide) detected at line 21
+ []\T5/ptm/m/n/12 xviii
+ []
+
+
+Overfull \hbox (3.40796pt too wide) detected at line 22
+ []\T5/ptm/m/n/12 xviii
+ []
+
+
+Overfull \hbox (3.40796pt too wide) detected at line 23
+ []\T5/ptm/m/n/12 xviii
+ []
+
+[3
+
+]
+Overfull \hbox (3.40796pt too wide) detected at line 34
+ []\T5/ptm/m/n/12 xxiii
+ []
+
+
+Overfull \hbox (3.40796pt too wide) detected at line 35
+ []\T5/ptm/m/n/12 xxiii
+ []
+
+
+Overfull \hbox (2.73596pt too wide) detected at line 36
+ []\T5/ptm/m/n/12 xxiv
+ []
+
+
+Overfull \hbox (2.73596pt too wide) detected at line 37
+ []\T5/ptm/m/n/12 xxiv
+ []
+
+
+Overfull \hbox (2.73596pt too wide) detected at line 39
+ []\T5/ptm/m/n/12 xxvi
+ []
+
+
+Overfull \hbox (6.07196pt too wide) detected at line 41
+ []\T5/ptm/m/n/12 xxvii
+ []
+
+
+Overfull \hbox (6.07196pt too wide) detected at line 42
+ []\T5/ptm/m/n/12 xxvii
+ []
+
+
+Overfull \hbox (2.73596pt too wide) detected at line 43
+ []\T5/ptm/m/n/12 xxix
+ []
+
+
+Overfull \hbox (9.40796pt too wide) detected at line 44
+ []\T5/ptm/m/n/12 xxxiii
+ []
+
+
+Overfull \hbox (5.39996pt too wide) detected at line 45
+ []\T5/ptm/m/n/12 xxxv
+ []
+
+
+Overfull \hbox (5.39996pt too wide) detected at line 46
+ []\T5/ptm/m/n/12 xxxv
+ []
+
+
+Overfull \hbox (5.39996pt too wide) detected at line 47
+ []\T5/ptm/m/n/12 xxxv
+ []
+
+)
+\tf@toc=\write6
+\openout6 = `Thesis.toc'.
+
+ [4] (./Thesis.lof
+Overfull \hbox (6.07196pt too wide) detected at line 6
+ []\T5/ptm/m/n/12 xxvii
+ []
+
+
+Overfull \hbox (9.40796pt too wide) detected at line 7
+ []\T5/ptm/m/n/12 xxviii
+ []
+
+
+Overfull \hbox (2.73596pt too wide) detected at line 8
+ []\T5/ptm/m/n/12 xxix
+ []
+
+
+Overfull \hbox (5.39996pt too wide) detected at line 9
+ []\T5/ptm/m/n/12 xxxv
+ []
+
+
+Overfull \hbox (8.73596pt too wide) detected at line 10
+ []\T5/ptm/m/n/12 xxxvi
+ []
+
+
+Overfull \hbox (8.73596pt too wide) detected at line 11
+ []\T5/ptm/m/n/12 xxxvi
+ []
+
+
+Overfull \hbox (12.07196pt too wide) detected at line 12
+ []\T5/ptm/m/n/12 xxxvii
+ []
+
+
+Overfull \hbox (12.07196pt too wide) detected at line 13
+ []\T5/ptm/m/n/12 xxxvii
+ []
+
+
+Overfull \hbox (15.40796pt too wide) detected at line 14
+ []\T5/ptm/m/n/12 xxxviii
+ []
+
+
+Overfull \hbox (15.40796pt too wide) detected at line 15
+ []\T5/ptm/m/n/12 xxxviii
+ []
+
+
+Overfull \hbox (8.73596pt too wide) detected at line 16
+ []\T5/ptm/m/n/12 xxxix
+ []
+
+
+Overfull \hbox (8.73596pt too wide) detected at line 17
+ []\T5/ptm/m/n/12 xxxix
+ []
+
+
+Overfull \hbox (0.74396pt too wide) detected at line 24
+ []\T5/ptm/m/n/12 xliii
+ []
+
+
+Overfull \hbox (0.74396pt too wide) detected at line 25
+ []\T5/ptm/m/n/12 xliii
+ []
+
+)
+\tf@lof=\write7
+\openout7 = `Thesis.lof'.
+
+ [5
+
+]
+Ch\uhorn \ohorn ng 1.
+(./chapters/chap1-tong-quan.tex [6
+
+]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 25.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+<figures//lms-market.jpg, id=334, 2168.1pt x 1409.265pt>
+File: figures//lms-market.jpg Graphic file (type jpg)
+<use figures//lms-market.jpg>
+Package pdftex.def Info: figures//lms-market.jpg  used on input line 38.
+(pdftex.def)             Requested size: 325.20097pt x 211.38063pt.
+ [7{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc}] [8 <./figures//lms-market.jpg>] [9] [10]) [11]
+Ch\uhorn \ohorn ng 2.
+(./chapters/chap2-co-so-ly-thuyet-va-cong-nghe.tex [12
+
+] [13] [14]
+Overfull \hbox (5.56958pt too wide) in paragraph at lines 68--68
+|[]\T5/ptm/b/n/14.4 T¦m quan trång cõa Thi¸t k¸ Giao di»n ng÷íi dòng trong E-Learning| 
+ []
+
+[15] [16] [17] [18] [19] [20]) [21]
+Ch\uhorn \ohorn ng 3.
+(./chapters/chap3-phan-tich-yeu-cau.tex [22
+
+] [23] [24] [25]) [26]
+Ch\uhorn \ohorn ng 4.
+(./chapters/chap4-xay-dung-he-thong-va-cai-dat.tex
+<figures//1-google-cloud-console.png, id=420, 1445.4pt x 825.0825pt>
+File: figures//1-google-cloud-console.png Graphic file (type png)
+<use figures//1-google-cloud-console.png>
+Package pdftex.def Info: figures//1-google-cloud-console.png  used on input line 9.
+(pdftex.def)             Requested size: 299.9921pt x 200.00043pt.
+ [27
+
+ <./figures//1-google-cloud-console.png>]
+<figures//google-create-instance.png, id=429, 3854.4pt x 2168.1pt>
+File: figures//google-create-instance.png Graphic file (type png)
+<use figures//google-create-instance.png>
+Package pdftex.def Info: figures//google-create-instance.png  used on input line 24.
+(pdftex.def)             Requested size: 299.948pt x 199.9837pt.
+<figures//google-network.png, id=430, 3854.4pt x 2168.1pt>
+File: figures//google-network.png Graphic file (type png)
+<use figures//google-network.png>
+Package pdftex.def Info: figures//google-network.png  used on input line 37.
+(pdftex.def)             Requested size: 299.948pt x 199.9837pt.
+ [28 <./figures//google-create-instance.png>] (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+)
+LaTeX Font Info:    Trying to load font information for T5+pcr on input line 54.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/vntex/t5pcr.fd
+File: t5ucr.fd 2005/08/24 Fontinst v1.929 font definitions for T5/pcr.
+) [29 <./figures//google-network.png>]
+LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 103.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1pcr.fd
+File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
+) [30] [31] [32] [33] [34]
+<figures//landing-page.png, id=621, 1444.39626pt x 822.07124pt>
+File: figures//landing-page.png Graphic file (type png)
+<use figures//landing-page.png>
+Package pdftex.def Info: figures//landing-page.png  used on input line 355.
+(pdftex.def)             Requested size: 299.98213pt x 199.99803pt.
+<figures//dang-nhap-admin.png, id=623, 1445.4pt x 822.07124pt>
+File: figures//dang-nhap-admin.png Graphic file (type png)
+<use figures//dang-nhap-admin.png>
+Package pdftex.def Info: figures//dang-nhap-admin.png  used on input line 370.
+(pdftex.def)             Requested size: 299.9921pt x 199.99803pt.
+ [35 <./figures//landing-page.png>]
+<figures//trang-chu-admin.png, id=630, 1445.4pt x 822.07124pt>
+File: figures//trang-chu-admin.png Graphic file (type png)
+<use figures//trang-chu-admin.png>
+Package pdftex.def Info: figures//trang-chu-admin.png  used on input line 378.
+(pdftex.def)             Requested size: 299.9921pt x 199.99803pt.
+<figures//danh-sach-khoa-hoc.png, id=632, 1445.4pt x 821.0675pt>
+File: figures//danh-sach-khoa-hoc.png Graphic file (type png)
+<use figures//danh-sach-khoa-hoc.png>
+Package pdftex.def Info: figures//danh-sach-khoa-hoc.png  used on input line 386.
+(pdftex.def)             Requested size: 299.9921pt x 199.99188pt.
+ [36 <./figures//dang-nhap-admin.png> <./figures//trang-chu-admin.png>]
+<figures//tao-khoa-hoc.png, id=642, 1445.4pt x 823.075pt>
+File: figures//tao-khoa-hoc.png Graphic file (type png)
+<use figures//tao-khoa-hoc.png>
+Package pdftex.def Info: figures//tao-khoa-hoc.png  used on input line 394.
+(pdftex.def)             Requested size: 299.9921pt x 199.99106pt.
+<figures//danh-sach-bai-tap.png, id=644, 1445.4pt x 818.05624pt>
+File: figures//danh-sach-bai-tap.png Graphic file (type png)
+<use figures//danh-sach-bai-tap.png>
+Package pdftex.def Info: figures//danh-sach-bai-tap.png  used on input line 403.
+(pdftex.def)             Requested size: 299.9921pt x 199.99489pt.
+ [37 <./figures//danh-sach-khoa-hoc.png> <./figures//tao-khoa-hoc.png>]
+<figures//tao-nhom-bai-tap.png, id=652, 1445.4pt x 822.07124pt>
+File: figures//tao-nhom-bai-tap.png Graphic file (type png)
+<use figures//tao-nhom-bai-tap.png>
+Package pdftex.def Info: figures//tao-nhom-bai-tap.png  used on input line 411.
+(pdftex.def)             Requested size: 299.9921pt x 199.99803pt.
+<figures//tao-bai-tap.png, id=654, 3854.4pt x 2168.1pt>
+File: figures//tao-bai-tap.png Graphic file (type png)
+<use figures//tao-bai-tap.png>
+Package pdftex.def Info: figures//tao-bai-tap.png  used on input line 419.
+(pdftex.def)             Requested size: 299.948pt x 199.9837pt.
+ [38 <./figures//danh-sach-bai-tap.png> <./figures//tao-nhom-bai-tap.png>]
+<figures//chi-tiet-bai-tap.png, id=662, 3854.4pt x 2168.1pt>
+File: figures//chi-tiet-bai-tap.png Graphic file (type png)
+<use figures//chi-tiet-bai-tap.png>
+Package pdftex.def Info: figures//chi-tiet-bai-tap.png  used on input line 427.
+(pdftex.def)             Requested size: 299.948pt x 199.9837pt.
+<figures//chinh-sua-bai-tap.png, id=664, 3854.4pt x 3095.565pt>
+File: figures//chinh-sua-bai-tap.png Graphic file (type png)
+<use figures//chinh-sua-bai-tap.png>
+Package pdftex.def Info: figures//chinh-sua-bai-tap.png  used on input line 435.
+(pdftex.def)             Requested size: 299.948pt x 199.99069pt.
+ [39 <./figures//tao-bai-tap.png> <./figures//chi-tiet-bai-tap.png>]
+<figures//cau-hoi-kiem-tra.png, id=672, 3854.4pt x 2168.1pt>
+File: figures//cau-hoi-kiem-tra.png Graphic file (type png)
+<use figures//cau-hoi-kiem-tra.png>
+Package pdftex.def Info: figures//cau-hoi-kiem-tra.png  used on input line 443.
+(pdftex.def)             Requested size: 299.948pt x 199.9837pt.
+<figures//tao-cau-hoi-kiem-tra.png, id=674, 3854.4pt x 2949.0175pt>
+File: figures//tao-cau-hoi-kiem-tra.png Graphic file (type png)
+<use figures//tao-cau-hoi-kiem-tra.png>
+Package pdftex.def Info: figures//tao-cau-hoi-kiem-tra.png  used on input line 451.
+(pdftex.def)             Requested size: 299.948pt x 199.97255pt.
+ [40 <./figures//chinh-sua-bai-tap.png> <./figures//cau-hoi-kiem-tra.png>]
+<figures//chinh-sua-cau-hoi-kiem-tra.png, id=682, 3854.4pt x 2949.0175pt>
+File: figures//chinh-sua-cau-hoi-kiem-tra.png Graphic file (type png)
+<use figures//chinh-sua-cau-hoi-kiem-tra.png>
+Package pdftex.def Info: figures//chinh-sua-cau-hoi-kiem-tra.png  used on input line 459.
+(pdftex.def)             Requested size: 299.948pt x 199.97255pt.
+<figures//tao-cau-hoi-trong-cau-hoi-kiem-tra.png, id=684, 3854.4pt x 2802.47pt>
+File: figures//tao-cau-hoi-trong-cau-hoi-kiem-tra.png Graphic file (type png)
+<use figures//tao-cau-hoi-trong-cau-hoi-kiem-tra.png>
+Package pdftex.def Info: figures//tao-cau-hoi-trong-cau-hoi-kiem-tra.png  used on input line 467.
+(pdftex.def)             Requested size: 299.948pt x 199.99878pt.
+ [41 <./figures//tao-cau-hoi-kiem-tra.png> <./figures//chinh-sua-cau-hoi-kiem-tra.png>]
+<figures//chinh-sua-cau-hoi-trong-cau-hoi-kiem-tra.png, id=692, 3854.4pt x 2987.16pt>
+File: figures//chinh-sua-cau-hoi-trong-cau-hoi-kiem-tra.png Graphic file (type png)
+<use figures//chinh-sua-cau-hoi-trong-cau-hoi-kiem-tra.png>
+Package pdftex.def Info: figures//chinh-sua-cau-hoi-trong-cau-hoi-kiem-tra.png  used on input line 475.
+(pdftex.def)             Requested size: 299.948pt x 199.96092pt.
+<figures//lich-su.png, id=694, 1445.4pt x 764.8575pt>
+File: figures//lich-su.png Graphic file (type png)
+<use figures//lich-su.png>
+Package pdftex.def Info: figures//lich-su.png  used on input line 483.
+(pdftex.def)             Requested size: 299.9921pt x 200.00198pt.
+ [42 <./figures//tao-cau-hoi-trong-cau-hoi-kiem-tra.png> <./figures//chinh-sua-cau-hoi-trong-cau-hoi-kiem-tra.png>]
+<figures//su-kien.png, id=703, 3854.4pt x 2168.1pt>
+File: figures//su-kien.png Graphic file (type png)
+<use figures//su-kien.png>
+Package pdftex.def Info: figures//su-kien.png  used on input line 491.
+(pdftex.def)             Requested size: 299.948pt x 199.9837pt.
+<figures//danh-sach-su-kien.png, id=705, 3854.4pt x 2168.1pt>
+File: figures//danh-sach-su-kien.png Graphic file (type png)
+<use figures//danh-sach-su-kien.png>
+Package pdftex.def Info: figures//danh-sach-su-kien.png  used on input line 499.
+(pdftex.def)             Requested size: 299.948pt x 199.9837pt.
+ [43 <./figures//lich-su.png> <./figures//su-kien.png>]
+<figures//tao-su-kien.png, id=713, 3854.4pt x 2168.1pt>
+File: figures//tao-su-kien.png Graphic file (type png)
+<use figures//tao-su-kien.png>
+Package pdftex.def Info: figures//tao-su-kien.png  used on input line 507.
+(pdftex.def)             Requested size: 299.948pt x 199.9837pt.
+<figures//tin-nhan.png, id=715, 3854.4pt x 2296.58pt>
+File: figures//tin-nhan.png Graphic file (type png)
+<use figures//tin-nhan.png>
+Package pdftex.def Info: figures//tin-nhan.png  used on input line 515.
+(pdftex.def)             Requested size: 299.948pt x 199.99008pt.
+ [44 <./figures//danh-sach-su-kien.png> <./figures//tao-su-kien.png>]
+<figures//chi-tiet-tin-nhan.png, id=723, 3854.4pt x 2296.58pt>
+File: figures//chi-tiet-tin-nhan.png Graphic file (type png)
+<use figures//chi-tiet-tin-nhan.png>
+Package pdftex.def Info: figures//chi-tiet-tin-nhan.png  used on input line 523.
+(pdftex.def)             Requested size: 299.948pt x 199.99008pt.
+) [45 <./figures//tin-nhan.png> <./figures//chi-tiet-tin-nhan.png>]
+Ch\uhorn \ohorn ng 5.
+(./chapters/chap5-danh-gia-va-ket-luan.tex [46
+
+]) [47]
+Underfull \hbox (badness 2181) in paragraph at lines 169--170
+[]\T5/ptm/m/n/12 Google Cloud. (2021). \T5/ptm/m/it/12 Google Cloud Server\T5/ptm/m/n/12 . Re-trieved from []$\T5/pcr/m/n/12 https : / / cloud .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+[]\T5/ptm/m/n/12 Mailgun. (2021). \T5/ptm/m/it/12 Mail-gun Doc-u-men-ta-tion\T5/ptm/m/n/12 . Re-trieved from []$\T5/pcr/m/n/12 https : / /
+ []
+
+
+Underfull \hbox (badness 6944) in paragraph at lines 175--176
+[]\T5/ptm/m/n/12 Open Source Can-vas LMS. (2021). Re-trieved from []$\T5/pcr/m/n/12 https : / / github . com /
+ []
+
+
+LaTeX Warning: Empty bibliography on input line 193.
+
+
+Package glossaries Warning: No \printnoidxglossary or \printnoidxglossaries
+ found. (Remove \makenoidxglossaries if you don't want any glossaries.)
+This document will not have a glossary.
+
+[48
+
+] (./Thesis.aux)
+
+LaTeX Warning: There were undefined references.
+
+Package rerunfilecheck Info: File `Thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 3E0B41BF9BF20B8771D1688580609CD9;9709.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                Thesis
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'Thesis.run.xml'.
+\openout1 = `Thesis.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 28188 strings out of 476025
+ 493326 string characters out of 5790018
+ 2248388 words of memory out of 5000000
+ 47861 multiletter control sequences out of 15000+600000
+ 551994 words of font info for 73 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 94i,10n,110p,2303b,2305s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/urwvn/ucrr8v.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/urwvn/utmb8v.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/urwvn/utmri8v.pfb>
+Output written on Thesis.pdf (49 pages, 4590873 bytes).
+PDF statistics:
+ 867 PDF objects out of 1000 (max. 8388607)
+ 745 compressed objects within 8 object streams
+ 292 named destinations out of 1000 (max. 500000)
+ 515 words of extra memory for PDF output out of 10000 (max. 10000000)
+
