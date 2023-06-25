@@ -29,6 +29,7 @@
 \setglossarystyle{superraggedheaderborder}
 \usepackage{setspace}
 \usepackage{parskip}
+\usepackage[final]{pdfpages}
 
 
 \setlength{\glsdescwidth}{9cm}
@@ -101,14 +102,35 @@ pdfmenubar=false % Ẩn đi menu bar trong PDF viewer
 \subfile{cover} % Phần bìa
 \restoregeometry
 
+\newgeometry{top=2cm, bottom=2cm, left=2cm, right=2cm}
+\subfile{subcover} % Phần bìa
+\restoregeometry
+
+\newpage
+\includepdf[pages=-]{gay-va-de-cuong.pdf}
+
+
 \pagenumbering{roman} % Đánh số i, ii, iii, iv, v,..
 
-\chapter*{Lời cam đoan}
+\section*{\centering{LỜI CAM ĐOAN}}
+\addcontentsline{toc}{chapter}{LỜI CAM ĐOAN}
+\vspace{15pt}
+
 
 Tác giả xin cam đoan đây là Đồ án tốt nghiệp của bản thân tác giả. Các kết quả trong Đồ án tốt nghiệp này là trung thực và không sao chép từ bất kỳ một nguồn nào và dưới bất kỳ hình thức nào. Việc tham khảo các nguồn tài liệu (nếu có) đã được thực hiện trích dẫn và ghi nguồn tài liệu tham khảo đúng quy định.
+\begin{flushright}
+  \textbf{Tác giả Đồ án tốt nghiệp}\\
+  \vspace{2cm}
+  \textbf{Nguyễn Trọng Thuỷ}
+\end{flushright}
+
+\pagestyle{empty} % Header và footer rỗng
+
 \newpage
 
-\chapter*{Lời cảm ơn}
+\section*{\centering{LỜI CẢM ƠN}}
+\addcontentsline{toc}{chapter}{LỜI CẢM ƠN}
+\vspace{15pt}
 
 Để hoàn thành Đồ án tốt nghiệp với đề tài “Phát triển hệ thống học tập tuỳ chỉnh dựa trên Canvas LMS cho các tổ chức giáo dục trước đại học”. Trước tiên, tôi xin gửi lời cảm ơn chân thành đến Giáo viên hướng dẫn đồ án Thạc sĩ Kiều Tuấn Dũng và Trường Đại học Thuỷ lợi vì sự hỗ trợ và định hướng quan trọng trong quá trình thực hiện đồ án của tôi.
 
@@ -126,6 +148,8 @@ Tôi rất biết ơn vì sự hỗ trợ và cảm giác được đồng hành
 \addcontentsline{toc}{chapter}{Danh mục hình ảnh}
 
 \glsaddall
+\newpage
+\pagenumbering{arabic}
 
 \newpage
 \pagestyle{fancy} % Áp dụng header và footer
@@ -153,6 +177,9 @@ Tôi rất biết ơn vì sự hỗ trợ và cảm giác được đồng hành
 \subfile{chapters/chap5-danh-gia-va-ket-luan.tex}
 
 \newpage
+\printbibliography % In ra danh mục tài liệu tham khảo
+\addcontentsline{toc}{chapter}{Tài liệu tham khảo}
+
 \renewcommand{\bibname}{Tài liệu tham khảo}
 \begin{thebibliography}{9}
 
@@ -190,5 +217,4 @@ Tôi rất biết ơn vì sự hỗ trợ và cảm giác được đồng hành
   
 \nocite{*} % Tùy chọn cho phép in tất cả danh mục tài liệu tham khảo, kể cả tài liệu không được tham chiếu
 \pagestyle{plain}
-\printbibliography % In ra danh mục tài liệu tham khảo
 \end{document}

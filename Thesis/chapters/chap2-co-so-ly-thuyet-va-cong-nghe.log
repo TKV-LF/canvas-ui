@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.9)  23 JUN 2023 23:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.9)  25 JUN 2023 21:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -238,6 +238,8 @@ File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen149
 \Gin@req@width=\dimen150
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/fancybox/fancybox.sty
 Package: fancybox 2010/05/15 1.4
 
@@ -827,7 +829,7 @@ Package: setspace 2022/12/04 v6.7b set line spacing
 Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
 )
 
-LaTeX Warning: \include should only be used after \begin{document} on input line 36.
+LaTeX Warning: \include should only be used after \begin{document} on input line 38.
 
 (..//lstlisting.tex (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count437
@@ -1095,21 +1097,21 @@ This document will not have a glossary.
 
 [10] (./chap2-co-so-ly-thuyet-va-cong-nghe.aux)
 Package rerunfilecheck Info: File `chap2-co-so-ly-thuyet-va-cong-nghe.out' has not changed.
-(rerunfilecheck)             Checksum: 3623E13A46AB75DCED960CB3CAE6AE10;4812.
+(rerunfilecheck)             Checksum: 1DAF802BC18E0716A5E4B8B8C17E47DB;4832.
 Package logreq Info: Writing requests to 'chap2-co-so-ly-thuyet-va-cong-nghe.run.xml'.
 \openout1 = `chap2-co-so-ly-thuyet-va-cong-nghe.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26799 strings out of 476025
- 470498 string characters out of 5790018
+ 26830 strings out of 476025
+ 471331 string characters out of 5790018
  1865388 words of memory out of 5000000
- 46800 multiletter control sequences out of 15000+600000
+ 46827 multiletter control sequences out of 15000+600000
  530793 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  114i,12n,107p,2380b,854s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/urwvn/utmb8v.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.pfb>
-Output written on chap2-co-so-ly-thuyet-va-cong-nghe.pdf (10 pages, 85553 bytes).
+Output written on chap2-co-so-ly-thuyet-va-cong-nghe.pdf (10 pages, 85492 bytes).
 PDF statistics:
  168 PDF objects out of 1000 (max. 8388607)
  148 compressed objects within 2 object streams

@@ -3,8 +3,8 @@ entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/thuynt/Working/canvas-ui/Thesis/cover
-(/Users/thuynt/Working/canvas-ui/Thesis/cover.tex
+**/Users/thuynt/Working/canvas-ui/Thesis/subcover
+(/Users/thuynt/Working/canvas-ui/Thesis/subcover.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (/usr/local/texlive/2023/texmf-dist/tex/latex/subfiles/subfiles.cls
 Document Class: subfiles 2020/11/14 v2.2 Multi-file projects (class)
@@ -29,10 +29,10 @@ l.45 \input{\preamble@file}
  
 Here is how much of TeX's memory you used:
  82 strings out of 476025
- 2009 string characters out of 5790018
+ 2021 string characters out of 5790018
  1849388 words of memory out of 5000000
  20623 multiletter control sequences out of 15000+600000
  512287 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,0n,48p,194b,18s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 42i,0n,48p,197b,18s stack positions out of 10000i,1000n,20000p,200000b,200000s
 /usr/local/texlive/2023/texmf-dist/tex/latex/subfiles/subfiles.cls:45:  ==> Fatal error occurred, no output PDF file produced!
