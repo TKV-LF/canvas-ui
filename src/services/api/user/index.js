@@ -33,6 +33,15 @@ const UserApi = {
             throw error;
         }
     },
+
+    getUsersInCourse: async (courseId) => {
+        try {
+            const response = await apiClient.get(`api/v1/courses/${courseId}/enrollments`);
+            return response.data;
+        } catch (error) {
+            throw error;
+        }
+    },
 };
 
 export default UserApi;
