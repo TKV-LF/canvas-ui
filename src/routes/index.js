@@ -20,14 +20,25 @@ import {
 } from '~/pages';
 import { Notification, Profile, Announcement } from '~/pages/Settings';
 
-import withAuth from '~/components/withAuth';
+import { withAuth, withPublic } from '~/components/route-guard';
 import EditAssignmentForm from '~/pages/Course/Assignments/Assignment/EditAssignment';
+import { Fragment } from 'react';
 
-const publicRoutes = [
-    {
-        path: '/',
-        layout: Home,
-    },
+const mapRoute = (route, mapper) => {
+    if (route.layout) {
+        return {
+            ...route,
+            layout: mapper(route.layout),
+        };
+    }
+
+    return {
+        ...route,
+        component: mapper(route.component),
+    };
+};
+
+const privateRoutes = [
     {
         path: '/dashboard',
         component: withAuth(Dashboard),
@@ -87,6 +98,7 @@ const publicRoutes = [
     },
     {
         path: '/admin',
+        component: Fragment,
     },
     {
         path: '/calendar',
@@ -98,10 +110,7 @@ const publicRoutes = [
     },
     {
         path: '/history',
-    },
-    {
-        path: '/oauth2response',
-        component: Login,
+        component: Fragment,
     },
     {
         path: '/courses/:courseId/grades',
@@ -128,8 +137,17 @@ const publicRoutes = [
         component: Profile,
         layout: SettingLayout,
     },
-];
+].map((route) => mapRoute(route, withAuth));
 
-const privateRoutes = [];
+const publicRoutes = [
+    {
+        path: '/oauth2response',
+        component: Login,
+    },
+    {
+        path: '/',
+        layout: Home,
+    },
+].map((route) => mapRoute(route, withPublic));
 
 export { publicRoutes, privateRoutes };
