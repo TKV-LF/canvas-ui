@@ -58,6 +58,28 @@ const GradeApi = {
             throw error;
         }
     },
+    getSubmission: async (payload) => {
+        try {
+            const response = await apiClient.get(
+                `/api/v1/courses/${payload.courseId}/gradebook_history/${payload.date}/graders/${payload.graderId}/assignments/${payload.assignmentId}/submissions`,
+            );
+            return response.data;
+        } catch (error) {
+            // Rethrow the error to allow error handling further up the call stack
+            throw error;
+        }
+    },
+    listUncollatedSubmissionVersions: async (payload) => {
+        try {
+            const response = await apiClient.get(
+                `/api/v1/courses/${payload.courseId}/gradebook_history/feed`,
+            );
+            return response.data;
+        } catch (error) {
+            // Rethrow the error to allow error handling further up the call stack
+            throw error;
+        }
+    }
 };
 
 export default GradeApi;

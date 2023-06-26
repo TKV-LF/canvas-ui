@@ -348,6 +348,14 @@ const CourseApi = {
             throw error;
         }
     },
+    listEnrollments: async (payload) => {
+        try {
+            const response = await apiClient.get(`/api/v1/courses/${payload.courseId}/enrollments`);
+            return response;
+        } catch (error) {
+            throw error;
+        }
+    }
 };
 
 export default CourseApi;

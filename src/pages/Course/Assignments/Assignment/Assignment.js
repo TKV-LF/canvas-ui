@@ -119,7 +119,7 @@ const Assignment = () => {
                         <Link underline="hover" color="inherit" to={`/courses/${courseId}`}>
                             Khoá học
                         </Link>
-                        <Link underline="hover" color="inherit" to={`/courses/${courseId}/assgiments`}>
+                        <Link underline="hover" color="inherit" to={`/courses/${courseId}/assignments`}>
                             Bài tập
                         </Link>
                         <Typography color="text.primary">{assignment.name}</Typography>

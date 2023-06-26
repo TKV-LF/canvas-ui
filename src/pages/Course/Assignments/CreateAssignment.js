@@ -16,7 +16,7 @@ import { notification } from 'antd';
 import { Editor } from '@tinymce/tinymce-react';
 import { useParams } from 'react-router-dom';
 import { CourseApi, AccountApi } from '~/services/api';
-import { assign } from '@fluentui/react';
+import { useNavigate, generatePath } from 'react-router-dom';
 
 const useStyles = makeStyles(() => ({
     button: {
@@ -38,6 +38,7 @@ export default function CreateAssignmentForm({ title, css, assignmentGroups }) {
     const classes = useStyles();
     const [name, setName] = useState('');
     const [assignmentGroup, setAssignmentGroup] = useState();
+    const [weight, setWeight] = useState(0);
     const [group, setGroup] = useState([]);
     const [attempt, setAttempt] = useState(1);
     const [score, setScore] = useState(0);
@@ -49,8 +50,14 @@ export default function CreateAssignmentForm({ title, css, assignmentGroups }) {
     const editorRef = useRef(null);
     const { courseId } = useParams();
 
+    var navigate = useNavigate();
+
     const handleNameChange = (event) => {
         setName(event.target.value);
+    };
+
+    const handleWeightChange = (event) => {
+        setWeight(event.target.value);
     };
 
     const handleSubmit = async (event) => {
@@ -60,6 +67,22 @@ export default function CreateAssignmentForm({ title, css, assignmentGroups }) {
             notification.error({
                 message: 'Lỗi',
                 description: 'Tên bài tập không được để trống',
+            });
+            return;
+        }
+
+        if (weight === '') {
+            notification.error({
+                message: 'Lỗi',
+                description: 'Trọng số không được để trống',
+            });
+            return;
+        }
+
+        if (isNaN(weight) || Number.isInteger(parseInt(weight)) === false) {
+            notification.error({
+                message: 'Lỗi',
+                description: 'Trọng số phải là số nguyên',
             });
             return;
         }
@@ -162,8 +185,8 @@ export default function CreateAssignmentForm({ title, css, assignmentGroups }) {
 
         try {
             const res = await CourseApi.createAssignment(payload);
-            console.log('res', res);
             if (res.status === 201) {
+                localStorage.setItem(`assignment_` + res.data.id, weight);
                 notification.success({
                     message: 'Thành công',
                     description: 'Tạo bài tập thành công',
@@ -171,8 +194,12 @@ export default function CreateAssignmentForm({ title, css, assignmentGroups }) {
             }
 
             setOpen(false);
-
-            window.location.reload();
+            navigate(
+                generatePath('/courses/:courseId/assignments/:assignmentId', {
+                    courseId: courseId,
+                    assignmentId: res.data.id,
+                }),
+            );
         } catch (err) {
             notification.error({
                 message: 'Lỗi',
@@ -277,6 +304,18 @@ export default function CreateAssignmentForm({ title, css, assignmentGroups }) {
                             sx={{ mb: 3, mt: 1 }}
                             onChange={handleScoreChange}
                         />
+                        <InputLabel id="weight-label" className="mt-5">
+                            Trọng số
+                        </InputLabel>
+                        <TextField
+                            id="weight"
+                            labelId="weight-label"
+                            autoFocus
+                            variant="standard"
+                            fullWidth
+                            sx={{ mb: 3, mt: 1 }}
+                            onChange={handleWeightChange}
+                        />
                         <Select
                             id="grading_type"
                             labelId="grading-label"
@@ -370,10 +409,10 @@ export default function CreateAssignmentForm({ title, css, assignmentGroups }) {
                         />
                         <FormGroup>
                             <FormControlLabel
-                                control={<Checkbox checked={isPublished} onChange={handlePublishedChange} />}
+                                control={<Checkbox value={1} onChange={handlePublishedChange} />}
                                 label="Công khai"
                             />
-                        </FormGroup>{' '}
+                        </FormGroup>
                         <Button
                             type="submit"
                             variant="contained"

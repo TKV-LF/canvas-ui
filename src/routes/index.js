@@ -53,7 +53,7 @@ const privateRoutes = [
     },
     {
         path: '/courses/:courseId',
-        component: Course,
+        component: Assignments,
     },
     {
         path: '/courses/:courseId/assignments',

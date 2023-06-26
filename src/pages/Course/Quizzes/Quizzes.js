@@ -50,7 +50,6 @@ const Quizzes = () => {
         });
     }, []);
 
-    console.log(quizzes);
 
     return (
         <CourseLayout courseId={courseId} title="Các câu hỏi kiểm tra">
