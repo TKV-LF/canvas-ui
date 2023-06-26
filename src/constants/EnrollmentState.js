@@ -1,11 +1,11 @@
 const STATE_COLOR = {
-    active: { backgroundColor: '#00FF00', textColor: '#FFFFFF' }, // green with white text
+    active: { backgroundColor: '#00FF00', textColor: '#000000' }, // green with white text
     invited: { backgroundColor: '#0000FF', textColor: '#FFFFFF' }, // blue with white text
     creation_pending: { backgroundColor: '#FFA500', textColor: '#000000' }, // orange with black text
     deleted: { backgroundColor: '#FF0000', textColor: '#FFFFFF' }, // red with white text
     rejected: { backgroundColor: '#800080', textColor: '#FFFFFF' }, // purple with white text
     completed: { backgroundColor: '#008080', textColor: '#FFFFFF' }, // teal with white text
-    inactive: { backgroundColor: '#808080', textColor: '#000000' }, // gray with black text
+    inactive: { backgroundColor: '#808080', textColor: '#FFFFFF' }, // gray with black text
     current_and_invited: { backgroundColor: '#FFFF00', textColor: '#000000' }, // yellow with black text
     current_and_future: { backgroundColor: '#00FFFF', textColor: '#000000' }, // cyan with black text
     current_and_concluded: { backgroundColor: '#A52A2A', textColor: '#FFFFFF' }, // brown with white text

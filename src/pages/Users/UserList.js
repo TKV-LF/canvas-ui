@@ -2,11 +2,13 @@ import { Chip } from '@mui/material';
 import { DataGrid } from '@mui/x-data-grid';
 import moment from 'moment';
 import 'moment/locale/vi';
-import { USER_ROLES, ENROLLMENT_STATE } from '~/constants';
+import { useParams } from 'react-router-dom';
+import { ENROLLMENT_STATE, USER_ROLES } from '~/constants';
 import ButtonAction from './ButtonAction';
 
-function UserList({ data }) {
+function UserList({ data, refresh, loading }) {
     moment.locale('vi');
+    const { courseId } = useParams();
 
     const getUserRole = (roleValue) => {
         const role = USER_ROLES.find((role) => role.value === roleValue);
@@ -60,13 +62,22 @@ function UserList({ data }) {
             headerName: '',
             width: 50,
             renderCell: (params) => {
-                return <ButtonAction user={params.row.user} />;
+                return (
+                    <ButtonAction
+                        courseId={courseId}
+                        enrollmentId={params.row.id}
+                        enrollmentState={params.row.enrollment_state}
+                        refresh={refresh}
+                        user={params.row.user}
+                    ></ButtonAction>
+                );
             },
         },
     ];
 
     return (
         <DataGrid
+            loading={loading}
             rows={data}
             columns={columns}
             initialState={{
