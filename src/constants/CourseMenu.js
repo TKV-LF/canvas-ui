@@ -17,14 +17,14 @@ export const COURSE_MENU = [
         path: '/courses/:courseId/grades',
     },
     {
-        label: 'Mọi người(Coming soon)',
+        label: 'Mọi người',
         path: '/courses/:courseId/users',
     },
     {
         label: 'Các trang(Coming soon)',
         path: '/courses/:courseId/wiki',
     },
-    
+
     {
         label: 'Chương trình học(Coming soon)',
         path: '/courses/:courseId/assignments/syllabus',
