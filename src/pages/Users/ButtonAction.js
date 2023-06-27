@@ -42,6 +42,14 @@ function ButtonAction({ courseId, enrollmentId, enrollmentState, refresh, user }
         }
     };
 
+    const handleReactive = async () => {
+        try {
+            await enrollmentApi.reactiveEnrollment(courseId, enrollmentId);
+        } catch (error) {
+            console.log(error);
+        }
+    };
+
     const ACTION_LIST = [
         {
             label: 'Chi tiết người dùng',
@@ -53,14 +61,14 @@ function ButtonAction({ courseId, enrollmentId, enrollmentState, refresh, user }
             icon: <CheckIcon></CheckIcon>,
             visible: enrollmentState === 'inactive',
             onClick: async () => {
-                await handleToggleActive('conclude');
+                await handleReactive();
                 refresh();
             },
         },
         {
             label: 'Huỷ kích hoạt người dùng',
             icon: <CloseIcon></CloseIcon>,
-            visible: enrollmentState === 'active' || enrollmentState === 'invited',
+            visible: enrollmentState !== 'inactive',
             onClick: async () => {
                 if (window.confirm('Bạn có chắc chắn muốn huỷ kích hoạt người dùng này?')) {
                     await handleToggleActive('inactivate');

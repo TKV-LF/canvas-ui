@@ -26,6 +26,16 @@ const enrollmentApi = {
             throw error;
         }
     },
+
+    reactiveEnrollment: async (courseId, enrollmentId) => {
+        try {
+            const response = await apiClient.put(`/api/v1/courses/${courseId}/enrollments/${enrollmentId}/reactivate`);
+
+            return response.data;
+        } catch (error) {
+            throw error;
+        }
+    },
 };
 
 export default enrollmentApi;

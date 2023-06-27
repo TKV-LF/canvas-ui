@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { CourseLayout } from '~/components/Layouts';
 import { UserApi } from '~/services/api';
-import ButtonAddUser from './ButtonAddUser';
+import ButtonEnrollUser from './ButtonEnrollUser';
 import UserList from './UserList';
 
 function Users() {
@@ -32,7 +32,7 @@ function Users() {
             <div className="flex items-center justify-between mb-4">
                 <h1 className="text-2xl font-semibold">Danh sách người dùng trong khoá học</h1>
 
-                <ButtonAddUser></ButtonAddUser>
+                <ButtonEnrollUser refresh={() => getUsersInCourse(courseId)}></ButtonEnrollUser>
             </div>
 
             <div className="flex flex-col">
