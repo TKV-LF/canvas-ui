@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.9)  26 JUN 2023 22:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.9)  28 JUN 2023 01:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1012,8 +1012,7 @@ Package: hypcap 2016/05/16 v1.12 Adjusting the anchors of captions (HO)
 LaTeX Font Info:    Trying to load font information for T5+ptm on input line 100.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/vntex/t5ptm.fd
 File: t5utm.fd 2005/08/24 Fontinst v1.929 font definitions for T5/ptm.
-)
-No file Thesis.aux.
+) (./Thesis.aux)
 \openout1 = `Thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
@@ -1036,6 +1035,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 100.
 LaTeX Font Info:    ... okay on input line 100.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 100.
 LaTeX Font Info:    ... okay on input line 100.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1113,6 +1113,7 @@ Package biblatex Info: Reference section=0 on input line 100.
 Package biblatex Info: Reference segment=0 on input line 100.
 \c@lstlisting=\count472
 Package hyperref Info: Link coloring OFF on input line 100.
+(./Thesis.out) (./Thesis.out)
 \@outlinefile=\write5
 \openout5 = `Thesis.out'.
 
@@ -1148,8 +1149,8 @@ Package hyperref Info: Link coloring OFF on input line 100.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(./cover.tex
-<figures//logo.png, id=4, 1204.5pt x 1002.74625pt>
+ (./cover.tex
+<figures//logo.png, id=15, 1204.5pt x 1002.74625pt>
 File: figures//logo.png Graphic file (type png)
 <use figures//logo.png>
 Package pdftex.def Info: figures//logo.png  used on input line 14.
@@ -1199,7 +1200,7 @@ l.31 \end{titlepage}
 
 
 ])
-<gay-de-cuong.pdf, id=17, 597.79335pt x 845.19763pt>
+<gay-de-cuong.pdf, id=27, 597.79335pt x 845.19763pt>
 File: gay-de-cuong.pdf Graphic file (type pdf)
 <use gay-de-cuong.pdf>
 Package pdftex.def Info: gay-de-cuong.pdf  used on input line 110.
@@ -1208,7 +1209,7 @@ File: gay-de-cuong.pdf Graphic file (type pdf)
 <use gay-de-cuong.pdf>
 Package pdftex.def Info: gay-de-cuong.pdf  used on input line 110.
 (pdftex.def)             Requested size: 597.79189pt x 845.19557pt.
-<gay-de-cuong.pdf, id=20, page=1, 597.79335pt x 845.19763pt>
+<gay-de-cuong.pdf, id=30, page=1, 597.79335pt x 845.19763pt>
 File: gay-de-cuong.pdf Graphic file (type pdf)
 <use gay-de-cuong.pdf, page 1>
 Package pdftex.def Info: gay-de-cuong.pdf , page1 used on input line 110.
@@ -1238,7 +1239,7 @@ Package pdftex.def Info: gay-de-cuong.pdf , page1 used on input line 110.
  [1
 
  <./gay-de-cuong.pdf>]
-<gay-de-cuong.pdf, id=42, page=2, 597.19112pt x 845.07718pt>
+<gay-de-cuong.pdf, id=52, page=2, 597.19112pt x 845.07718pt>
 File: gay-de-cuong.pdf Graphic file (type pdf)
 <use gay-de-cuong.pdf, page 2>
 Package pdftex.def Info: gay-de-cuong.pdf , page2 used on input line 110.
@@ -1252,7 +1253,7 @@ File: gay-de-cuong.pdf Graphic file (type pdf)
 Package pdftex.def Info: gay-de-cuong.pdf , page2 used on input line 110.
 (pdftex.def)             Requested size: 597.217pt x 845.1138pt.
  [2 <./gay-de-cuong.pdf>]
-<gay-de-cuong.pdf, id=69, page=3, 597.19112pt x 845.07718pt>
+<gay-de-cuong.pdf, id=79, page=3, 597.19112pt x 845.07718pt>
 File: gay-de-cuong.pdf Graphic file (type pdf)
 <use gay-de-cuong.pdf, page 3>
 Package pdftex.def Info: gay-de-cuong.pdf , page3 used on input line 110.
@@ -1266,7 +1267,7 @@ File: gay-de-cuong.pdf Graphic file (type pdf)
 Package pdftex.def Info: gay-de-cuong.pdf , page3 used on input line 110.
 (pdftex.def)             Requested size: 597.217pt x 845.1138pt.
  [3 <./gay-de-cuong.pdf>]
-<gay-de-cuong.pdf, id=86, page=4, 597.19112pt x 845.07718pt>
+<gay-de-cuong.pdf, id=96, page=4, 597.19112pt x 845.07718pt>
 File: gay-de-cuong.pdf Graphic file (type pdf)
 <use gay-de-cuong.pdf, page 4>
 Package pdftex.def Info: gay-de-cuong.pdf , page4 used on input line 110.
@@ -1280,7 +1281,7 @@ File: gay-de-cuong.pdf Graphic file (type pdf)
 Package pdftex.def Info: gay-de-cuong.pdf , page4 used on input line 110.
 (pdftex.def)             Requested size: 597.217pt x 845.1138pt.
  [4 <./gay-de-cuong.pdf>]
-<gay-de-cuong.pdf, id=94, page=5, 597.19112pt x 845.07718pt>
+<gay-de-cuong.pdf, id=104, page=5, 597.19112pt x 845.07718pt>
 File: gay-de-cuong.pdf Graphic file (type pdf)
 <use gay-de-cuong.pdf, page 5>
 Package pdftex.def Info: gay-de-cuong.pdf , page5 used on input line 110.
@@ -1293,19 +1294,17 @@ File: gay-de-cuong.pdf Graphic file (type pdf)
 <use gay-de-cuong.pdf, page 5>
 Package pdftex.def Info: gay-de-cuong.pdf , page5 used on input line 110.
 (pdftex.def)             Requested size: 597.217pt x 845.1138pt.
- [5 <./gay-de-cuong.pdf>] [1] [2]
-No file Thesis.toc.
+ [5 <./gay-de-cuong.pdf>] [1] [2] (./Thesis.toc)
 \tf@toc=\write6
 \openout6 = `Thesis.toc'.
 
-[3
+ [3
 
-]
-No file Thesis.lof.
+] (./Thesis.lof)
 \tf@lof=\write7
 \openout7 = `Thesis.lof'.
 
-[4
+ [4
 
 ]
 Ch\uhorn \ohorn ng 1.
@@ -1321,7 +1320,7 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 25
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-<figures//lms-market.jpg, id=124, 2168.1pt x 1409.265pt>
+<figures//lms-market.jpg, id=136, 2168.1pt x 1409.265pt>
 File: figures//lms-market.jpg Graphic file (type jpg)
 <use figures//lms-market.jpg>
 Package pdftex.def Info: figures//lms-market.jpg  used on input line 38.
@@ -1361,237 +1360,219 @@ Ch\uhorn \ohorn ng 3.
 
 ] [18] [19] [20]) [21]
 Ch\uhorn \ohorn ng 4.
-(./chapters/chap4-xay-dung-he-thong-va-cai-dat.tex
-<figures//1-google-cloud-console.png, id=244, 1445.4pt x 825.0825pt>
-File: figures//1-google-cloud-console.png Graphic file (type png)
-<use figures//1-google-cloud-console.png>
-Package pdftex.def Info: figures//1-google-cloud-console.png  used on input line 9.
-(pdftex.def)             Requested size: 299.9921pt x 200.00043pt.
- [22
+(./chapters/chap4-xay-dung-he-thong-va-cai-dat.tex [22
 
- <./figures//1-google-cloud-console.png>]
-<figures//google-create-instance.png, id=255, 3854.4pt x 2168.1pt>
-File: figures//google-create-instance.png Graphic file (type png)
-<use figures//google-create-instance.png>
-Package pdftex.def Info: figures//google-create-instance.png  used on input line 24.
-(pdftex.def)             Requested size: 299.948pt x 199.9837pt.
-<figures//google-network.png, id=256, 3854.4pt x 2168.1pt>
-File: figures//google-network.png Graphic file (type png)
-<use figures//google-network.png>
-Package pdftex.def Info: figures//google-network.png  used on input line 37.
-(pdftex.def)             Requested size: 299.948pt x 199.9837pt.
- [23 <./figures//google-create-instance.png>] (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2023/02/27 1.9 listings language file
-) (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2023/02/27 1.9 listings language file
-)
-LaTeX Font Info:    Trying to load font information for T5+pcr on input line 54.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/vntex/t5pcr.fd
-File: t5ucr.fd 2005/08/24 Fontinst v1.929 font definitions for T5/pcr.
-) [24 <./figures//google-network.png>]
-LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 103.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1pcr.fd
-File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
-) [25] [26] [27]
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 285.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/base/ulasy.fd
-File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 285.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 285.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [28] [29]
+]
 
-LaTeX Warning: Reference `fig:landing-page' on page 30 undefined on input line 353.
+LaTeX Warning: Reference `fig:landing-page' on page 23 undefined on input line 353.
 
-<figures//landing-page.png, id=452, 1444.39626pt x 822.07124pt>
+<figures//landing-page.png, id=262, 1444.39626pt x 822.07124pt>
 File: figures//landing-page.png Graphic file (type png)
 <use figures//landing-page.png>
 Package pdftex.def Info: figures//landing-page.png  used on input line 355.
 (pdftex.def)             Requested size: 299.98213pt x 199.99803pt.
+[23]
 
-LaTeX Warning: Reference `fig:dang-nhap-admin' on page 30 undefined on input line 367.
+LaTeX Warning: Reference `fig:dang-nhap-admin' on page 24 undefined on input line 367.
 
-<figures//dang-nhap-admin.png, id=453, 1445.4pt x 822.07124pt>
+<figures//dang-nhap-admin.png, id=267, 1445.4pt x 822.07124pt>
 File: figures//dang-nhap-admin.png Graphic file (type png)
 <use figures//dang-nhap-admin.png>
 Package pdftex.def Info: figures//dang-nhap-admin.png  used on input line 370.
 (pdftex.def)             Requested size: 299.9921pt x 199.99803pt.
-[30 <./figures//landing-page.png>]
 
-LaTeX Warning: Reference `fig:trang-chu-admin' on page 31 undefined on input line 376.
+LaTeX Warning: Reference `fig:trang-chu-admin' on page 24 undefined on input line 376.
 
-<figures//trang-chu-admin.png, id=463, 1445.4pt x 822.07124pt>
+<figures//trang-chu-admin.png, id=268, 1445.4pt x 822.07124pt>
 File: figures//trang-chu-admin.png Graphic file (type png)
 <use figures//trang-chu-admin.png>
 Package pdftex.def Info: figures//trang-chu-admin.png  used on input line 378.
 (pdftex.def)             Requested size: 299.9921pt x 199.99803pt.
+[24 <./figures//landing-page.png> <./figures//dang-nhap-admin.png>]
 
-LaTeX Warning: Reference `fig:danh-sach-khoa-hoc' on page 31 undefined on input line 384.
+LaTeX Warning: Reference `fig:danh-sach-khoa-hoc' on page 25 undefined on input line 384.
 
-<figures//danh-sach-khoa-hoc.png, id=464, 1445.4pt x 821.0675pt>
+<figures//danh-sach-khoa-hoc.png, id=281, 1445.4pt x 821.0675pt>
 File: figures//danh-sach-khoa-hoc.png Graphic file (type png)
 <use figures//danh-sach-khoa-hoc.png>
 Package pdftex.def Info: figures//danh-sach-khoa-hoc.png  used on input line 386.
 (pdftex.def)             Requested size: 299.9921pt x 199.99188pt.
-[31 <./figures//dang-nhap-admin.png> <./figures//trang-chu-admin.png>]
 
-LaTeX Warning: Reference `fig:tao-khoa-hoc' on page 32 undefined on input line 392.
+LaTeX Warning: Reference `fig:tao-khoa-hoc' on page 25 undefined on input line 392.
 
-<figures//tao-khoa-hoc.png, id=473, 1445.4pt x 823.075pt>
+<figures//tao-khoa-hoc.png, id=282, 1445.4pt x 823.075pt>
 File: figures//tao-khoa-hoc.png Graphic file (type png)
 <use figures//tao-khoa-hoc.png>
 Package pdftex.def Info: figures//tao-khoa-hoc.png  used on input line 394.
 (pdftex.def)             Requested size: 299.9921pt x 199.99106pt.
+[25 <./figures//trang-chu-admin.png> <./figures//danh-sach-khoa-hoc.png>]
 
-LaTeX Warning: Reference `fig:danh-sach-bai-tap' on page 32 undefined on input line 401.
+LaTeX Warning: Reference `fig:danh-sach-bai-tap' on page 26 undefined on input line 401.
 
-<figures//danh-sach-bai-tap.png, id=474, 1445.4pt x 818.05624pt>
+<figures//danh-sach-bai-tap.png, id=291, 1445.4pt x 818.05624pt>
 File: figures//danh-sach-bai-tap.png Graphic file (type png)
 <use figures//danh-sach-bai-tap.png>
 Package pdftex.def Info: figures//danh-sach-bai-tap.png  used on input line 403.
 (pdftex.def)             Requested size: 299.9921pt x 199.99489pt.
-[32 <./figures//danh-sach-khoa-hoc.png> <./figures//tao-khoa-hoc.png>]
 
-LaTeX Warning: Reference `fig:tao-nhom-bai-tap' on page 33 undefined on input line 409.
+LaTeX Warning: Reference `fig:tao-nhom-bai-tap' on page 26 undefined on input line 409.
 
-<figures//tao-nhom-bai-tap.png, id=484, 1445.4pt x 822.07124pt>
+<figures//tao-nhom-bai-tap.png, id=292, 1445.4pt x 822.07124pt>
 File: figures//tao-nhom-bai-tap.png Graphic file (type png)
 <use figures//tao-nhom-bai-tap.png>
 Package pdftex.def Info: figures//tao-nhom-bai-tap.png  used on input line 411.
 (pdftex.def)             Requested size: 299.9921pt x 199.99803pt.
+[26 <./figures//tao-khoa-hoc.png> <./figures//danh-sach-bai-tap.png>]
 
-LaTeX Warning: Reference `fig:tao-bai-tap' on page 33 undefined on input line 417.
+LaTeX Warning: Reference `fig:tao-bai-tap' on page 27 undefined on input line 417.
 
-<figures//tao-bai-tap.png, id=485, 3854.4pt x 2168.1pt>
+<figures//tao-bai-tap.png, id=302, 3854.4pt x 2168.1pt>
 File: figures//tao-bai-tap.png Graphic file (type png)
 <use figures//tao-bai-tap.png>
 Package pdftex.def Info: figures//tao-bai-tap.png  used on input line 419.
 (pdftex.def)             Requested size: 299.948pt x 199.9837pt.
-[33 <./figures//danh-sach-bai-tap.png> <./figures//tao-nhom-bai-tap.png>]
 
-LaTeX Warning: Reference `fig:chi-tiet-bai-tap' on page 34 undefined on input line 425.
+LaTeX Warning: Reference `fig:chi-tiet-bai-tap' on page 27 undefined on input line 425.
 
-<figures//chi-tiet-bai-tap.png, id=494, 3854.4pt x 2168.1pt>
+<figures//chi-tiet-bai-tap.png, id=303, 3854.4pt x 2168.1pt>
 File: figures//chi-tiet-bai-tap.png Graphic file (type png)
 <use figures//chi-tiet-bai-tap.png>
 Package pdftex.def Info: figures//chi-tiet-bai-tap.png  used on input line 427.
 (pdftex.def)             Requested size: 299.948pt x 199.9837pt.
+[27 <./figures//tao-nhom-bai-tap.png> <./figures//tao-bai-tap.png>]
 
-LaTeX Warning: Reference `fig:chinh-sua-bai-tap' on page 34 undefined on input line 433.
+LaTeX Warning: Reference `fig:chinh-sua-bai-tap' on page 28 undefined on input line 433.
 
-<figures//chinh-sua-bai-tap.png, id=495, 3854.4pt x 3095.565pt>
+<figures//chinh-sua-bai-tap.png, id=312, 3854.4pt x 3095.565pt>
 File: figures//chinh-sua-bai-tap.png Graphic file (type png)
 <use figures//chinh-sua-bai-tap.png>
 Package pdftex.def Info: figures//chinh-sua-bai-tap.png  used on input line 435.
 (pdftex.def)             Requested size: 299.948pt x 199.99069pt.
-[34 <./figures//tao-bai-tap.png> <./figures//chi-tiet-bai-tap.png>]
 
-LaTeX Warning: Reference `fig:cau-hoi-kiem-tra' on page 35 undefined on input line 441.
+LaTeX Warning: Reference `fig:cau-hoi-kiem-tra' on page 28 undefined on input line 441.
 
-<figures//cau-hoi-kiem-tra.png, id=504, 3854.4pt x 2168.1pt>
+<figures//cau-hoi-kiem-tra.png, id=313, 3854.4pt x 2168.1pt>
 File: figures//cau-hoi-kiem-tra.png Graphic file (type png)
 <use figures//cau-hoi-kiem-tra.png>
 Package pdftex.def Info: figures//cau-hoi-kiem-tra.png  used on input line 443.
 (pdftex.def)             Requested size: 299.948pt x 199.9837pt.
+[28 <./figures//chi-tiet-bai-tap.png> <./figures//chinh-sua-bai-tap.png>]
 
-LaTeX Warning: Reference `fig:tao-cau-hoi-kiem-tra' on page 35 undefined on input line 449.
+LaTeX Warning: Reference `fig:tao-cau-hoi-kiem-tra' on page 29 undefined on input line 449.
 
-<figures//tao-cau-hoi-kiem-tra.png, id=505, 3854.4pt x 2949.0175pt>
+<figures//tao-cau-hoi-kiem-tra.png, id=322, 3854.4pt x 2949.0175pt>
 File: figures//tao-cau-hoi-kiem-tra.png Graphic file (type png)
 <use figures//tao-cau-hoi-kiem-tra.png>
 Package pdftex.def Info: figures//tao-cau-hoi-kiem-tra.png  used on input line 451.
 (pdftex.def)             Requested size: 299.948pt x 199.97255pt.
-[35 <./figures//chinh-sua-bai-tap.png> <./figures//cau-hoi-kiem-tra.png>]
 
-LaTeX Warning: Reference `fig:chinh-sua-cau-hoi-kiem-tra' on page 36 undefined on input line 457.
+LaTeX Warning: Reference `fig:chinh-sua-cau-hoi-kiem-tra' on page 29 undefined on input line 457.
 
-<figures//chinh-sua-cau-hoi-kiem-tra.png, id=514, 3854.4pt x 2949.0175pt>
+<figures//chinh-sua-cau-hoi-kiem-tra.png, id=323, 3854.4pt x 2949.0175pt>
 File: figures//chinh-sua-cau-hoi-kiem-tra.png Graphic file (type png)
 <use figures//chinh-sua-cau-hoi-kiem-tra.png>
 Package pdftex.def Info: figures//chinh-sua-cau-hoi-kiem-tra.png  used on input line 459.
 (pdftex.def)             Requested size: 299.948pt x 199.97255pt.
+[29 <./figures//cau-hoi-kiem-tra.png> <./figures//tao-cau-hoi-kiem-tra.png>]
 
-LaTeX Warning: Reference `fig:tao-cau-hoi-trong-cau-hoi-kiem-tra' on page 36 undefined on input line 465.
+LaTeX Warning: Reference `fig:tao-cau-hoi-trong-cau-hoi-kiem-tra' on page 30 undefined on input line 465.
 
-<figures//tao-cau-hoi-trong-cau-hoi-kiem-tra.png, id=515, 3854.4pt x 2802.47pt>
+<figures//tao-cau-hoi-trong-cau-hoi-kiem-tra.png, id=332, 3854.4pt x 2802.47pt>
 File: figures//tao-cau-hoi-trong-cau-hoi-kiem-tra.png Graphic file (type png)
 <use figures//tao-cau-hoi-trong-cau-hoi-kiem-tra.png>
 Package pdftex.def Info: figures//tao-cau-hoi-trong-cau-hoi-kiem-tra.png  used on input line 467.
 (pdftex.def)             Requested size: 299.948pt x 199.99878pt.
-[36 <./figures//tao-cau-hoi-kiem-tra.png> <./figures//chinh-sua-cau-hoi-kiem-tra.png>]
 
-LaTeX Warning: Reference `fig:chinh-sua-cau-hoi-trong-cau-hoi-kiem-tra' on page 37 undefined on input line 473.
+LaTeX Warning: Reference `fig:chinh-sua-cau-hoi-trong-cau-hoi-kiem-tra' on page 30 undefined on input line 473.
 
-<figures//chinh-sua-cau-hoi-trong-cau-hoi-kiem-tra.png, id=525, 3854.4pt x 2987.16pt>
+<figures//chinh-sua-cau-hoi-trong-cau-hoi-kiem-tra.png, id=333, 3854.4pt x 2987.16pt>
 File: figures//chinh-sua-cau-hoi-trong-cau-hoi-kiem-tra.png Graphic file (type png)
 <use figures//chinh-sua-cau-hoi-trong-cau-hoi-kiem-tra.png>
 Package pdftex.def Info: figures//chinh-sua-cau-hoi-trong-cau-hoi-kiem-tra.png  used on input line 475.
 (pdftex.def)             Requested size: 299.948pt x 199.96092pt.
+[30 <./figures//chinh-sua-cau-hoi-kiem-tra.png> <./figures//tao-cau-hoi-trong-cau-hoi-kiem-tra.png>]
 
-LaTeX Warning: Reference `fig:lich-su' on page 37 undefined on input line 481.
+LaTeX Warning: Reference `fig:lich-su' on page 31 undefined on input line 481.
 
-<figures//lich-su.png, id=526, 1445.4pt x 764.8575pt>
+<figures//lich-su.png, id=342, 1445.4pt x 764.8575pt>
 File: figures//lich-su.png Graphic file (type png)
 <use figures//lich-su.png>
 Package pdftex.def Info: figures//lich-su.png  used on input line 483.
 (pdftex.def)             Requested size: 299.9921pt x 200.00198pt.
-[37 <./figures//tao-cau-hoi-trong-cau-hoi-kiem-tra.png> <./figures//chinh-sua-cau-hoi-trong-cau-hoi-kiem-tra.png>]
 
-LaTeX Warning: Reference `fig:su-kien' on page 38 undefined on input line 489.
+LaTeX Warning: Reference `fig:su-kien' on page 31 undefined on input line 489.
 
-<figures//su-kien.png, id=535, 3854.4pt x 2168.1pt>
+<figures//su-kien.png, id=343, 3854.4pt x 2168.1pt>
 File: figures//su-kien.png Graphic file (type png)
 <use figures//su-kien.png>
 Package pdftex.def Info: figures//su-kien.png  used on input line 491.
 (pdftex.def)             Requested size: 299.948pt x 199.9837pt.
+[31 <./figures//chinh-sua-cau-hoi-trong-cau-hoi-kiem-tra.png> <./figures//lich-su.png>]
 
-LaTeX Warning: Reference `fig:danh-sach-su-kien' on page 38 undefined on input line 497.
+LaTeX Warning: Reference `fig:danh-sach-su-kien' on page 32 undefined on input line 497.
 
-<figures//danh-sach-su-kien.png, id=536, 3854.4pt x 2168.1pt>
+<figures//danh-sach-su-kien.png, id=352, 3854.4pt x 2168.1pt>
 File: figures//danh-sach-su-kien.png Graphic file (type png)
 <use figures//danh-sach-su-kien.png>
 Package pdftex.def Info: figures//danh-sach-su-kien.png  used on input line 499.
 (pdftex.def)             Requested size: 299.948pt x 199.9837pt.
-[38 <./figures//lich-su.png> <./figures//su-kien.png>]
 
-LaTeX Warning: Reference `fig:tao-su-kien' on page 39 undefined on input line 505.
+LaTeX Warning: Reference `fig:tao-su-kien' on page 32 undefined on input line 505.
 
-<figures//tao-su-kien.png, id=546, 3854.4pt x 2168.1pt>
+<figures//tao-su-kien.png, id=353, 3854.4pt x 2168.1pt>
 File: figures//tao-su-kien.png Graphic file (type png)
 <use figures//tao-su-kien.png>
 Package pdftex.def Info: figures//tao-su-kien.png  used on input line 507.
 (pdftex.def)             Requested size: 299.948pt x 199.9837pt.
+[32 <./figures//su-kien.png> <./figures//danh-sach-su-kien.png>]
 
-LaTeX Warning: Reference `fig:tin-nhan' on page 39 undefined on input line 513.
+LaTeX Warning: Reference `fig:tin-nhan' on page 33 undefined on input line 513.
 
-<figures//tin-nhan.png, id=547, 3854.4pt x 2296.58pt>
+<figures//tin-nhan.png, id=363, 3854.4pt x 2296.58pt>
 File: figures//tin-nhan.png Graphic file (type png)
 <use figures//tin-nhan.png>
 Package pdftex.def Info: figures//tin-nhan.png  used on input line 515.
 (pdftex.def)             Requested size: 299.948pt x 199.99008pt.
-[39 <./figures//danh-sach-su-kien.png> <./figures//tao-su-kien.png>]
 
-LaTeX Warning: Reference `fig:chi-tiet-tin-nhan' on page 40 undefined on input line 521.
+LaTeX Warning: Reference `fig:chi-tiet-tin-nhan' on page 33 undefined on input line 521.
 
-<figures//chi-tiet-tin-nhan.png, id=556, 3854.4pt x 2296.58pt>
+<figures//chi-tiet-tin-nhan.png, id=364, 3854.4pt x 2296.58pt>
 File: figures//chi-tiet-tin-nhan.png Graphic file (type png)
 <use figures//chi-tiet-tin-nhan.png>
 Package pdftex.def Info: figures//chi-tiet-tin-nhan.png  used on input line 523.
 (pdftex.def)             Requested size: 299.948pt x 199.99008pt.
-) [40 <./figures//tin-nhan.png> <./figures//chi-tiet-tin-nhan.png>]
+[33 <./figures//tao-su-kien.png> <./figures//tin-nhan.png>] (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+)
+LaTeX Font Info:    Trying to load font information for T5+pcr on input line 547.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/vntex/t5pcr.fd
+File: t5ucr.fd 2005/08/24 Fontinst v1.929 font definitions for T5/pcr.
+) [34 <./figures//chi-tiet-tin-nhan.png>] [35] [36] [37] [38] [39]
+LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 900.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1pcr.fd
+File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
+) [40] [41]) [42]
 Ch\uhorn \ohorn ng 5.
-(./chapters/chap5-danh-gia-va-ket-luan.tex [41
+(./chapters/chap5-danh-gia-va-ket-luan.tex [43
 
-]) [42]
+]) [44]
 
 LaTeX Warning: Empty bibliography on input line 179.
 
-
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 186.
+(/usr/local/texlive/2023/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 186.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 186.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 Underfull \hbox (badness 2181) in paragraph at lines 195--196
 []\T5/ptm/m/n/12 Google Cloud. (2021). \T5/ptm/m/it/12 Google Cloud Server\T5/ptm/m/n/12 . Re-trieved from []$\T5/pcr/m/n/12 https : / / cloud .
  []
@@ -1611,7 +1592,7 @@ Package glossaries Warning: No \printnoidxglossary or \printnoidxglossaries
  found. (Remove \makenoidxglossaries if you don't want any glossaries.)
 This document will not have a glossary.
 
-[43
+[45
 
 ] (./Thesis.aux)
 
@@ -1626,8 +1607,8 @@ Package rerunfilecheck Warning: File `Thesis.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `Thesis.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  F9FBC5436AD99039C455E3C443B3AD6E;10106.
+(rerunfilecheck)             Before: 906AE309F12B7BDD75A58C4C2684849F;370
+(rerunfilecheck)             After:  B6ADCC3CFCF4005809130ACD75A504B1;16750.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                Thesis
@@ -1638,18 +1619,18 @@ Package logreq Info: Writing requests to 'Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29292 strings out of 476025
- 509976 string characters out of 5790018
- 2248388 words of memory out of 5000000
- 48956 multiletter control sequences out of 15000+600000
+ 29311 strings out of 476025
+ 510370 string characters out of 5790018
+ 2208388 words of memory out of 5000000
+ 48771 multiletter control sequences out of 15000+600000
  551994 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,17n,110p,2303b,2316s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,17n,110p,2303b,2299s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/urwvn/ucrr8v.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/urwvn/utmb8v.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/urwvn/utmri8v.pfb>
-Output written on Thesis.pdf (54 pages, 4943219 bytes).
+Output written on Thesis.pdf (56 pages, 4036418 bytes).
 PDF statistics:
- 698 PDF objects out of 1000 (max. 8388607)
- 553 compressed objects within 6 object streams
- 288 named destinations out of 1000 (max. 500000)
- 171 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 947 PDF objects out of 1000 (max. 8388607)
+ 803 compressed objects within 9 object streams
+ 482 named destinations out of 1000 (max. 500000)
+ 180 words of extra memory for PDF output out of 10000 (max. 10000000)
 
