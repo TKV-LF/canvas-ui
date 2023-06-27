@@ -19,6 +19,7 @@ import {
     EditQuestion,
 } from '~/pages';
 import { Notification, Profile, Announcement } from '~/pages/Settings';
+import Users from '~/pages/Users';
 
 import { withAuth, withPublic } from '~/components/route-guard';
 import EditAssignmentForm from '~/pages/Course/Assignments/Assignment/EditAssignment';
@@ -136,6 +137,10 @@ const privateRoutes = [
         path: '/settings/profile',
         component: Profile,
         layout: SettingLayout,
+    },
+    {
+        path: '/courses/:courseId/users',
+        component: Users,
     },
 ].map((route) => mapRoute(route, withAuth));
 
