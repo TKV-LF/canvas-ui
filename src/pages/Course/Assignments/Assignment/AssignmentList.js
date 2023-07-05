@@ -53,6 +53,10 @@ const reorder = (list, startIndex, endIndex) => {
 
     return result;
 };
+
+const getWeight = (id) => {
+    return localStorage.getItem('assignment_' + id) || 0;
+};
 const AssignmentList = ({ courseId, data }) => {
     const [items, setItems] = useState(data);
     const onDragEnd = (result) => {
@@ -74,15 +78,20 @@ const AssignmentList = ({ courseId, data }) => {
                                 {items.map((item, index) => (
                                     <Draggable key={item.id} draggableId={item.id.toString()} index={index}>
                                         {(provided) => (
-                                            <div
-                                                ref={provided.innerRef}
-                                                {...provided.draggableProps}
-                                                {...provided.dragHandleProps}
-                                                className="border-b"
-                                            >
-                                                <Link to={`/courses/${courseId}/assignments/${item.id}`}>
-                                                    <Task>{item.name}</Task>
-                                                </Link>
+                                            <div>
+                                                <div className="absolute left-3/4 ml-32 mt-4">
+                                                    Trọng số {getWeight(item.id)}
+                                                </div>
+                                                <div
+                                                    ref={provided.innerRef}
+                                                    {...provided.draggableProps}
+                                                    {...provided.dragHandleProps}
+                                                    className="border-b"
+                                                >
+                                                    <Link to={`/courses/${courseId}/assignments/${item.id}`}>
+                                                        <Task>{item.name}</Task>
+                                                    </Link>
+                                                </div>
                                             </div>
                                         )}
                                     </Draggable>

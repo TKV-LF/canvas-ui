@@ -102,7 +102,7 @@ const CourseApi = {
         }
     },
     // Edit assignment groups
-    editAssignmentGroup: async (payload) => {
+    updateAssignmentGroup: async (payload) => {
         try {
             const response = await apiClient.put(
                 `/api/v1/courses/${payload.courseId}/assignment_groups/${payload.assignmentGroupId}`,
@@ -355,7 +355,7 @@ const CourseApi = {
         } catch (error) {
             throw error;
         }
-    }
+    },
 };
 
 export default CourseApi;

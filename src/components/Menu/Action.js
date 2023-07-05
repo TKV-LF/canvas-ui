@@ -14,8 +14,6 @@ export default function ActionMenu({ options }) {
         setAnchorEl(null);
     };
 
-   
-
     return (
         <div>
             <IconButton

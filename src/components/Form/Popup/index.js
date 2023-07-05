@@ -29,6 +29,7 @@ const FormDialog = ({ open, onClose, onSubmit, title, fields }) => {
                 <form onSubmit={handleSubmit}>
                     {fields.map((field) => (
                         <div key={field.name} className="mb-4">
+                            {}
                             <TextField
                                 fullWidth
                                 variant="outlined"
